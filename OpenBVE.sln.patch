@@ -1,0 +1,37 @@
+﻿diff -uprN a/OpenBVE.sln b/OpenBVE.sln>OpenBVE.sln.patch
+--- a/OpenBVE.sln	2018-06-15 00:08:35.000000000 +0900
++++ b/OpenBVE.sln	2018-07-15 09:36:13.909330700 +0900
+@@ -44,6 +44,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F
+ EndProject
+ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formats.Msts", "source\Plugins\Formats.Msts\Formats.Msts.csproj", "{E81B7BD8-A326-47D3-B7EE-E9C7D4D119FA}"
+ EndProject
++Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATCFS", "source\Plugins\ATCFS_For_OpenBVE\ATCFS.csproj", "{FC8BB003-BC1D-45D0-8DF8-487CB0C58FC3}"
++EndProject
+ Global
+ 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+ 		Debug|Any CPU = Debug|Any CPU
+@@ -232,6 +234,16 @@ Global
+ 		{E81B7BD8-A326-47D3-B7EE-E9C7D4D119FA}.Release|Mixed Platforms.Build.0 = Release|x86
+ 		{E81B7BD8-A326-47D3-B7EE-E9C7D4D119FA}.Release|x86.ActiveCfg = Release|x86
+ 		{E81B7BD8-A326-47D3-B7EE-E9C7D4D119FA}.Release|x86.Build.0 = Release|x86
++		{FC8BB003-BC1D-45D0-8DF8-487CB0C58FC3}.Debug|Any CPU.ActiveCfg = Debug|x86
++		{FC8BB003-BC1D-45D0-8DF8-487CB0C58FC3}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
++		{FC8BB003-BC1D-45D0-8DF8-487CB0C58FC3}.Debug|Mixed Platforms.Build.0 = Debug|x86
++		{FC8BB003-BC1D-45D0-8DF8-487CB0C58FC3}.Debug|x86.ActiveCfg = Debug|x86
++		{FC8BB003-BC1D-45D0-8DF8-487CB0C58FC3}.Debug|x86.Build.0 = Debug|x86
++		{FC8BB003-BC1D-45D0-8DF8-487CB0C58FC3}.Release|Any CPU.ActiveCfg = Release|x86
++		{FC8BB003-BC1D-45D0-8DF8-487CB0C58FC3}.Release|Mixed Platforms.ActiveCfg = Release|x86
++		{FC8BB003-BC1D-45D0-8DF8-487CB0C58FC3}.Release|Mixed Platforms.Build.0 = Release|x86
++		{FC8BB003-BC1D-45D0-8DF8-487CB0C58FC3}.Release|x86.ActiveCfg = Release|x86
++		{FC8BB003-BC1D-45D0-8DF8-487CB0C58FC3}.Release|x86.Build.0 = Release|x86
+ 	EndGlobalSection
+ 	GlobalSection(SolutionProperties) = preSolution
+ 		HideSolutionNode = FALSE
+@@ -245,6 +257,7 @@ Global
+ 		{E9B64673-65B7-4D77-A4DB-4B441A7C9197} = {3D6660F8-52D2-4A30-8F1E-1922DDCF10F9}
+ 		{EEC75E83-E284-44E0-B321-3F5C6512074F} = {16553295-E70F-4596-AA78-848EEA576C4A}
+ 		{E81B7BD8-A326-47D3-B7EE-E9C7D4D119FA} = {16553295-E70F-4596-AA78-848EEA576C4A}
++		{FC8BB003-BC1D-45D0-8DF8-487CB0C58FC3} = {16553295-E70F-4596-AA78-848EEA576C4A}
+ 	EndGlobalSection
+ 	GlobalSection(ExtensibilityGlobals) = postSolution
+ 		SolutionGuid = {50B52A67-69B1-4B19-A59C-FF058FD9EBDF}

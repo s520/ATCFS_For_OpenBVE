@@ -1,0 +1,68 @@
+﻿version: 1.0.{build}
+branches:
+  except:
+  - gh-pages
+init:
+- ps: >-
+    iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+
+    c:\cygwin\setup-x86.exe -qnNdO -R C:/cygwin -s http://cygwin.mirror.constant.com -l C:/cygwin/var/cache/setup -P patchutils
+
+    mkdir ..\tmp
+
+    cd ..\tmp
+
+    (new-object System.Net.WebClient).Downloadfile("https://codeload.github.com/leezer3/OpenBVE/zip/$env:OPENBVE_VER", "$env:APPVEYOR_BUILD_FOLDER\..\tmp\OpenBVE-$env:OPENBVE_VER.zip")
+
+    Start-Process $env:7zip "x OpenBVE-$env:OPENBVE_VER.zip" -Wait
+
+    cd $env:APPVEYOR_BUILD_FOLDER
+environment:
+  OPENBVE_VER: 1.5.3.6
+  Configuration: Release
+  Platform: x86
+  matrix:
+  - TARGET: VS2010
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+    ProjectToolsVersion: 4.0
+    PlatformToolset: v100
+  - TARGET: VS2012
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+    ProjectToolsVersion: 4.0
+    PlatformToolset: v110
+    VisualStudioVersion: 11.0
+  - TARGET: VS2013
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+    ProjectToolsVersion: 12.0
+    PlatformToolset: v120
+  - TARGET: VS2015
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+    ProjectToolsVersion: 14.0
+    PlatformToolset: v140
+  - TARGET: VS2017
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+    ProjectToolsVersion: 15.0
+    PlatformToolset: v141
+install:
+- cmd: >-
+    cd %APPVEYOR_BUILD_FOLDER%\..\tmp\OpenBVE-%OPENBVE_VER%\source\Plugins
+
+    cp -r %APPVEYOR_BUILD_FOLDER% %APPVEYOR_PROJECT_NAME%
+
+    cd ..\..\
+
+    patch -p1 < %APPVEYOR_BUILD_FOLDER%\OpenBVE.sln.patch
+build_script:
+- cmd: >-
+    cd %APPVEYOR_BUILD_FOLDER%\..\tmp\OpenBVE-%OPENBVE_VER%\
+
+    msbuild OpenBve.sln /t:OpenBveApi;Plugins\ATCFS
+after_build:
+- cmd: >-
+    cd %APPVEYOR_BUILD_FOLDER%
+
+    cp -r ..\tmp\OpenBVE-%OPENBVE_VER%\bin_release bin_release
+test: off
+artifacts:
+- path: bin_release
+  name: ATCFS_For_OpenBVE_%TARGET%
