@@ -120,7 +120,7 @@ namespace ATCFS {
             this.Sounds = new Sounds(playSound);
             this.Accel = new Accel();
             this.Atc = new Atc(this);
-            this.AtsP = new AtsP();
+            this.AtsP = new AtsP(this);
             this.Wiper = new Wiper(this);
             this.Sub = new Sub(this);
             this.Devices = new Device[] { this.Accel, this.Atc, this.AtsP, this.Wiper, this.Sub };

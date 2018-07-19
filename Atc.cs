@@ -1425,32 +1425,34 @@ namespace ATCFS {
                 ResetIndicator();
                 RunIndicator();
                 RunSubSpeedMeter();
+
+                atc_eb_lamp_ = (atc_brake_notch_ == max_brake_notch_) ? 1 : 0;  // ATC非常
+                atc_svc_lamp_ = (atc_brake_notch_ > 0) ? 1 : 0;  // ATC常用
+
+                // For debug
+                if (time_ >= debug_timer_) {
+                    if (atc_type_ < 2) {
+                        Trace.WriteLine("Loc: " + (float)this.train_.State.Location + " / Accel: " + (float)this.train_.Accel.ema_accel_ + " / TargetSpd: " + ItoV(atc_a_.signal_));
+                        Trace.WriteLine("出力B: B" + atc_brake_notch_ + " / is_stop_eb_: " + atc_a_.is_stop_eb_ + " / is_stop_svc_: " + atc_a_.is_stop_svc_ + " / is__brake_reset_: " + atc_a_.is__brake_reset_);
+                    } else {
+                        int arrow_spd = pattern_arrow_spd_list_.Min();
+                        int index = Array.IndexOf(pattern_arrow_spd_list_, arrow_spd);
+                        int tget_spd = pattern_tget_spd_list_[index];
+                        float pattern_start_loc = (float)pattern_start_loc_list_[index];
+                        float pattern_end_loc = (float)pattarn_end_loc_list_[index];
+                        index = Array.IndexOf(fuzzy_.fuzzy_brake_notch_list_, fuzzy_.fuzzy_brake_notch_list_.Max());
+                        Trace.WriteLine("Loc: " + (float)this.train_.State.Location + " / Accel: " + (float)this.train_.Accel.ema_accel_ + " / TargetSpd: " + tget_spd + " / PattStart: " + pattern_start_loc + " / PattEnd: " + pattern_end_loc + " / Arrow: " + arrow_spd);
+                        Trace.WriteLine("Index: " + index + " / 出力B: B" + atc_brake_notch_ + " / is_stop_eb_: " + atc_d_.is_stop_eb_ + " / is_stop_svc_: " + atc_d_.is_stop_svc_ + " / is__brake_reset_: " + atc_d_.is__brake_reset_);
+                    }
+                    debug_timer_ = time_ + 1000.0;
+                }
             }
+
             if (atc_brake_notch_ > raw_brake_notch) {
                 data.Handles.BrakeNotch = atc_brake_notch_ + this.train_.Specs.AtsNotch - 1;
                 data.Handles.PowerNotch = 0;
                 data.Handles.ConstSpeed = false;
                 blocking = true;
-            }
-
-            atc_eb_lamp_ = (atc_brake_notch_ == max_brake_notch_) ? 1 : 0;  // ATC非常
-            atc_svc_lamp_ = (atc_brake_notch_ > 0) ? 1 : 0;  // ATC常用
-
-            if (time_ >= debug_timer_) {
-                if (atc_type_ < 2) {
-                    Trace.WriteLine("Loc: " + (float)this.train_.State.Location + " / Accel: " + (float)this.train_.Accel.ema_accel_ + " / TargetSpd: " + ItoV(atc_a_.signal_));
-                    Trace.WriteLine("出力B: " + atc_brake_notch_ + " / is_stop_eb_: " + atc_a_.is_stop_eb_ + " / is_stop_svc_: " + atc_a_.is_stop_svc_ + " / is__brake_reset_: " + atc_a_.is__brake_reset_);
-                } else {
-                    int arrow_spd = pattern_arrow_spd_list_.Min();
-                    int index = Array.IndexOf(pattern_arrow_spd_list_, arrow_spd);
-                    int tget_spd = pattern_tget_spd_list_[index];
-                    float pattern_start_loc = (float)pattern_start_loc_list_[index];
-                    float pattern_end_loc = (float)pattarn_end_loc_list_[index];
-                    index = Array.IndexOf(fuzzy_.fuzzy_brake_notch_list_, fuzzy_.fuzzy_brake_notch_list_.Max());
-                    Trace.WriteLine("Loc: " + (float)this.train_.State.Location + " / Accel: " + (float)this.train_.Accel.ema_accel_ + " / TargetSpd: " + tget_spd + " / PattStart: " + pattern_start_loc + " / PattEnd: " + pattern_end_loc + " / Arrow: " + arrow_spd);
-                    Trace.WriteLine("Index: " + index + " / 出力B: " + atc_brake_notch_ + " / is_stop_eb_: " + atc_d_.is_stop_eb_ + " / is_stop_svc_: " + atc_d_.is_stop_svc_ + " / is__brake_reset_: " + atc_d_.is__brake_reset_);
-                }
-                debug_timer_ = time_ + 1000.0;
             }
 
             // --- パネル ---
