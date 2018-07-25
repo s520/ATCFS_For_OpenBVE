@@ -1433,7 +1433,7 @@ namespace ATCFS {
                 if (time_ >= debug_timer_) {
                     if (atc_type_ < 2) {
                         Trace.WriteLine("Loc: " + (float)this.train_.State.Location + " / Accel: " + (float)this.train_.Accel.ema_accel_ + " / TargetSpd: " + ItoV(atc_a_.signal_));
-                        Trace.WriteLine("出力B: B" + atc_brake_notch_ + " / is_stop_eb_: " + atc_a_.is_stop_eb_ + " / is_stop_svc_: " + atc_a_.is_stop_svc_ + " / is__brake_reset_: " + atc_a_.is__brake_reset_);
+                        Trace.WriteLine("出力B: B" + atc_brake_notch_ + " / is_stop_eb_: " + atc_a_.is_stop_eb_ + " / is_stop_svc_: " + atc_a_.is_stop_svc_ + " / is__brake_reset_: " + atc_a_.is__brake_reset_ + " / am: " + (float)this.train_.Sub.current_);
                     } else {
                         int arrow_spd = pattern_arrow_spd_list_.Min();
                         int index = Array.IndexOf(pattern_arrow_spd_list_, arrow_spd);
@@ -1442,7 +1442,7 @@ namespace ATCFS {
                         float pattern_end_loc = (float)pattarn_end_loc_list_[index];
                         index = Array.IndexOf(fuzzy_.fuzzy_brake_notch_list_, fuzzy_.fuzzy_brake_notch_list_.Max());
                         Trace.WriteLine("Loc: " + (float)this.train_.State.Location + " / Accel: " + (float)this.train_.Accel.ema_accel_ + " / TargetSpd: " + tget_spd + " / PattStart: " + pattern_start_loc + " / PattEnd: " + pattern_end_loc + " / Arrow: " + arrow_spd);
-                        Trace.WriteLine("Index: " + index + " / 出力B: B" + atc_brake_notch_ + " / is_stop_eb_: " + atc_d_.is_stop_eb_ + " / is_stop_svc_: " + atc_d_.is_stop_svc_ + " / is__brake_reset_: " + atc_d_.is__brake_reset_);
+                        Trace.WriteLine("Index: " + index + " / 出力B: B" + atc_brake_notch_ + " / is_stop_eb_: " + atc_d_.is_stop_eb_ + " / is_stop_svc_: " + atc_d_.is_stop_svc_ + " / is__brake_reset_: " + atc_d_.is__brake_reset_ + " / am: " + (float)this.train_.Sub.current_);
                     }
                     debug_timer_ = time_ + 1000.0;
                 }

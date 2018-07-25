@@ -66,7 +66,7 @@ namespace ATCFS {
         /// <summary>
         /// インスタンスを取得するメソッド
         /// </summary>
-        /// <returns></returns>
+        /// <returns>インスタンス</returns>
         internal static LoadConfig GetInstance() {
             return load_config_;
         }

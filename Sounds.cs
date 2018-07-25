@@ -35,6 +35,9 @@ namespace ATCFS {
         internal readonly Sound AtcSwUpSound;
         internal readonly Sound WiperSwDownSound;
         internal readonly Sound LcdSwDownSound;
+        internal readonly Sound LcdSwUpSound;
+        internal readonly Sound LightSwDownSound;
+        internal readonly Sound LightSwUpSound;
         internal readonly Sound AtcAirSound;
         internal readonly Sound WiperSound;
         private readonly Sound[] PlayOnceSounds;
@@ -56,6 +59,9 @@ namespace ATCFS {
             this.AtcSwUpSound = new Sound(9);
             this.WiperSwDownSound = new Sound(6);
             this.LcdSwDownSound = new Sound(61);
+            this.LcdSwUpSound = new Sound(62);
+            this.LightSwDownSound = new Sound(63);
+            this.LightSwUpSound = new Sound(64);
             this.AtcAirSound = new Sound(10);
             if (LoadConfig.WiperWet == 0) {
                 this.WiperSound = new Sound(17);
