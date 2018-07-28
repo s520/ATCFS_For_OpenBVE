@@ -8,7 +8,7 @@ using System.Text;
 
 namespace ATCFS {
 
-    internal class BaseFunc {
+    internal static class BaseFunc {
 
         /// <summary>指定した値以上の先頭のインデックスを返す</summary>
         /// <typeparam name="T">比較する値の型</typeparam>
@@ -24,10 +24,11 @@ namespace ATCFS {
             int mid;
             while (low < high) {
                 mid = ((high - low) >> 1) + low;
-                if (comparer.Compare(arr[mid], value) < 0)
+                if (comparer.Compare(arr[mid], value) < 0) {
                     low = mid + 1;
-                else
+                } else {
                     high = mid;
+                }
             }
             return low;
         }
@@ -51,10 +52,11 @@ namespace ATCFS {
             int mid;
             while (low < high) {
                 mid = ((high - low) >> 1) + low;
-                if (comparer.Compare(list[mid], value) < 0)
+                if (comparer.Compare(list[mid], value) < 0) {
                     low = mid + 1;
-                else
+                } else {
                     high = mid;
+                }
             }
             return low;
         }
@@ -78,10 +80,11 @@ namespace ATCFS {
             int mid;
             while (low < high) {
                 mid = ((high - low) >> 1) + low;
-                if (comparer.Compare(arr[mid], value) <= 0)
+                if (comparer.Compare(arr[mid], value) <= 0) {
                     low = mid + 1;
-                else
+                } else {
                     high = mid;
+                }
             }
             return low;
         }

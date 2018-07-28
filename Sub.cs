@@ -39,7 +39,7 @@ namespace ATCFS {
         private int[] current_list_;  //!< 1桁ごと表示する電流値[A]
         private int ac_voltage_;  //!< 交流電圧
         private int cv_voltage_;  //!< 制御電圧
-        private int reverser_postion_;  //!< レバーサー位置(0: 中立, 1: 前, 2: 後)
+        private int reverser_position_;  //!< レバーサー位置(0: 中立, 1: 前, 2: 後)
         private int lcd_sw_;  //!< LCD切り替えSWの状態(0: 開放, 1: 押下)
         private int lcd_status_;  //!< LCDの状態(0: 表示1, 1: 表示2)
         private int light_sw_;  //!< 手元灯SWの状態(0: 開放, 1: 押下)
@@ -189,7 +189,7 @@ namespace ATCFS {
         /// 現在の電流値を取得する関数
         /// </summary>
         private void GetCurrent() {
-            int train_spd = (int)Math.Abs(this.train_.State.Speed.KilometersPerHour);
+            int train_spd = (int)Math.Abs(this.train_.State.Speed.KilometersPerHour * 1000);
             if (LoadCurrent.brake_current_.Count != 0 && LoadCurrent.power_current_.Count != 0) {
                 if (train_spd != 0 && brake_notch_ > 0) {
                     int brake_stage = brake_notch_;
@@ -238,7 +238,7 @@ namespace ATCFS {
             GetCurrent();
 
             // --- パネル ---
-            this.train_.Panel[32] = reverser_postion_;  // レバーサ表示
+            this.train_.Panel[32] = reverser_position_;  // レバーサ表示
             this.train_.Panel[61] = lcd_status_;  // LCD表示
             this.train_.Panel[62] = light_status_;  // 手元灯
             this.train_.Panel[200] = digital_clock_[0];  // デジタル時計 (時)の十の位
@@ -268,9 +268,15 @@ namespace ATCFS {
         internal override void SetReverser(int reverser) {
             // レバーサの位置を表示する
             switch (reverser) {
-            case -1: reverser_postion_ = 2; break;
-            case 1: reverser_postion_ = 1; break;
-            default: reverser_postion_ = 0; break;
+            case -1:
+                reverser_position_ = 2;
+                break;
+            case 1:
+                reverser_position_ = 1;
+                break;
+            default:
+                reverser_position_ = 0;
+                break;
             }
         }
 
@@ -297,11 +303,9 @@ namespace ATCFS {
             case VirtualKeys.I:  // 手元灯
                 LightSwDown();
                 break;
-
             case VirtualKeys.L:  // LCD表示切り替え
                 LcdSwDown();
                 break;
-
             default:
                 break;
             }
@@ -316,11 +320,9 @@ namespace ATCFS {
             case VirtualKeys.I:  // 手元灯
                 LightSwUp();
                 break;
-
             case VirtualKeys.L:  // LCD表示切り替え
                 LcdSwUp();
                 break;
-
             default:
                 break;
             }
@@ -349,7 +351,6 @@ namespace ATCFS {
             case 100:
                 SetAdjLoc(beacon.Optional);
                 break;
-
             default:
                 break;
             }

@@ -1,0 +1,5 @@
+exclude_paths:
+- 'CsvReader/**'
+- 'IniParser/**'
+- 'Project Items/**'
+- 'Properties/**'

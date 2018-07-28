@@ -12,54 +12,25 @@ namespace ATCFS {
 
             // --- メンバ ---
             /// <summary>レバーサ位置</summary>
-            private int MyReverser;
+            internal int Reverser { get; private set; }
 
             /// <summary>力行ノッチ</summary>
-            private int MyPowerNotch;
+            internal int PowerNotch { get; private set; }
 
             /// <summary>ブレーキノッチ</summary>
-            private int MyBrakeNotch;
+            internal int BrakeNotch { get; private set; }
 
             /// <summary>定速制御の状態</summary>
-            private bool MyConstSpeed;
-
-            // --- プロパティ ---
-            /// <summary>レバーサ位置を取得または設定する</summary>
-            internal int Reverser {
-                get {
-                    return this.MyReverser;
-                }
-            }
-
-            /// <summary>力行ノッチを取得または設定する</summary>
-            internal int PowerNotch {
-                get {
-                    return this.MyPowerNotch;
-                }
-            }
-
-            /// <summary>ブレーキノッチを取得または設定する</summary>
-            internal int BrakeNotch {
-                get {
-                    return this.MyBrakeNotch;
-                }
-            }
-
-            /// <summary>定速制御の状態を取得または設定する</summary>
-            internal bool ConstSpeed {
-                get {
-                    return this.MyConstSpeed;
-                }
-            }
+            internal bool ConstSpeed { get; private set; }
 
             // --- コンストラクタ ---
             /// <summary>新しいインスタンスを作成する</summary>
             /// <param name="handles">ハンドル操作</param>
             internal ReadOnlyHandles(Handles handles) {
-                this.MyReverser = handles.Reverser;
-                this.MyPowerNotch = handles.PowerNotch;
-                this.MyBrakeNotch = handles.BrakeNotch;
-                this.MyConstSpeed = handles.ConstSpeed;
+                this.Reverser = handles.Reverser;
+                this.PowerNotch = handles.PowerNotch;
+                this.BrakeNotch = handles.BrakeNotch;
+                this.ConstSpeed = handles.ConstSpeed;
             }
         }
 
@@ -140,7 +111,7 @@ namespace ATCFS {
         /// <param name="data">The data.</param>
         internal void Elapse(ElapseData data) {
             this.PluginInitializing = false;
-            if (data.ElapsedTime.Seconds > 0.0 & data.ElapsedTime.Seconds < 1.0) {
+            if (data.ElapsedTime.Seconds > 0.0 && data.ElapsedTime.Seconds < 1.0) {
                 // --- パネル初期化 ---
                 for (int i = 0; i < this.Panel.Length; i++) {
                     this.Panel[i] = 0;
@@ -152,6 +123,11 @@ namespace ATCFS {
                 bool blocking = false;
                 foreach (Device device in this.Devices) {
                     device.Elapse(data, ref blocking);
+                }
+
+                // For Safety
+                if (this.Doors != DoorStates.None) {
+                    data.Handles.PowerNotch = 0;
                 }
 
                 // --- パネル ---

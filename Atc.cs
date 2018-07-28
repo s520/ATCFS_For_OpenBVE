@@ -235,10 +235,17 @@ namespace ATCFS {
                 internal void RegStaManual(int distance) {
                     pattern_end_loc_[1] = this.train_.State.Location + distance;
                     switch (this.train_.Atc.atc_type_) {
-                    case 2: pattern_tget_spd_[1] = 30; break;
-                    case 3: pattern_tget_spd_[1] = 15; break;
-                    case 4: pattern_tget_spd_[1] = 75; break;
-                    default: break;
+                    case 2:
+                        pattern_tget_spd_[1] = 30;
+                        break;
+                    case 3:
+                        pattern_tget_spd_[1] = 15;
+                        break;
+                    case 4:
+                        pattern_tget_spd_[1] = 75;
+                        break;
+                    default:
+                        break;
                     }
                     pattern_is_valid_[1] = (pattern_is_ready_[1] == 1) ? 1 : 0;
                 }
@@ -326,9 +333,9 @@ namespace ATCFS {
 
             // --- メンバ ---
             private readonly Train train_;
-            internal SectionD section_d_;
-            internal StationD station_d_;
-            internal PatternD pattern_d_;
+            internal readonly SectionD section_d_;
+            internal readonly StationD station_d_;
+            internal readonly PatternD pattern_d_;
             private double prev_spd_;  //!< 1フレーム前の列車速度[km/h]
             internal int is_stop_eb_;  //!< ATC-02, 03信号ブレーキフラグ
             internal int is_stop_svc_;  //!< ATC-30信号ブレーキフラグ
@@ -666,10 +673,10 @@ namespace ATCFS {
         }
 
         // --- メンバ ---
-        private Train train_;
-        private AtcA atc_a_;
-        private AtcD atc_d_;
-        private Fuzzy fuzzy_;
+        private readonly Train train_;
+        private readonly AtcA atc_a_;
+        private readonly AtcD atc_d_;
+        private readonly Fuzzy fuzzy_;
         private const int ALL_PATTERN = 8;  //!< パターンの総数
         private const int STA_PATTERN = 3;  //!< 駅停車パターンの総数
         private const int USR_PATTERN = 3;  //!< 速度制限パターンの総数
@@ -753,7 +760,11 @@ namespace ATCFS {
         private int ItoV(int index) {
             int atc_spd = BaseFunc.ArrayGetOrDefault(atc_spd_list_, index);
             if (atc_type_ == 0 && atc_spd >= 220) {
-                if (atc_spd >= 300) { atc_spd += 3; } else { atc_spd += 5; }
+                if (atc_spd >= 300) {
+                    atc_spd += 3;
+                } else {
+                    atc_spd += 5;
+                }
             }
             return atc_spd;
         }
@@ -768,7 +779,11 @@ namespace ATCFS {
         private int ItoV(int index, bool is_display) {
             int atc_spd = BaseFunc.ArrayGetOrDefault(atc_spd_list_, index);
             if (atc_type_ == 0 && atc_spd >= 220 && !is_display) {
-                if (atc_spd >= 300) { atc_spd += 3; } else { atc_spd += 5; }
+                if (atc_spd >= 300) {
+                    atc_spd += 3;
+                } else {
+                    atc_spd += 5;
+                }
             }
             return atc_spd;
         }
@@ -820,7 +835,11 @@ namespace ATCFS {
         /// <param name="signal">現在のセクションの信号番号</param>
         private void ChangedSignal(int signal) {
             if (atc_use_ == 1) {
-                if (atc_type_ < 2) { this.atc_a_.ChangedSignal(signal); } else { this.atc_d_.ChangedSignal(signal); }
+                if (atc_type_ < 2) {
+                    this.atc_a_.ChangedSignal(signal);
+                } else {
+                    this.atc_d_.ChangedSignal(signal);
+                }
             }
         }
 
@@ -836,47 +855,36 @@ namespace ATCFS {
             case 70:
                 PassedLoop(signal);
                 break;
-
             case 80:
                 atc_d_.section_d_.RegSection(distance);
                 break;
-
             case 81:
                 atc_d_.station_d_.RegStaStop(signal);
                 break;
-
             case 82:
                 atc_d_.station_d_.RegStaBranch(optional);
                 break;
-
             case 83:
                 atc_d_.station_d_.RegStaManual(optional);
                 break;
-
             case 84:
                 atc_d_.station_d_.RegStaEnd(optional);
                 break;
-
             case 85:
                 atc_d_.station_d_.RegStaLoc();
                 break;
-
             case 86:
                 atc_d_.pattern_d_.RegPattern(0, optional);
                 break;
-
             case 87:
                 atc_d_.pattern_d_.RegPattern(1, optional);
                 break;
-
             case 88:
                 atc_d_.pattern_d_.RegPattern(2, optional);
                 break;
-
             case 90:
                 ChangedAtcType(optional);
                 break;
-
             default:
                 break;
             }
@@ -1007,7 +1015,13 @@ namespace ATCFS {
         private int CalcPatternSpd(int tget_spd, double pattern_end_loc) {
             int arrow_spd = 0;
             if (pattern_end_loc <= this.train_.State.Location) {
-                if (tget_spd > atc_max_spd_) { arrow_spd = atc_max_spd_; } else if (tget_spd < 0) { arrow_spd = 0; } else { arrow_spd = tget_spd; }
+                if (tget_spd > atc_max_spd_) {
+                    arrow_spd = atc_max_spd_;
+                } else if (tget_spd < 0) {
+                    arrow_spd = 0;
+                } else {
+                    arrow_spd = tget_spd;
+                }
             } else {
                 arrow_spd = SearchPattern(BaseFunc.ArrayGetOrDefault(pattern_list_, tget_spd) + pattern_end_loc - this.train_.State.Location);
             }
@@ -1548,7 +1562,6 @@ namespace ATCFS {
             case VirtualKeys.S:  // ATC確認
                 ResetSwDown();
                 break;
-
             default:
                 break;
             }
@@ -1563,7 +1576,6 @@ namespace ATCFS {
             case VirtualKeys.S:  // ATC確認
                 ResetSwUp();
                 break;
-
             default:
                 break;
             }

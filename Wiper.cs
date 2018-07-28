@@ -216,11 +216,9 @@ namespace ATCFS {
             case VirtualKeys.J:  // ワイパースピードアップ
                 WiperRequest(0);
                 break;
-
             case VirtualKeys.K:  // ワイパースピードダウン
                 WiperRequest(1);
                 break;
-
             default:
                 break;
             }

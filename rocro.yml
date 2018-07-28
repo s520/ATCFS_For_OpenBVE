@@ -1,0 +1,17 @@
+﻿inspecode:
+  experimental:
+    ignore:
+      - IniParser
+      - CsvReader
+      - Project Items
+      - Properties
+
+  astyle:
+    auto-fix: true
+    options:
+      --style: google
+      --mode: cs
+      --indent-namespaces:
+      --keep-one-line-blocks:
+
+  misspell: default

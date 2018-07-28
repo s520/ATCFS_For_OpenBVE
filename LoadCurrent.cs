@@ -44,7 +44,9 @@ namespace ATCFS {
             BaseFunc.CsvToDataTable(csv_path, current_dt);
             List<int> work_list = new List<int>();
             BaseFunc.DataTableToList(current_dt, "TrainSpeed", ref work_list);
-            power_spd_index_ = work_list;
+            for (int i = 0; i < work_list.Count; i++) {
+                power_spd_index_.Add(work_list[i] * 1000);
+            }
             for (int i = 1; i < current_dt.Columns.Count; i++) {
                 List<double> work_list2 = new List<double>();
                 BaseFunc.DataTableToList(current_dt, "Stage" + i, ref work_list2);
@@ -61,7 +63,9 @@ namespace ATCFS {
             BaseFunc.CsvToDataTable(csv_path, current_dt);
             List<int> work_list = new List<int>();
             BaseFunc.DataTableToList(current_dt, "TrainSpeed", ref work_list);
-            brake_spd_index_ = work_list;
+            for (int i = 0; i < work_list.Count; i++) {
+                brake_spd_index_.Add(work_list[i] * 1000);
+            }
             for (int i = 1; i < current_dt.Columns.Count; i++) {
                 List<double> work_list2 = new List<double>();
                 BaseFunc.DataTableToList(current_dt, "Stage" + i, ref work_list2);

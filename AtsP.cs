@@ -189,9 +189,9 @@ namespace ATCFS {
         }
 
         // --- メンバ ---
-        private Train train_;
-        private SectionP section_p_;
-        private PatternP pattern_p_;
+        private readonly Train train_;
+        private readonly SectionP section_p_;
+        private readonly PatternP pattern_p_;
         private const int ALL_PATTERN_P = 7;  //!< パターンの総数
         private const int USR_PATTERN_P = 5;  //!< 速度制限パターンの総数
         private int max_brake_notch_;  //!< 常用最大ブレーキノッチ(HBを含まない)
@@ -276,55 +276,42 @@ namespace ATCFS {
             case 3:
                 section_p_.GetSection(distance);
                 break;
-
             case 4:
                 section_p_.PassedStopEb(distance);
                 break;
-
             case 5:
                 section_p_.PassedStopSvc(distance);
                 break;
-
             case 6:
                 pattern_p_.RegPattern(0, optional);
                 break;
-
             case 7:
                 pattern_p_.RegPattern(1, optional);
                 break;
-
             case 8:
                 pattern_p_.RegPattern(2, optional);
                 break;
-
             case 9:
                 pattern_p_.RegPattern(3, optional);
                 break;
-
             case 10:
                 pattern_p_.RegPattern(4, optional);
                 break;
-
             case 16:
                 pattern_p_.DelPattern(0);
                 break;
-
             case 18:
                 pattern_p_.DelPattern(2);
                 break;
-
             case 19:
                 pattern_p_.DelPattern(3);
                 break;
-
             case 20:
                 pattern_p_.DelPattern(4);
                 break;
-
             case 203:
                 AdjDeceleration(optional);
                 break;
-
             default:
                 break;
             }
@@ -333,14 +320,14 @@ namespace ATCFS {
         /// <summary>
         /// 勾配補正設定を行う関数
         /// </summary>
-        /// <param name="decleration">減速度補正値[m/s^2]*1000</param>
-        private void AdjDeceleration(int decleration) {
-            if (decleration > 0) {
+        /// <param name="deceleration">減速度補正値[m/s^2]*1000</param>
+        private void AdjDeceleration(int deceleration) {
+            if (deceleration > 0) {
                 adj_deceleration_ = 0.0;
-            } else if (decleration < -35) {
+            } else if (deceleration < -35) {
                 adj_deceleration_ = -0.035;
             } else {
-                adj_deceleration_ = decleration / 1000.0;
+                adj_deceleration_ = deceleration / 1000.0;
             }
             SetPatternList();
         }
@@ -386,7 +373,13 @@ namespace ATCFS {
         private int CalcPatternSpd(int tget_spd, double pattern_end_loc) {
             int pattern_spd = 0;
             if (pattern_end_loc <= this.train_.State.Location) {
-                if (tget_spd > atsp_max_spd_) { pattern_spd = atsp_max_spd_; } else if (tget_spd < 0) { pattern_spd = 0; } else { pattern_spd = tget_spd; }
+                if (tget_spd > atsp_max_spd_) {
+                    pattern_spd = atsp_max_spd_;
+                } else if (tget_spd < 0) {
+                    pattern_spd = 0;
+                } else {
+                    pattern_spd = tget_spd;
+                }
             } else {
                 pattern_spd = SearchPattern(BaseFunc.ArrayGetOrDefault(pattern_list_, tget_spd) + pattern_end_loc - this.train_.State.Location);
             }
@@ -649,7 +642,6 @@ namespace ATCFS {
             case VirtualKeys.B1:  // ATS-P復帰
                 ResetSwDown();
                 break;
-
             default:
                 break;
             }
