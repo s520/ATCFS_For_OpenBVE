@@ -1,6 +1,8 @@
 ﻿# ATCFS For OpenBVE
 
 [![Build status](https://ci.appveyor.com/api/projects/status/kw52b75ccsbp6fv4?svg=true)](https://ci.appveyor.com/project/s520/atcfs-for-openbve)
+[![Report](https://inspecode.rocro.com/badges/github.com/s520/ATCFS_For_OpenBVE/report?token=gBBXkwyqWeN38TId3d7yjIzYaT2rrcrUndn3zi1ehYc&branch=master)](https://inspecode.rocro.com/reports/github.com/s520/ATCFS_For_OpenBVE/branch/master/summary)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0a57f0f8fc334949b3e30e1119504fde)](https://www.codacy.com/project/s520/ATCFS_For_OpenBVE/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=s520/ATCFS_For_OpenBVE&amp;utm_campaign=Badge_Grade_Dashboard)
 
 ATC-1, ATC-2, ATC-NS, KS-ATC, DS-ATC, ATS-P Plugin for OpenBVE on Linux or Windows
 
