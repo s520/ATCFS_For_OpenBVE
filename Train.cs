@@ -135,11 +135,11 @@ namespace ATCFS {
                 this.Panel[10] = (seconds / 3600) % 24;
                 this.Panel[11] = (seconds / 60) % 60;
                 this.Panel[12] = seconds % 60;
-                this.Panel[194] = ((int)data.Vehicle.Location + this.Sub.adj_loc_ % 1000000) / 100000;
-                this.Panel[195] = ((int)data.Vehicle.Location + this.Sub.adj_loc_ % 100000) / 10000;
-                this.Panel[196] = ((int)data.Vehicle.Location + this.Sub.adj_loc_ % 10000) / 1000;
-                this.Panel[197] = ((int)data.Vehicle.Location + this.Sub.adj_loc_ % 1000) / 100;
-                this.Panel[198] = ((int)data.Vehicle.Location + this.Sub.adj_loc_ % 100) / 10;
+                this.Panel[194] = (((int)data.Vehicle.Location + this.Sub.adj_loc_) % 1000000) / 100000;
+                this.Panel[195] = (((int)data.Vehicle.Location + this.Sub.adj_loc_) % 100000) / 10000;
+                this.Panel[196] = (((int)data.Vehicle.Location + this.Sub.adj_loc_) % 10000) / 1000;
+                this.Panel[197] = (((int)data.Vehicle.Location + this.Sub.adj_loc_) % 1000) / 100;
+                this.Panel[198] = (((int)data.Vehicle.Location + this.Sub.adj_loc_) % 100) / 10;
                 this.Panel[199] = ((int)data.Vehicle.Location + this.Sub.adj_loc_) % 10;
                 this.Panel[216] = (int)(data.Vehicle.BcPressure / 98.0665 * 100.0);
                 this.Panel[217] = (int)(data.Vehicle.SapPressure / 98.0665 * 100.0);

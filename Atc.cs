@@ -84,10 +84,10 @@ namespace ATCFS {
                     if (signal > this.train_.Atc.max_signal_) { signal = this.train_.Atc.max_signal_; }
 
                     // ATC-02, 03信号ブレーキフラグOFF
-                    if (signal != 0 && signal_ == 0) { is_stop_eb_ = 0; }
+                    if (signal != 0) { is_stop_eb_ = 0; }
 
                     // ATC-30信号ブレーキフラグOFF
-                    if (signal != 1 && signal_ == 1) { is_stop_svc_ = 0; }
+                    if (signal != 1) { is_stop_svc_ = 0; }
 
                     // ATC-02信号ブレーキフラグON & ブレーキ開放フラグOFF
                     if (signal == 0 && signal_ != 0) {
