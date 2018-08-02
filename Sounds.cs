@@ -74,7 +74,7 @@ namespace ATCFS {
             for (int i = 0; i < LoadSwitch.switch_config_.Length; i++) {
                 this.SwitchSound[i] = new Sound(LoadSwitch.switch_config_[i].switch_index_);
             }
-            this.PlayOnceSounds = new List<Sound>() { this.AtspDing, this.AtcDing, this.AtcSwDownSound, this.AtcSwUpSound, this.WiperSwDownSound, this.LcdSwDownSound, this.AtcAirSound, this.WiperSound };
+            this.PlayOnceSounds = new List<Sound> { this.AtspDing, this.AtcDing, this.AtcSwDownSound, this.AtcSwUpSound, this.WiperSwDownSound, this.LcdSwDownSound, this.AtcAirSound, this.WiperSound };
             for (int i = 0; i < LoadSwitch.ALL_SWITCH; i++) {
                 this.PlayOnceSounds.Add(this.SwitchSound[i]);
             }

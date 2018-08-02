@@ -11,7 +11,7 @@ namespace ATCFS {
     internal class LoadSwitch {
 
         // --- メンバ ---
-        private static LoadSwitch load_switch_ = new LoadSwitch();
+        private static LoadSwitch load_switch_;
         internal const int ALL_SWITCH = 10;
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace ATCFS {
                 switch_init_ = 0;
                 switch_step_ = 1;
                 switch_is_loop_ = 0;
-                switch_key_ = new VirtualKeys?[2] { null, null };
+                switch_key_ = new VirtualKeys?[] { null, null };
             }
 
             // --- 関数 ---
@@ -46,7 +46,7 @@ namespace ATCFS {
             /// </summary>
             /// <param name="key">string型のキー割り当て</param>
             /// <returns>VirtualKeys型のキー割り当て</returns>
-            private VirtualKeys? LoadKeyCfg(string key) {
+            private static VirtualKeys? LoadKeyCfg(string key) {
                 if (key == "S") {
                     return VirtualKeys.S;
                 } else if (key == "A1") {
@@ -124,17 +124,24 @@ namespace ATCFS {
             }
         }
 
-        internal static SwitchConfig[] switch_config_;
+        internal static readonly SwitchConfig[] switch_config_;
 
         // --- コンストラクタ ---
         /// <summary>
-        /// 新しいインスタンスを作成する
+        /// 静的コンストラクタ
         /// </summary>
-        private LoadSwitch() {
+        static LoadSwitch() {
+            load_switch_ = new LoadSwitch();
             switch_config_ = new SwitchConfig[ALL_SWITCH];
             for (int i = 0; i < ALL_SWITCH; i++) {
                 switch_config_[i] = new SwitchConfig();
             }
+        }
+
+        /// <summary>
+        /// 新しいインスタンスを作成する
+        /// </summary>
+        private LoadSwitch() {
         }
 
         // --- 関数 ---
@@ -150,7 +157,7 @@ namespace ATCFS {
         /// ファイルから設定を読み込む関数
         /// </summary>
         /// <param name="file_path">ファイルパス</param>
-        internal void LoadCfgFile(string file_path) {
+        internal static void LoadCfgFile(string file_path) {
             for (int i = 0; i < ALL_SWITCH; i++) {
                 switch_config_[i].LoadCfgFile(file_path, i);
             }
