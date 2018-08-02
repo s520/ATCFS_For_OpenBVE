@@ -1,4 +1,5 @@
 ﻿using OpenBveApi.Runtime;
+using System.Collections.Generic;
 
 namespace ATCFS {
 
@@ -40,7 +41,8 @@ namespace ATCFS {
         internal readonly Sound LightSwUpSound;
         internal readonly Sound AtcAirSound;
         internal readonly Sound WiperSound;
-        private readonly Sound[] PlayOnceSounds;
+        internal readonly Sound[] SwitchSound;
+        private readonly List<Sound> PlayOnceSounds;
 
         // --- コンストラクタ ---
         /// <summary>新しいインスタンスを作成する</summary>
@@ -68,7 +70,14 @@ namespace ATCFS {
             } else {
                 this.WiperSound = new Sound(18);
             }
-            this.PlayOnceSounds = new Sound[] { this.AtspDing, this.AtcDing, this.AtcSwDownSound, this.AtcSwUpSound, this.WiperSwDownSound, this.LcdSwDownSound, this.AtcAirSound, this.WiperSound };
+            this.SwitchSound = new Sound[LoadSwitch.ALL_SWITCH];
+            for (int i = 0; i < LoadSwitch.switch_config_.Length; i++) {
+                this.SwitchSound[i] = new Sound(LoadSwitch.switch_config_[i].switch_index_);
+            }
+            this.PlayOnceSounds = new List<Sound>() { this.AtspDing, this.AtcDing, this.AtcSwDownSound, this.AtcSwUpSound, this.WiperSwDownSound, this.LcdSwDownSound, this.AtcAirSound, this.WiperSound };
+            for (int i = 0; i < LoadSwitch.ALL_SWITCH; i++) {
+                this.PlayOnceSounds.Add(this.SwitchSound[i]);
+            }
         }
 
         // --- 関数 ---

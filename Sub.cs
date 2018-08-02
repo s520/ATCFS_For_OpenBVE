@@ -50,6 +50,7 @@ namespace ATCFS {
         private int brake_notch_;
         private int power_notch_;
         internal double current_ { get; private set; }  //!< 電流値[A]
+        private int[] switch_;  //!< カスタムスイッチの状態
 
         // --- コンストラクタ ---
         /// <summary>
@@ -209,6 +210,42 @@ namespace ATCFS {
             }
         }
 
+        /// <summary>
+        /// カスタムスイッチを右に回す関数
+        /// </summary>
+        /// <param name="i">カスタムスイッチのナンバー</param>
+        /// <param name="position">カスタムスイッチの状態</param>
+        /// <param name="switch_config">カスタムスイッチの設定</param>
+        private void SwitchRight(int i, ref int position, LoadSwitch.SwitchConfig switch_config) {
+            if (position >= switch_config.switch_max_) {
+                if (switch_config.switch_is_loop_ == 1) {
+                    position = switch_config.switch_min_;
+                    this.train_.Sounds.SwitchSound[i].Play();
+                }
+            } else {
+                position += switch_config.switch_step_;
+                this.train_.Sounds.SwitchSound[i].Play();
+            }
+        }
+
+        /// <summary>
+        /// カスタムスイッチを左に回す関数
+        /// </summary>
+        /// <param name="i">カスタムスイッチのナンバー</param>
+        /// <param name="position">カスタムスイッチの状態</param>
+        /// <param name="switch_config">カスタムスイッチの設定</param>
+        private void SwitchLeft(int i, ref int position, LoadSwitch.SwitchConfig switch_config) {
+            if (position <= switch_config.switch_min_) {
+                if (switch_config.switch_is_loop_ == 1) {
+                    position = switch_config.switch_max_;
+                    this.train_.Sounds.SwitchSound[i].Play();
+                }
+            } else {
+                position -= switch_config.switch_step_;
+                this.train_.Sounds.SwitchSound[i].Play();
+            }
+        }
+
         // --- 継承された関数 ---
         /// <summary>
         /// ゲーム開始時に呼び出される関数
@@ -220,6 +257,10 @@ namespace ATCFS {
             digital_clock_ = new int[6];
             current_list_ = new int[4];
             speedometer_ = new int[28];
+            switch_ = new int[LoadSwitch.ALL_SWITCH];
+            for (int i = 0; i < LoadSwitch.ALL_SWITCH; i++) {
+                switch_[i] = LoadSwitch.switch_config_[i].switch_init_;
+            }
         }
 
         /// <summary>
@@ -258,6 +299,9 @@ namespace ATCFS {
             this.train_.Panel[215] = cv_voltage_;  // インバータ電圧計
             for (int i = 0; i < speedometer_.Length; i++) {
                 this.train_.Panel[220 + i] = speedometer_[i];  // 0系/200系用速度計の針
+            }
+            for (int i = 0; i < LoadSwitch.ALL_SWITCH; i++) {
+                this.train_.Panel[LoadSwitch.switch_config_[i].switch_index_] = switch_[i];
             }
         }
 
@@ -308,6 +352,15 @@ namespace ATCFS {
                 break;
             default:
                 break;
+            }
+
+            // カスタムスイッチ
+            for (int i = 0; i < LoadSwitch.ALL_SWITCH; i++) {
+                if (key == LoadSwitch.switch_config_[i].switch_key_[0]) {
+                    SwitchRight(i, ref switch_[i], LoadSwitch.switch_config_[i]);
+                } else if (key == LoadSwitch.switch_config_[i].switch_key_[1]) {
+                    SwitchLeft(i, ref switch_[i], LoadSwitch.switch_config_[i]);
+                }
             }
         }
 
