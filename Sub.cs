@@ -272,7 +272,7 @@ namespace ATCFS {
             power_notch_ = data.Handles.PowerNotch;
             brake_notch_ = data.Handles.BrakeNotch;
             PlayAtcAirSound();
-            DisplayClock((int)data.TotalTime.Seconds);
+            DisplayClock((int)data.TotalTime.Milliseconds);
             DisplayCurrent();
             ResetSpeedometer();
             RunSpeedometer();
