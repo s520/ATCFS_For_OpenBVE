@@ -115,44 +115,15 @@ namespace ATCFS {
                 if (int.TryParse(parsedData["ATC"]["AtcMax"], out value)) {
                     AtcMax = value;
                 }
-                if (int.TryParse(parsedData["ATC"]["AtcSpeed3"], out value)) {
-                    AtcSpeed[3] = value;
+                for (int i = 3; i < AtcSpeed.Length; i++) {
+                    if (int.TryParse(parsedData["ATC"]["AtcSpeed" + i], out value)) {
+                        AtcSpeed[i] = value;
+                    }
                 }
-                if (int.TryParse(parsedData["ATC"]["AtcSpeed4"], out value)) {
-                    AtcSpeed[4] = value;
-                }
-                if (int.TryParse(parsedData["ATC"]["AtcSpeed5"], out value)) {
-                    AtcSpeed[5] = value;
-                }
-                if (int.TryParse(parsedData["ATC"]["AtcSpeed6"], out value)) {
-                    AtcSpeed[6] = value;
-                }
-                if (int.TryParse(parsedData["ATC"]["AtcSpeed7"], out value)) {
-                    AtcSpeed[7] = value;
-                }
-                if (int.TryParse(parsedData["ATC"]["AtcSpeed8"], out value)) {
-                    AtcSpeed[8] = value;
-                }
-                if (int.TryParse(parsedData["ATC"]["AtcSpeed9"], out value)) {
-                    AtcSpeed[9] = value;
-                }
-                if (int.TryParse(parsedData["ATC"]["AtcSpeed10"], out value)) {
-                    AtcSpeed[10] = value;
-                }
-                if (int.TryParse(parsedData["ATC"]["AtcSpeed11"], out value)) {
-                    AtcSpeed[11] = value;
-                }
-                if (int.TryParse(parsedData["ATC"]["AtcDeceleration1"], out value)) {
-                    AtcDeceleration[0] = value;
-                }
-                if (int.TryParse(parsedData["ATC"]["AtcDeceleration2"], out value)) {
-                    AtcDeceleration[1] = value;
-                }
-                if (int.TryParse(parsedData["ATC"]["AtcDeceleration3"], out value)) {
-                    AtcDeceleration[2] = value;
-                }
-                if (int.TryParse(parsedData["ATC"]["AtcDeceleration4"], out value)) {
-                    AtcDeceleration[3] = value;
+                for (int i = 0; i < AtcDeceleration.Length; i++) {
+                    if (int.TryParse(parsedData["ATC"]["AtcDeceleration" + i + 1], out value)) {
+                        AtcDeceleration[0] = value;
+                    }
                 }
                 if (int.TryParse(parsedData["ATC"]["Xe"], out value)) {
                     Xe = value;
