@@ -45,6 +45,7 @@ namespace ATCFS {
         private int light_sw_;  //!< 手元灯SWの状態(0: 開放, 1: 押下)
         private int light_status_;  //!< 手元灯の状態(0: 消灯, 1: 点灯)
         private int[] digital_clock_;  //!< 1桁ごと表示するデジタル時計
+        private int[] analog_clock_;  //!< アナログ時計
         private int[] speedometer_;  //!< 10km/h刻みの0系/200系用速度計の針
         internal int adj_loc_ { get; private set; }  //!< 距離表示に加算する補正値[m]
         private int brake_notch_;
@@ -128,6 +129,7 @@ namespace ATCFS {
         /// <summary>
         /// 1桁ごと分割された時刻を出力する関数
         /// </summary>
+        /// <param name="time">ゲーム内時刻[ms]</param>
         private void DisplayClock(int time) {
             int hour = time / 3600000;
             int min = time / 60000 % 60;
@@ -138,6 +140,19 @@ namespace ATCFS {
             digital_clock_[3] = min % 10;
             digital_clock_[4] = sec / 10;
             digital_clock_[5] = sec % 10;
+        }
+
+        /// <summary>
+        /// アナログ時計を表示する関数
+        /// </summary>
+        /// <param name="time">ゲーム内時刻[ms]</param>
+        private void DisplayAnalogClock(int time) {
+            int hour = time / 3600;
+            int min = (time / 60) % 60000;
+            int sec = time % 60000;
+            analog_clock_[0] = (hour >= 12000) ? hour - 12000 : hour;
+            analog_clock_[1] = min;
+            analog_clock_[2] = sec;
         }
 
         /// <summary>
@@ -255,6 +270,7 @@ namespace ATCFS {
             ac_voltage_ = 25;
             cv_voltage_ = 100;
             digital_clock_ = new int[6];
+            analog_clock_ = new int[3];
             current_list_ = new int[4];
             speedometer_ = new int[28];
             switch_ = new int[LoadSwitch.ALL_SWITCH];
@@ -273,6 +289,7 @@ namespace ATCFS {
             brake_notch_ = data.Handles.BrakeNotch;
             PlayAtcAirSound();
             DisplayClock((int)data.TotalTime.Milliseconds);
+            DisplayAnalogClock((int)data.TotalTime.Milliseconds);
             DisplayCurrent();
             ResetSpeedometer();
             RunSpeedometer();
@@ -282,6 +299,9 @@ namespace ATCFS {
             this.train_.Panel[32] = reverser_position_;  // レバーサ表示
             this.train_.Panel[61] = lcd_status_;  // LCD表示
             this.train_.Panel[62] = light_status_;  // 手元灯
+            this.train_.Panel[63] = analog_clock_[0];  // アナログ時計 (時 * 1000)
+            this.train_.Panel[64] = analog_clock_[1];  // アナログ時計 (分 * 1000)
+            this.train_.Panel[65] = analog_clock_[2];  // アナログ時計 (秒 * 1000)
             this.train_.Panel[200] = digital_clock_[0];  // デジタル時計 (時)の十の位
             this.train_.Panel[201] = digital_clock_[1];  // デジタル時計 (時)の一の位
             this.train_.Panel[202] = digital_clock_[2];  // デジタル時計 (分)の十の位
