@@ -15,12 +15,6 @@ namespace ATCFS {
         internal static int MaxDeceleration { get; private set; }
         internal static int LeverDelay { get; private set; }
 
-        internal static int WiperRate { get; private set; }
-        internal static int WiperHoldPosition { get; private set; }
-        internal static int WiperDelay { get; private set; }
-        internal static int WiperSoundBehaviour { get; private set; }
-        internal static int WiperWet { get; private set; }
-
         internal static int AtcUse { get; private set; }
         internal static int AtcType { get; private set; }
         internal static int AtcMax { get; private set; }
@@ -41,12 +35,6 @@ namespace ATCFS {
         private LoadConfig() {
             MaxDeceleration = 2700;
             LeverDelay = 250;
-
-            WiperRate = 700;
-            WiperHoldPosition = 0;
-            WiperDelay = 700;
-            WiperSoundBehaviour = 0;
-            WiperWet = 0;
 
             AtcUse = 1;
             AtcType = 0;
@@ -90,21 +78,6 @@ namespace ATCFS {
                 }
                 if (int.TryParse(parsedData["Emulate"]["LeverDelay"], out value)) {
                     LeverDelay = value;
-                }
-                if (int.TryParse(parsedData["Wiper"]["WiperRate"], out value)) {
-                    WiperRate = value;
-                }
-                if (int.TryParse(parsedData["Wiper"]["WiperHoldPosition"], out value)) {
-                    WiperHoldPosition = value;
-                }
-                if (int.TryParse(parsedData["Wiper"]["WiperDelay"], out value)) {
-                    WiperDelay = value;
-                }
-                if (int.TryParse(parsedData["Wiper"]["WiperSoundBehaviour"], out value)) {
-                    WiperSoundBehaviour = value;
-                }
-                if (int.TryParse(parsedData["Wiper"]["WiperWet"], out value)) {
-                    WiperWet = value;
                 }
                 if (int.TryParse(parsedData["ATC"]["AtcUse"], out value)) {
                     AtcUse = value;

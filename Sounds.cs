@@ -34,14 +34,7 @@ namespace ATCFS {
         internal readonly Sound AtcDing;
         internal readonly Sound AtcSwDownSound;
         internal readonly Sound AtcSwUpSound;
-        internal readonly Sound WiperSwDownSound;
-        internal readonly Sound LcdSwDownSound;
-        internal readonly Sound LcdSwUpSound;
-        internal readonly Sound LightSwDownSound;
-        internal readonly Sound LightSwUpSound;
         internal readonly Sound AtcAirSound;
-        internal readonly Sound WiperSound;
-        internal readonly Sound[] SwitchSound;
         private readonly List<Sound> PlayOnceSounds;
 
         // --- コンストラクタ ---
@@ -59,25 +52,8 @@ namespace ATCFS {
             this.AtcDing = new Sound(7);
             this.AtcSwDownSound = new Sound(8);
             this.AtcSwUpSound = new Sound(9);
-            this.WiperSwDownSound = new Sound(6);
-            this.LcdSwDownSound = new Sound(61);
-            this.LcdSwUpSound = new Sound(62);
-            this.LightSwDownSound = new Sound(63);
-            this.LightSwUpSound = new Sound(64);
             this.AtcAirSound = new Sound(10);
-            if (LoadConfig.WiperWet == 0) {
-                this.WiperSound = new Sound(17);
-            } else {
-                this.WiperSound = new Sound(18);
-            }
-            this.SwitchSound = new Sound[LoadSwitch.ALL_SWITCH];
-            for (int i = 0; i < LoadSwitch.switch_config_.Length; i++) {
-                this.SwitchSound[i] = new Sound(LoadSwitch.switch_config_[i].switch_index_);
-            }
-            this.PlayOnceSounds = new List<Sound> { this.AtspDing, this.AtcDing, this.AtcSwDownSound, this.AtcSwUpSound, this.WiperSwDownSound, this.LcdSwDownSound, this.AtcAirSound, this.WiperSound };
-            for (int i = 0; i < LoadSwitch.ALL_SWITCH; i++) {
-                this.PlayOnceSounds.Add(this.SwitchSound[i]);
-            }
+            this.PlayOnceSounds = new List<Sound> { this.AtspDing, this.AtcDing, this.AtcSwDownSound, this.AtcSwUpSound, this.AtcAirSound };
         }
 
         // --- 関数 ---

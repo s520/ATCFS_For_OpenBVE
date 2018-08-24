@@ -2,7 +2,6 @@
   experimental:
     ignore:
       - IniParser
-      - CsvReader
       - Project Items
       - Properties
 

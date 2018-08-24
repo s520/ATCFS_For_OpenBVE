@@ -21,8 +21,7 @@ ATC-1, ATC-2, ATC-NS, KS-ATC, DS-ATC, ATS-P Plugin for OpenBVE on Linux or Windo
 - 各種ATCの挙動を再現
 - ATC-NS, KS-ATC, DS-ATCでは、予見Fuzzy制御により1段ブレーキを再現
 - 各種ATCのモニタ表示を再現
-- ワイパーの動作を再現
-- 電流計を再現
+- [DetailManager For OpenBVE](https://github.com/s520/DetailManager_For_OpenBVE)を用いて[MiscFunc For OpenBVE](https://github.com/s520/MiscFunc_For_OpenBVE)と組み合わせることにより、ワイパーや電流計などの再現が可能
 
 ## Requirement
 
@@ -32,9 +31,7 @@ ATC-1, ATC-2, ATC-NS, KS-ATC, DS-ATC, ATS-P Plugin for OpenBVE on Linux or Windo
 
 2-clause BSD license
 
-- Since this project contains part BVEC_ATS source code, that part is provided under the 2-clause BSD license of BVEC_ATS described below.
 - Since this project contains INI File Parser source code, that part is provided under the MIT license of INI File Parser described below.
-- Since this project contains CSV Reader source code, that part is provided under the MIT license of CSV Reader described below.
 
 ## Postscript
 

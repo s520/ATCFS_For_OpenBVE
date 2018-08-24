@@ -51,29 +51,12 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Accel.cs" />
     <Compile Include="Atc.cs" />
     <Compile Include="AtsP.cs" />
     <Compile Include="BaseFunc.cs" />
-    <Compile Include="CsvReader\CachedCsvReader.cs" />
-    <Compile Include="CsvReader\CachedCsvReader.CsvBindingList.cs" />
-    <Compile Include="CsvReader\CachedCsvReader.CsvPropertyDescriptor.cs" />
-    <Compile Include="CsvReader\CachedCsvReader.CsvRecordComparer.cs" />
-    <Compile Include="CsvReader\Column.cs" />
-    <Compile Include="CsvReader\CsvReader.cs" />
-    <Compile Include="CsvReader\CsvReader.DataReaderValidations.cs" />
-    <Compile Include="CsvReader\CsvReader.RecordEnumerator.cs" />
-    <Compile Include="CsvReader\Events\ParseErrorEventArgs.cs" />
-    <Compile Include="CsvReader\Exceptions\MalformedCsvException.cs" />
-    <Compile Include="CsvReader\Exceptions\MissingFieldCsvException.cs" />
-    <Compile Include="CsvReader\MissingFieldAction.cs" />
-    <Compile Include="CsvReader\ParseErrorAction.cs" />
-    <Compile Include="CsvReader\Resources\ExceptionMessage.Designer.cs" />
-    <Compile Include="CsvReader\ValueTrimmingOptions.cs" />
     <Compile Include="Device.cs" />
     <Compile Include="IniParser\Exceptions\ParsingException.cs" />
     <Compile Include="IniParser\FileIniParser.cs" />
@@ -91,9 +74,6 @@
     <Compile Include="IniParser\Model\SectionDataCollection.cs" />
     <Compile Include="IniParser\Parser\ConcatenateDuplicatedKeysIniDataParser.cs" />
     <Compile Include="IniParser\Parser\IniDataParser.cs" />
-    <Compile Include="LoadCurrent.cs" />
-    <Compile Include="LoadPerform.cs" />
-    <Compile Include="LoadSwitch.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sounds.cs" />
@@ -101,7 +81,6 @@
     <Compile Include="IniParser\StringIniParser.cs" />
     <Compile Include="Sub.cs" />
     <Compile Include="Train.cs" />
-    <Compile Include="Wiper.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\OpenBveApi\OpenBveApi.csproj">
@@ -118,8 +97,5 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="CsvReader\Resources\ExceptionMessage.resx" />
   </ItemGroup>
 </Project>

@@ -68,9 +68,6 @@ namespace ATCFS {
         /// <summary>ATS-P</summary>
         internal AtsP AtsP;
 
-        /// <summary>ワイパー</summary>
-        internal Wiper Wiper;
-
         /// <summary>その他機能</summary>
         internal Sub Sub;
 
@@ -92,9 +89,8 @@ namespace ATCFS {
             this.Accel = new Accel();
             this.Atc = new Atc(this);
             this.AtsP = new AtsP(this);
-            this.Wiper = new Wiper(this);
             this.Sub = new Sub(this);
-            this.Devices = new Device[] { this.Accel, this.Atc, this.AtsP, this.Wiper, this.Sub };
+            this.Devices = new Device[] { this.Accel, this.Atc, this.AtsP, this.Sub };
         }
 
         // --- 関数 ---
@@ -131,20 +127,6 @@ namespace ATCFS {
                 }
 
                 // --- パネル ---
-                int seconds = (int)Math.Floor(data.TotalTime.Seconds);
-                this.Panel[10] = (seconds / 3600) % 24;
-                this.Panel[11] = (seconds / 60) % 60;
-                this.Panel[12] = seconds % 60;
-                this.Panel[194] = (((int)data.Vehicle.Location + this.Sub.adj_loc_) % 1000000) / 100000;
-                this.Panel[195] = (((int)data.Vehicle.Location + this.Sub.adj_loc_) % 100000) / 10000;
-                this.Panel[196] = (((int)data.Vehicle.Location + this.Sub.adj_loc_) % 10000) / 1000;
-                this.Panel[197] = (((int)data.Vehicle.Location + this.Sub.adj_loc_) % 1000) / 100;
-                this.Panel[198] = (((int)data.Vehicle.Location + this.Sub.adj_loc_) % 100) / 10;
-                this.Panel[199] = ((int)data.Vehicle.Location + this.Sub.adj_loc_) % 10;
-                this.Panel[216] = (int)(data.Vehicle.BcPressure / 98.0665 * 100.0);
-                this.Panel[217] = (int)(data.Vehicle.SapPressure / 98.0665 * 100.0);
-                this.Panel[218] = (int)(data.Vehicle.MrPressure / 98.0665 * 100.0);
-                this.Panel[219] = (data.Vehicle.Speed.KilometersPerHour >= 30.0 && data.Handles.BrakeNotch != 0) ? 1 : 0;
 
                 // --- サウンド ---
                 this.Sounds.Elapse(data);

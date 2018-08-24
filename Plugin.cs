@@ -8,9 +8,6 @@ namespace ATCFS {
         // --- メンバ ---
         private Train Train = null;
         private LoadConfig LoadConfig = null;
-        private LoadPerform LoadPerform = null;
-        private LoadCurrent LoadCurrent = null;
-        private LoadSwitch LoadSwitch = null;
 
         // --- インターフェース関数 ---
         /// <summary>プラグインが読み込まれたときに呼び出される関数</summary>
@@ -21,20 +18,6 @@ namespace ATCFS {
             string cfgPath = System.IO.Path.ChangeExtension(dllPath, ".cfg");
             this.LoadConfig = LoadConfig.GetInstance();
             LoadConfig.LoadCfgFile(cfgPath);
-
-            string dllDirectory = System.IO.Path.GetDirectoryName(dllPath);
-            string notchPath = System.IO.Path.Combine(dllDirectory, "Notch", "Notch.txt");
-            this.LoadPerform = LoadPerform.GetInstance();
-            LoadPerform.LoadCfgFile(notchPath);
-
-            this.LoadCurrent = LoadCurrent.GetInstance();
-            LoadCurrent.LoadPowerCfg(LoadPerform.power_current_path_);
-            LoadCurrent.LoadBrakeCfg(LoadPerform.brake_current_path_);
-
-            this.LoadSwitch = LoadSwitch.GetInstance();
-            string dllName = System.IO.Path.GetFileNameWithoutExtension(dllPath);
-            string exCfgPath = System.IO.Path.Combine(dllDirectory, dllName + "_openbve.cfg");
-            LoadSwitch.LoadCfgFile(exCfgPath);
 
             properties.Panel = new int[272];
             properties.AISupport = AISupport.None;
