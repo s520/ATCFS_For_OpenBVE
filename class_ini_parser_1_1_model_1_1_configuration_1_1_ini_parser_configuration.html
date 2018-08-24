@@ -1,0 +1,998 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ATCFS For OpenBVE: IniParser.Model.Configuration.IniParserConfiguration クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ATCFS For OpenBVE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
+      <li><a href="namespaces.html"><span>パッケージ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>クラス一覧</span></a></li>
+      <li><a href="classes.html"><span>クラス索引</span></a></li>
+      <li><a href="inherits.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>クラスメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>名前空間</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_ini_parser.html">IniParser</a></li><li class="navelem"><a class="el" href="namespace_ini_parser_1_1_model.html">Model</a></li><li class="navelem"><a class="el" href="namespace_ini_parser_1_1_model_1_1_configuration.html">Configuration</a></li><li class="navelem"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html">IniParserConfiguration</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">IniParser.Model.Configuration.IniParserConfiguration クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Defines data for a <a class="el" href="namespace_ini_parser_1_1_parser.html">Parser</a> configuration object.  
+ <a href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#details">[詳解]</a></p>
+<div class="dynheader">
+IniParser.Model.Configuration.IniParserConfiguration の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration__inherit__graph.png" border="0" usemap="#_ini_parser_8_model_8_configuration_8_ini_parser_configuration_inherit__map" alt="Inheritance graph"/></div>
+<map name="_ini_parser_8_model_8_configuration_8_ini_parser_configuration_inherit__map" id="_ini_parser_8_model_8_configuration_8_ini_parser_configuration_inherit__map">
+<area shape="rect" id="node3" href="class_ini_parser_1_1_model_1_1_configuration_1_1_concatenate_duplicated_keys_ini_parser_configuration.html" title="IniParser.Model.Configuration.\lConcatenateDuplicatedKeysIniParser\lConfiguration" alt="" coords="5,171,245,227"/><area shape="rect" id="node4" href="class_ini_parser_1_1_model_1_1_configuration_1_1_default_ini_parser_configuration.html" title="IniParser.Model.Configuration.\lDefaultIniParserConfiguration" alt="" coords="26,275,224,317"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+IniParser.Model.Configuration.IniParserConfiguration 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration__coll__graph.png" border="0" usemap="#_ini_parser_8_model_8_configuration_8_ini_parser_configuration_coll__map" alt="Collaboration graph"/></div>
+<map name="_ini_parser_8_model_8_configuration_8_ini_parser_configuration_coll__map" id="_ini_parser_8_model_8_configuration_8_ini_parser_configuration_coll__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a32be3adff9e82aef9d44c174483799be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a32be3adff9e82aef9d44c174483799be">IniParserConfiguration</a> ()</td></tr>
+<tr class="memdesc:a32be3adff9e82aef9d44c174483799be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default values used if an instance of IniDataParser is created without specifying a configuration.  <a href="#a32be3adff9e82aef9d44c174483799be">[詳解]</a><br/></td></tr>
+<tr class="separator:a32be3adff9e82aef9d44c174483799be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accdfb5af03e8c5eeffa3a9d64f30ebf2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#accdfb5af03e8c5eeffa3a9d64f30ebf2">IniParserConfiguration</a> (<a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html">IniParserConfiguration</a> ori)</td></tr>
+<tr class="memdesc:accdfb5af03e8c5eeffa3a9d64f30ebf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy ctor.  <a href="#accdfb5af03e8c5eeffa3a9d64f30ebf2">[詳解]</a><br/></td></tr>
+<tr class="separator:accdfb5af03e8c5eeffa3a9d64f30ebf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58292756d35992a4cdd1bb474bae5256"><td class="memItemLeft" align="right" valign="top">override int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a58292756d35992a4cdd1bb474bae5256">GetHashCode</a> ()</td></tr>
+<tr class="separator:a58292756d35992a4cdd1bb474bae5256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b62cfca24477a2a907715a65496709e"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a8b62cfca24477a2a907715a65496709e">Equals</a> (object obj)</td></tr>
+<tr class="separator:a8b62cfca24477a2a907715a65496709e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7500ead34f08cb9d293250aeb43d6b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html">IniParserConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#ae7500ead34f08cb9d293250aeb43d6b2">Clone</a> ()</td></tr>
+<tr class="memdesc:ae7500ead34f08cb9d293250aeb43d6b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new object that is a copy of the current instance.  <a href="#ae7500ead34f08cb9d293250aeb43d6b2">[詳解]</a><br/></td></tr>
+<tr class="separator:ae7500ead34f08cb9d293250aeb43d6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:a9a21df63923c14862e61e09705b32107"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a9a21df63923c14862e61e09705b32107">_strCommentRegex</a> = @&quot;^{0}(.*)&quot;</td></tr>
+<tr class="separator:a9a21df63923c14862e61e09705b32107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26025e70987eaf036da753fdd35420b6"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a26025e70987eaf036da753fdd35420b6">_strSectionRegexStart</a> = @&quot;^(\s*?)&quot;</td></tr>
+<tr class="separator:a26025e70987eaf036da753fdd35420b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6289f6561577e5445878b86e45fdb5cd"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a6289f6561577e5445878b86e45fdb5cd">_strSectionRegexMiddle</a> = @&quot;{1}\s*[\p{L}\p{P}\p{M}_\&quot;&quot;\'\{\}\#\+\;\*\%\(\)\=\?\&amp;\$\,\:\/\.\-\w\d\s\\\~]+\s*&quot;</td></tr>
+<tr class="separator:a6289f6561577e5445878b86e45fdb5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6beff2c7026d9522e652f72aafedcc2d"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a6beff2c7026d9522e652f72aafedcc2d">_strSectionRegexEnd</a> = @&quot;(\s*?)$&quot;</td></tr>
+<tr class="separator:a6beff2c7026d9522e652f72aafedcc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa31d2e53177488ebafc6d5c1d9c460e"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#aaa31d2e53177488ebafc6d5c1d9c460e">_strKeyRegex</a> = @&quot;^(\s*[_\.\d\w]*\s*)&quot;</td></tr>
+<tr class="separator:aaa31d2e53177488ebafc6d5c1d9c460e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1784f2355ef1e770524499010071ea"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#afc1784f2355ef1e770524499010071ea">_strValueRegex</a> = @&quot;([\s\d\w\W\.]*)$&quot;</td></tr>
+<tr class="separator:afc1784f2355ef1e770524499010071ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7be70902edfb05d16649647fb620e41"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#aa7be70902edfb05d16649647fb620e41">_strSpecialRegexChars</a> = @&quot;[]\^$.|?*+()&quot;</td></tr>
+<tr class="separator:aa7be70902edfb05d16649647fb620e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:ae1cae31ec9465f582d1b92a554ef6218"><td class="memItemLeft" align="right" valign="top">Regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#ae1cae31ec9465f582d1b92a554ef6218">CommentRegex</a><code> [get, set]</code></td></tr>
+<tr class="separator:ae1cae31ec9465f582d1b92a554ef6218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7388b07cc1b967070a7a43b68935faf4"><td class="memItemLeft" align="right" valign="top">Regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a7388b07cc1b967070a7a43b68935faf4">SectionRegex</a><code> [get, set]</code></td></tr>
+<tr class="separator:a7388b07cc1b967070a7a43b68935faf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a080f4560170e7946c3c7fcdb72c94e52"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a080f4560170e7946c3c7fcdb72c94e52">SectionStartChar</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a080f4560170e7946c3c7fcdb72c94e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the char that defines the start of a section name.  <a href="#a080f4560170e7946c3c7fcdb72c94e52">[詳解]</a><br/></td></tr>
+<tr class="separator:a080f4560170e7946c3c7fcdb72c94e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92a99934e7f75eb8fdd009b93df7790"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#ae92a99934e7f75eb8fdd009b93df7790">SectionEndChar</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ae92a99934e7f75eb8fdd009b93df7790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the char that defines the end of a section name.  <a href="#ae92a99934e7f75eb8fdd009b93df7790">[詳解]</a><br/></td></tr>
+<tr class="separator:ae92a99934e7f75eb8fdd009b93df7790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa25261605e53403df6978a6647de7f60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#aa25261605e53403df6978a6647de7f60">CaseInsensitive</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aa25261605e53403df6978a6647de7f60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieving section / keys by name is done with a case-insensitive search.  <a href="#aa25261605e53403df6978a6647de7f60">[詳解]</a><br/></td></tr>
+<tr class="separator:aa25261605e53403df6978a6647de7f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead6cd980646e28c5b2b11b25ae80d44"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#aead6cd980646e28c5b2b11b25ae80d44">CommentChar</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aead6cd980646e28c5b2b11b25ae80d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the char that defines the start of a comment. A comment spans from the comment character to the end of the line.  <a href="#aead6cd980646e28c5b2b11b25ae80d44">[詳解]</a><br/></td></tr>
+<tr class="separator:aead6cd980646e28c5b2b11b25ae80d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767169438856aadb095df062abd55efd"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a767169438856aadb095df062abd55efd">CommentString</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a767169438856aadb095df062abd55efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the string that defines the start of a comment. A comment spans from the mirst matching comment string to the end of the line.  <a href="#a767169438856aadb095df062abd55efd">[詳解]</a><br/></td></tr>
+<tr class="separator:a767169438856aadb095df062abd55efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51db91d9b8bce1468b0de550d15b2926"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a51db91d9b8bce1468b0de550d15b2926">NewLineStr</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a51db91d9b8bce1468b0de550d15b2926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the string to use as new line string when formating an <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html" title="Represents all data from an INI file ">IniData</a> structure using a IIniDataFormatter. Parsing an ini-file accepts any new line character (Unix/windows)  <a href="#a51db91d9b8bce1468b0de550d15b2926">[詳解]</a><br/></td></tr>
+<tr class="separator:a51db91d9b8bce1468b0de550d15b2926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f1fc3f2a53f46b6c6482f9daa892854"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a6f1fc3f2a53f46b6c6482f9daa892854">KeyValueAssigmentChar</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a6f1fc3f2a53f46b6c6482f9daa892854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the char that defines a value assigned to a key  <a href="#a6f1fc3f2a53f46b6c6482f9daa892854">[詳解]</a><br/></td></tr>
+<tr class="separator:a6f1fc3f2a53f46b6c6482f9daa892854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc5f63ff1c4f731b530c411d63faa223"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#acc5f63ff1c4f731b530c411d63faa223">AssigmentSpacer</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:acc5f63ff1c4f731b530c411d63faa223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the string around KeyValuesAssignmentChar  <a href="#acc5f63ff1c4f731b530c411d63faa223">[詳解]</a><br/></td></tr>
+<tr class="separator:acc5f63ff1c4f731b530c411d63faa223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e49417c50357e5435756809c0928316"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a2e49417c50357e5435756809c0928316">AllowKeysWithoutSection</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a2e49417c50357e5435756809c0928316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows having keys in the file that don't belong to any section. i.e. allows defining keys before defining a section. If set to <code>false</code> and keys without a section are defined, the IniDataParser will stop with an error.  <a href="#a2e49417c50357e5435756809c0928316">[詳解]</a><br/></td></tr>
+<tr class="separator:a2e49417c50357e5435756809c0928316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdea686e39996dfa5b0f639a0953a7ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#abdea686e39996dfa5b0f639a0953a7ed">AllowDuplicateKeys</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:abdea686e39996dfa5b0f639a0953a7ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set to <code>false</code> and the IniDataParser finds duplicate keys in a section the parser will stop with an error. If set to <code>true</code>, duplicated keys are allowed in the file. The value of the duplicate key will be the last value asigned to the key in the file.  <a href="#abdea686e39996dfa5b0f639a0953a7ed">[詳解]</a><br/></td></tr>
+<tr class="separator:abdea686e39996dfa5b0f639a0953a7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afccff83ab5be16eaed9cc76f2b5372ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#afccff83ab5be16eaed9cc76f2b5372ce">OverrideDuplicateKeys</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:afccff83ab5be16eaed9cc76f2b5372ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only used if <a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#abdea686e39996dfa5b0f639a0953a7ed" title="If set to false and the IniDataParser finds duplicate keys in a section the parser will stop with an ...">IniParserConfiguration.AllowDuplicateKeys</a> is also <code>true</code> If set to <code>true</code> when the parser finds a duplicate key, it overrites the previous value, so the key will always contain the value of the last key readed in the file If set to <code>false</code> the first readed value is preserved, so the key will always contain the value of the first key readed in the file  <a href="#afccff83ab5be16eaed9cc76f2b5372ce">[詳解]</a><br/></td></tr>
+<tr class="separator:afccff83ab5be16eaed9cc76f2b5372ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65bcd1120d64bbe8740638ecf309b73d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a65bcd1120d64bbe8740638ecf309b73d">ConcatenateDuplicateKeys</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a65bcd1120d64bbe8740638ecf309b73d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether duplicate keys are concatenate together by ConcatenateSeparator.  <a href="#a65bcd1120d64bbe8740638ecf309b73d">[詳解]</a><br/></td></tr>
+<tr class="separator:a65bcd1120d64bbe8740638ecf309b73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a080f4014a6396efa609664a3d3b3a115"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a080f4014a6396efa609664a3d3b3a115">ThrowExceptionsOnError</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a080f4014a6396efa609664a3d3b3a115"><td class="mdescLeft">&#160;</td><td class="mdescRight">If <code>true</code> the IniDataParser instance will thrown an exception if an error is found. If <code>false</code> the parser will just stop execution and return a null value.  <a href="#a080f4014a6396efa609664a3d3b3a115">[詳解]</a><br/></td></tr>
+<tr class="separator:a080f4014a6396efa609664a3d3b3a115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7218894935d174e1b0b9bcef25dc0a83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a7218894935d174e1b0b9bcef25dc0a83">AllowDuplicateSections</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a7218894935d174e1b0b9bcef25dc0a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set to <code>false</code> and the IniDataParser finds a duplicate section the parser will stop with an error. If set to <code>true</code>, duplicated sections are allowed in the file, but only a <a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html" title="Information associated to a section in a INI File Includes both the value and the comments associated...">SectionData</a> element will be created in the <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html#ae438846118978e2f3d41e6db2a9df614" title="Gets or sets all the SectionData for this IniData instance. ">IniData.Sections</a> collection.  <a href="#a7218894935d174e1b0b9bcef25dc0a83">[詳解]</a><br/></td></tr>
+<tr class="separator:a7218894935d174e1b0b9bcef25dc0a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d0881c0df70ced43b42f37973bf897e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a0d0881c0df70ced43b42f37973bf897e">AllowCreateSectionsOnFly</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a0d0881c0df70ced43b42f37973bf897e"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set to <code>false</code>, the IniDataParser stop with a error if you try to access a section that was not created previously and the parser will stop with an error. If set to <code>true</code>, inexistents sections are created, always returning a valid <a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html" title="Information associated to a section in a INI File Includes both the value and the comments associated...">SectionData</a> element.  <a href="#a0d0881c0df70ced43b42f37973bf897e">[詳解]</a><br/></td></tr>
+<tr class="separator:a0d0881c0df70ced43b42f37973bf897e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae035b7028aa8459e101de542fc62ac5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#ae035b7028aa8459e101de542fc62ac5e">SkipInvalidLines</a><code> [get, set]</code></td></tr>
+<tr class="separator:ae035b7028aa8459e101de542fc62ac5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a373966d5bf9286f132837d510d47ec38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a373966d5bf9286f132837d510d47ec38">RecreateSectionRegex</a> (char value)</td></tr>
+<tr class="separator:a373966d5bf9286f132837d510d47ec38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97e1b5b35ce030857f41e551bb9c7f1d"><td class="memItemLeft" align="right" valign="top">object ICloneable.&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a97e1b5b35ce030857f41e551bb9c7f1d">Clone</a> ()</td></tr>
+<tr class="separator:a97e1b5b35ce030857f41e551bb9c7f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:ac0f8b28e497d55e8401261eb269af9d6"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#ac0f8b28e497d55e8401261eb269af9d6">_sectionStartChar</a></td></tr>
+<tr class="separator:ac0f8b28e497d55e8401261eb269af9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fdc7c262c17107987c5afdfbf346481"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a1fdc7c262c17107987c5afdfbf346481">_sectionEndChar</a></td></tr>
+<tr class="separator:a1fdc7c262c17107987c5afdfbf346481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24f305ace28f1b39da66d6f2e7e56b02"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a24f305ace28f1b39da66d6f2e7e56b02">_commentString</a></td></tr>
+<tr class="separator:a24f305ace28f1b39da66d6f2e7e56b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Defines data for a <a class="el" href="namespace_ini_parser_1_1_parser.html">Parser</a> configuration object. </p>
+<p>With a configuration object you can redefine how the parser will detect special items in the ini file by defining new regex (e.g. you can redefine the comment regex so it just treat text as a comment iff the comment caracter is the first in the line) or changing the set of characters used to define elements in the ini file (e.g. change the 'comment' caracter from ';' to '#') You can also define how the parser should treat errors, or how liberal or conservative should it be when parsing files with "strange" formats. </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a class="anchor" id="a32be3adff9e82aef9d44c174483799be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IniParser.Model.Configuration.IniParserConfiguration.IniParserConfiguration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default values used if an instance of IniDataParser is created without specifying a configuration. </p>
+<p>By default the various delimiters for the data are setted: </p>
+<p>';' for one-line comments</p>
+<p>'[' ']' for delimiting a section</p>
+<p>'=' for linking key / value pairs</p>
+<p>An example of well formed data with the default values: </p>
+<p>;section comment<br/>
+ [section] ; section comment<br/>
+ <br/>
+ ; key comment<br/>
+ key = value ;key comment<br/>
+ <br/>
+ ;key2 comment<br/>
+ key2 = value<br/>
+ </p>
+
+</div>
+</div>
+<a class="anchor" id="accdfb5af03e8c5eeffa3a9d64f30ebf2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IniParser.Model.Configuration.IniParserConfiguration.IniParserConfiguration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html">IniParserConfiguration</a>&#160;</td>
+          <td class="paramname"><em>ori</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy ctor. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ori</td><td>Original instance to be copied. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a class="anchor" id="ae7500ead34f08cb9d293250aeb43d6b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html">IniParserConfiguration</a> IniParser.Model.Configuration.IniParserConfiguration.Clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new object that is a copy of the current instance. </p>
+<dl class="section return"><dt>戻り値</dt><dd>A new object that is a copy of this instance. </dd></dl>
+<p>&lt;filterpriority&gt;2&lt;/filterpriority&gt; </p>
+
+</div>
+</div>
+<a class="anchor" id="a97e1b5b35ce030857f41e551bb9c7f1d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">object ICloneable. IniParser.Model.Configuration.IniParserConfiguration.Clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8b62cfca24477a2a907715a65496709e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override bool IniParser.Model.Configuration.IniParserConfiguration.Equals </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a58292756d35992a4cdd1bb474bae5256"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override int IniParser.Model.Configuration.IniParserConfiguration.GetHashCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a373966d5bf9286f132837d510d47ec38"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IniParser.Model.Configuration.IniParserConfiguration.RecreateSectionRegex </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a class="anchor" id="a24f305ace28f1b39da66d6f2e7e56b02"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string IniParser.Model.Configuration.IniParserConfiguration._commentString</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1fdc7c262c17107987c5afdfbf346481"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char IniParser.Model.Configuration.IniParserConfiguration._sectionEndChar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac0f8b28e497d55e8401261eb269af9d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char IniParser.Model.Configuration.IniParserConfiguration._sectionStartChar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9a21df63923c14862e61e09705b32107"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string IniParser.Model.Configuration.IniParserConfiguration._strCommentRegex = @&quot;^{0}(.*)&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaa31d2e53177488ebafc6d5c1d9c460e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string IniParser.Model.Configuration.IniParserConfiguration._strKeyRegex = @&quot;^(\s*[_\.\d\w]*\s*)&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6beff2c7026d9522e652f72aafedcc2d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string IniParser.Model.Configuration.IniParserConfiguration._strSectionRegexEnd = @&quot;(\s*?)$&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6289f6561577e5445878b86e45fdb5cd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string IniParser.Model.Configuration.IniParserConfiguration._strSectionRegexMiddle = @&quot;{1}\s*[\p{L}\p{P}\p{M}_\&quot;&quot;\'\{\}\#\+\;\*\%\(\)\=\?\&amp;\$\,\:\/\.\-\w\d\s\\\~]+\s*&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a26025e70987eaf036da753fdd35420b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string IniParser.Model.Configuration.IniParserConfiguration._strSectionRegexStart = @&quot;^(\s*?)&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa7be70902edfb05d16649647fb620e41"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string IniParser.Model.Configuration.IniParserConfiguration._strSpecialRegexChars = @&quot;[]\^$.|?*+()&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afc1784f2355ef1e770524499010071ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string IniParser.Model.Configuration.IniParserConfiguration._strValueRegex = @&quot;([\s\d\w\W\.]*)$&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a class="anchor" id="a0d0881c0df70ced43b42f37973bf897e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IniParser.Model.Configuration.IniParserConfiguration.AllowCreateSectionsOnFly</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If set to <code>false</code>, the IniDataParser stop with a error if you try to access a section that was not created previously and the parser will stop with an error. If set to <code>true</code>, inexistents sections are created, always returning a valid <a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html" title="Information associated to a section in a INI File Includes both the value and the comments associated...">SectionData</a> element. </p>
+<p>Defaults to <code>false</code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="abdea686e39996dfa5b0f639a0953a7ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IniParser.Model.Configuration.IniParserConfiguration.AllowDuplicateKeys</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If set to <code>false</code> and the IniDataParser finds duplicate keys in a section the parser will stop with an error. If set to <code>true</code>, duplicated keys are allowed in the file. The value of the duplicate key will be the last value asigned to the key in the file. </p>
+<p>Defaults to <code>false</code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7218894935d174e1b0b9bcef25dc0a83"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IniParser.Model.Configuration.IniParserConfiguration.AllowDuplicateSections</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If set to <code>false</code> and the IniDataParser finds a duplicate section the parser will stop with an error. If set to <code>true</code>, duplicated sections are allowed in the file, but only a <a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html" title="Information associated to a section in a INI File Includes both the value and the comments associated...">SectionData</a> element will be created in the <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html#ae438846118978e2f3d41e6db2a9df614" title="Gets or sets all the SectionData for this IniData instance. ">IniData.Sections</a> collection. </p>
+<p>Defaults to <code>false</code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2e49417c50357e5435756809c0928316"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IniParser.Model.Configuration.IniParserConfiguration.AllowKeysWithoutSection</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allows having keys in the file that don't belong to any section. i.e. allows defining keys before defining a section. If set to <code>false</code> and keys without a section are defined, the IniDataParser will stop with an error. </p>
+<p>Defaults to <code>true</code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="acc5f63ff1c4f731b530c411d63faa223"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string IniParser.Model.Configuration.IniParserConfiguration.AssigmentSpacer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the string around KeyValuesAssignmentChar </p>
+<p>Defaults to string ' ' </p>
+
+</div>
+</div>
+<a class="anchor" id="aa25261605e53403df6978a6647de7f60"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IniParser.Model.Configuration.IniParserConfiguration.CaseInsensitive</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieving section / keys by name is done with a case-insensitive search. </p>
+<p>Defaults to false (case sensitive search) </p>
+
+</div>
+</div>
+<a class="anchor" id="aead6cd980646e28c5b2b11b25ae80d44"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char IniParser.Model.Configuration.IniParserConfiguration.CommentChar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the char that defines the start of a comment. A comment spans from the comment character to the end of the line. </p>
+<p>Defaults to character ';' </p>
+
+</div>
+</div>
+<a class="anchor" id="ae1cae31ec9465f582d1b92a554ef6218"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Regex IniParser.Model.Configuration.IniParserConfiguration.CommentRegex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a767169438856aadb095df062abd55efd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string IniParser.Model.Configuration.IniParserConfiguration.CommentString</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the string that defines the start of a comment. A comment spans from the mirst matching comment string to the end of the line. </p>
+<p>Defaults to string ";" </p>
+
+</div>
+</div>
+<a class="anchor" id="a65bcd1120d64bbe8740638ecf309b73d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IniParser.Model.Configuration.IniParserConfiguration.ConcatenateDuplicateKeys</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets a value indicating whether duplicate keys are concatenate together by ConcatenateSeparator. </p>
+<p>Defaults to <code>false</code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6f1fc3f2a53f46b6c6482f9daa892854"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char IniParser.Model.Configuration.IniParserConfiguration.KeyValueAssigmentChar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the char that defines a value assigned to a key </p>
+<p>Defaults to character '=' </p>
+
+</div>
+</div>
+<a class="anchor" id="a51db91d9b8bce1468b0de550d15b2926"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string IniParser.Model.Configuration.IniParserConfiguration.NewLineStr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the string to use as new line string when formating an <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html" title="Represents all data from an INI file ">IniData</a> structure using a IIniDataFormatter. Parsing an ini-file accepts any new line character (Unix/windows) </p>
+<p>This allows to write a file with unix new line characters on windows (and vice versa) </p>
+<p>Defaults to value Environment.NewLine</p>
+
+</div>
+</div>
+<a class="anchor" id="afccff83ab5be16eaed9cc76f2b5372ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IniParser.Model.Configuration.IniParserConfiguration.OverrideDuplicateKeys</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only used if <a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#abdea686e39996dfa5b0f639a0953a7ed" title="If set to false and the IniDataParser finds duplicate keys in a section the parser will stop with an ...">IniParserConfiguration.AllowDuplicateKeys</a> is also <code>true</code> If set to <code>true</code> when the parser finds a duplicate key, it overrites the previous value, so the key will always contain the value of the last key readed in the file If set to <code>false</code> the first readed value is preserved, so the key will always contain the value of the first key readed in the file </p>
+<p>Defaults to <code>false</code>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae92a99934e7f75eb8fdd009b93df7790"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char IniParser.Model.Configuration.IniParserConfiguration.SectionEndChar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the char that defines the end of a section name. </p>
+<p>Defaults to character ']' </p>
+
+</div>
+</div>
+<a class="anchor" id="a7388b07cc1b967070a7a43b68935faf4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Regex IniParser.Model.Configuration.IniParserConfiguration.SectionRegex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a080f4560170e7946c3c7fcdb72c94e52"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char IniParser.Model.Configuration.IniParserConfiguration.SectionStartChar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the char that defines the start of a section name. </p>
+<p>Defaults to character '[' </p>
+
+</div>
+</div>
+<a class="anchor" id="ae035b7028aa8459e101de542fc62ac5e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IniParser.Model.Configuration.IniParserConfiguration.SkipInvalidLines</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a080f4014a6396efa609664a3d3b3a115"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IniParser.Model.Configuration.IniParserConfiguration.ThrowExceptionsOnError</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If <code>true</code> the IniDataParser instance will thrown an exception if an error is found. If <code>false</code> the parser will just stop execution and return a null value. </p>
+<p>Defaults to <code>true</code>. </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>IniParser/Model/Configuration/<a class="el" href="_ini_parser_configuration_8cs.html">IniParserConfiguration.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

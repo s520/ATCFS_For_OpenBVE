@@ -1,0 +1,4 @@
+<map id="クラス階層図" name="クラス階層図">
+<area shape="rect" id="node1" href="$interface_ini_parser_1_1_model_1_1_formatting_1_1_i_ini_data_formatter.html" title="Formats a IniData structure to an string " alt="" coords="6,5,189,46"/>
+<area shape="rect" id="node2" href="$class_ini_parser_1_1_model_1_1_formatting_1_1_default_ini_data_formatter.html" title="IniParser.Model.Formatting.\lDefaultIniDataFormatter" alt="" coords="238,5,421,46"/>
+</map>

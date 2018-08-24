@@ -1,0 +1,748 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ATCFS For OpenBVE: IniParser.Model.KeyDataCollection クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ATCFS For OpenBVE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
+      <li><a href="namespaces.html"><span>パッケージ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>クラス一覧</span></a></li>
+      <li><a href="classes.html"><span>クラス索引</span></a></li>
+      <li><a href="inherits.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>クラスメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>名前空間</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_ini_parser.html">IniParser</a></li><li class="navelem"><a class="el" href="namespace_ini_parser_1_1_model.html">Model</a></li><li class="navelem"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html">KeyDataCollection</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pac-methods">関数</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="class_ini_parser_1_1_model_1_1_key_data_collection-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">IniParser.Model.KeyDataCollection クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Represents a collection of Keydata.  
+ <a href="class_ini_parser_1_1_model_1_1_key_data_collection.html#details">[詳解]</a></p>
+<div class="dynheader">
+IniParser.Model.KeyDataCollection の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_model_1_1_key_data_collection__inherit__graph.png" border="0" usemap="#_ini_parser_8_model_8_key_data_collection_inherit__map" alt="Inheritance graph"/></div>
+<map name="_ini_parser_8_model_8_key_data_collection_inherit__map" id="_ini_parser_8_model_8_key_data_collection_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+IniParser.Model.KeyDataCollection 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_model_1_1_key_data_collection__coll__graph.png" border="0" usemap="#_ini_parser_8_model_8_key_data_collection_coll__map" alt="Collaboration graph"/></div>
+<map name="_ini_parser_8_model_8_key_data_collection_coll__map" id="_ini_parser_8_model_8_key_data_collection_coll__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a33d5ab4e5995da4b80d8160ed824dc85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#a33d5ab4e5995da4b80d8160ed824dc85">KeyDataCollection</a> ()</td></tr>
+<tr class="memdesc:a33d5ab4e5995da4b80d8160ed824dc85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html" title="Represents a collection of Keydata. ">KeyDataCollection</a> class.  <a href="#a33d5ab4e5995da4b80d8160ed824dc85">[詳解]</a><br/></td></tr>
+<tr class="separator:a33d5ab4e5995da4b80d8160ed824dc85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc4efaa3f32cae1d51afa3e138ec9d85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#adc4efaa3f32cae1d51afa3e138ec9d85">KeyDataCollection</a> (IEqualityComparer&lt; string &gt; searchComparer)</td></tr>
+<tr class="memdesc:adc4efaa3f32cae1d51afa3e138ec9d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html" title="Represents a collection of Keydata. ">KeyDataCollection</a> class with a given search comparer  <a href="#adc4efaa3f32cae1d51afa3e138ec9d85">[詳解]</a><br/></td></tr>
+<tr class="separator:adc4efaa3f32cae1d51afa3e138ec9d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5331d63d3566617e5e4a349d43fd806e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#a5331d63d3566617e5e4a349d43fd806e">KeyDataCollection</a> (<a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html">KeyDataCollection</a> ori, IEqualityComparer&lt; string &gt; searchComparer)</td></tr>
+<tr class="memdesc:a5331d63d3566617e5e4a349d43fd806e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html" title="Represents a collection of Keydata. ">KeyDataCollection</a> class from a previous instance of <a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html" title="Represents a collection of Keydata. ">KeyDataCollection</a>.  <a href="#a5331d63d3566617e5e4a349d43fd806e">[詳解]</a><br/></td></tr>
+<tr class="separator:a5331d63d3566617e5e4a349d43fd806e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a4c6de35e997dbe54ea007443de1c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#ad1a4c6de35e997dbe54ea007443de1c2">AddKey</a> (string keyName)</td></tr>
+<tr class="memdesc:ad1a4c6de35e997dbe54ea007443de1c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new key with the specified name and empty value and comments  <a href="#ad1a4c6de35e997dbe54ea007443de1c2">[詳解]</a><br/></td></tr>
+<tr class="separator:ad1a4c6de35e997dbe54ea007443de1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a054af84f4e265f11e23687c9e6cdde80"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#a054af84f4e265f11e23687c9e6cdde80">AddKey</a> (string keyName, <a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html">KeyData</a> keyData)</td></tr>
+<tr class="separator:a054af84f4e265f11e23687c9e6cdde80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b075dfb397ce3e1541a74388735a6e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#a4b075dfb397ce3e1541a74388735a6e2">AddKey</a> (<a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html">KeyData</a> keyData)</td></tr>
+<tr class="memdesc:a4b075dfb397ce3e1541a74388735a6e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new key to the collection  <a href="#a4b075dfb397ce3e1541a74388735a6e2">[詳解]</a><br/></td></tr>
+<tr class="separator:a4b075dfb397ce3e1541a74388735a6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f904528cd1136ce6fae6044f0657faf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#a1f904528cd1136ce6fae6044f0657faf">AddKey</a> (string keyName, string keyValue)</td></tr>
+<tr class="memdesc:a1f904528cd1136ce6fae6044f0657faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new key with the specified name and value to the collection  <a href="#a1f904528cd1136ce6fae6044f0657faf">[詳解]</a><br/></td></tr>
+<tr class="separator:a1f904528cd1136ce6fae6044f0657faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b2beecb19cf853a4267a4a10ef63a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#ae1b2beecb19cf853a4267a4a10ef63a3">ClearComments</a> ()</td></tr>
+<tr class="memdesc:ae1b2beecb19cf853a4267a4a10ef63a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all comments of this section  <a href="#ae1b2beecb19cf853a4267a4a10ef63a3">[詳解]</a><br/></td></tr>
+<tr class="separator:ae1b2beecb19cf853a4267a4a10ef63a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a65fb6d62606dc5ddc37bd8c64050f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#a3a65fb6d62606dc5ddc37bd8c64050f5">ContainsKey</a> (string keyName)</td></tr>
+<tr class="memdesc:a3a65fb6d62606dc5ddc37bd8c64050f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets if a specifyed key name exists in the collection.  <a href="#a3a65fb6d62606dc5ddc37bd8c64050f5">[詳解]</a><br/></td></tr>
+<tr class="separator:a3a65fb6d62606dc5ddc37bd8c64050f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1928feb23580a76824e9893591212cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html">KeyData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#ad1928feb23580a76824e9893591212cf">GetKeyData</a> (string keyName)</td></tr>
+<tr class="memdesc:ad1928feb23580a76824e9893591212cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the data for a specified key given its name  <a href="#ad1928feb23580a76824e9893591212cf">[詳解]</a><br/></td></tr>
+<tr class="separator:ad1928feb23580a76824e9893591212cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e4aa6e1f88f636ff35bc0ec469a6849"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#a4e4aa6e1f88f636ff35bc0ec469a6849">Merge</a> (<a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html">KeyDataCollection</a> keyDataToMerge)</td></tr>
+<tr class="separator:a4e4aa6e1f88f636ff35bc0ec469a6849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70341b1852e954e5e871001ef526ee63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#a70341b1852e954e5e871001ef526ee63">RemoveAllKeys</a> ()</td></tr>
+<tr class="memdesc:a70341b1852e954e5e871001ef526ee63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes all keys in this collection.  <a href="#a70341b1852e954e5e871001ef526ee63">[詳解]</a><br/></td></tr>
+<tr class="separator:a70341b1852e954e5e871001ef526ee63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4e48b1ffb5b5505006cf94769721171"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#ac4e48b1ffb5b5505006cf94769721171">RemoveKey</a> (string keyName)</td></tr>
+<tr class="memdesc:ac4e48b1ffb5b5505006cf94769721171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a previously existing key, including its associated data.  <a href="#ac4e48b1ffb5b5505006cf94769721171">[詳解]</a><br/></td></tr>
+<tr class="separator:ac4e48b1ffb5b5505006cf94769721171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b6953ad137fba3508e956f39e1711c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#a5b6953ad137fba3508e956f39e1711c2">SetKeyData</a> (<a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html">KeyData</a> data)</td></tr>
+<tr class="memdesc:a5b6953ad137fba3508e956f39e1711c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the key data associated to a specified key.  <a href="#a5b6953ad137fba3508e956f39e1711c2">[詳解]</a><br/></td></tr>
+<tr class="separator:a5b6953ad137fba3508e956f39e1711c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac755e76630a3441bc016d7683ffa9b5c"><td class="memItemLeft" align="right" valign="top">IEnumerator&lt; <a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html">KeyData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#ac755e76630a3441bc016d7683ffa9b5c">GetEnumerator</a> ()</td></tr>
+<tr class="memdesc:ac755e76630a3441bc016d7683ffa9b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows iteration througt the collection.  <a href="#ac755e76630a3441bc016d7683ffa9b5c">[詳解]</a><br/></td></tr>
+<tr class="separator:ac755e76630a3441bc016d7683ffa9b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23fde5b4e942174b20e3a00453e688b"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#ae23fde5b4e942174b20e3a00453e688b">Clone</a> ()</td></tr>
+<tr class="memdesc:ae23fde5b4e942174b20e3a00453e688b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new object that is a copy of the current instance.  <a href="#ae23fde5b4e942174b20e3a00453e688b">[詳解]</a><br/></td></tr>
+<tr class="separator:ae23fde5b4e942174b20e3a00453e688b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+関数</h2></td></tr>
+<tr class="memitem:a1fe262688a1658941d83efb4fcebc052"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html">KeyData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#a1fe262688a1658941d83efb4fcebc052">GetLast</a> ()</td></tr>
+<tr class="separator:a1fe262688a1658941d83efb4fcebc052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:aecea3ac0a96f34d61c2aa1e43529ec6a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#aecea3ac0a96f34d61c2aa1e43529ec6a">this[string keyName]</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aecea3ac0a96f34d61c2aa1e43529ec6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the value of a concrete key.  <a href="#aecea3ac0a96f34d61c2aa1e43529ec6a">[詳解]</a><br/></td></tr>
+<tr class="separator:aecea3ac0a96f34d61c2aa1e43529ec6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade06449e08f4f5ee59fbb0b06bc6c987"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#ade06449e08f4f5ee59fbb0b06bc6c987">Count</a><code> [get]</code></td></tr>
+<tr class="memdesc:ade06449e08f4f5ee59fbb0b06bc6c987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of keys in the collection  <a href="#ade06449e08f4f5ee59fbb0b06bc6c987">[詳解]</a><br/></td></tr>
+<tr class="separator:ade06449e08f4f5ee59fbb0b06bc6c987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a0ffca77302ef3ed8cb24cf1fe072acc9"><td class="memItemLeft" align="right" valign="top">IEnumerator IEnumerable.&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#a0ffca77302ef3ed8cb24cf1fe072acc9">GetEnumerator</a> ()</td></tr>
+<tr class="memdesc:a0ffca77302ef3ed8cb24cf1fe072acc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation needed  <a href="#a0ffca77302ef3ed8cb24cf1fe072acc9">[詳解]</a><br/></td></tr>
+<tr class="separator:a0ffca77302ef3ed8cb24cf1fe072acc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a9a759f78624d9a7281befb84b207109a"><td class="memItemLeft" align="right" valign="top">IEqualityComparer&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#a9a759f78624d9a7281befb84b207109a">_searchComparer</a></td></tr>
+<tr class="separator:a9a759f78624d9a7281befb84b207109a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2926b29e8fa6ca18084a69e4b609d64"><td class="memItemLeft" align="right" valign="top">readonly Dictionary&lt; string, <br class="typebreak"/>
+<a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html">KeyData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#af2926b29e8fa6ca18084a69e4b609d64">_keyData</a></td></tr>
+<tr class="memdesc:af2926b29e8fa6ca18084a69e4b609d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of <a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html" title="Information associated to a key from an INI file. Includes both the value and the comments associated...">KeyData</a> for a given section  <a href="#af2926b29e8fa6ca18084a69e4b609d64">[詳解]</a><br/></td></tr>
+<tr class="separator:af2926b29e8fa6ca18084a69e4b609d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Represents a collection of Keydata. </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a class="anchor" id="a33d5ab4e5995da4b80d8160ed824dc85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IniParser.Model.KeyDataCollection.KeyDataCollection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html" title="Represents a collection of Keydata. ">KeyDataCollection</a> class. </p>
+
+</div>
+</div>
+<a class="anchor" id="adc4efaa3f32cae1d51afa3e138ec9d85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IniParser.Model.KeyDataCollection.KeyDataCollection </td>
+          <td>(</td>
+          <td class="paramtype">IEqualityComparer&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>searchComparer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html" title="Represents a collection of Keydata. ">KeyDataCollection</a> class with a given search comparer </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">searchComparer</td><td>Search comparer used to find the key by name in the collection </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5331d63d3566617e5e4a349d43fd806e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IniParser.Model.KeyDataCollection.KeyDataCollection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html">KeyDataCollection</a>&#160;</td>
+          <td class="paramname"><em>ori</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEqualityComparer&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>searchComparer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html" title="Represents a collection of Keydata. ">KeyDataCollection</a> class from a previous instance of <a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html" title="Represents a collection of Keydata. ">KeyDataCollection</a>. </p>
+<p>Data from the original <a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html" title="Represents a collection of Keydata. ">KeyDataCollection</a> instance is deeply copied </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ori</td><td>The instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html" title="Represents a collection of Keydata. ">KeyDataCollection</a> class used to create the new instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_model_1_1_key_data_collection_a5331d63d3566617e5e4a349d43fd806e_cgraph.png" border="0" usemap="#class_ini_parser_1_1_model_1_1_key_data_collection_a5331d63d3566617e5e4a349d43fd806e_cgraph" alt=""/></div>
+<map name="class_ini_parser_1_1_model_1_1_key_data_collection_a5331d63d3566617e5e4a349d43fd806e_cgraph" id="class_ini_parser_1_1_model_1_1_key_data_collection_a5331d63d3566617e5e4a349d43fd806e_cgraph">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_model_1_1_key_data.html#ae13dc4b20fe8fc0aa8e991ddad6851fc" title="Creates a new object that is a copy of the current instance. " alt="" coords="286,5,458,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a class="anchor" id="ad1a4c6de35e997dbe54ea007443de1c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IniParser.Model.KeyDataCollection.AddKey </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>keyName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a new key with the specified name and empty value and comments </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyName</td><td>New key to be added. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p><code>true</code> if the key was added <code>false</code> if a key with the same name already exist in the collection </p>
+
+</div>
+</div>
+<a class="anchor" id="a054af84f4e265f11e23687c9e6cdde80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IniParser.Model.KeyDataCollection.AddKey </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>keyName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html">KeyData</a>&#160;</td>
+          <td class="paramname"><em>keyData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4b075dfb397ce3e1541a74388735a6e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IniParser.Model.KeyDataCollection.AddKey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html">KeyData</a>&#160;</td>
+          <td class="paramname"><em>keyData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a new key to the collection </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyData</td><td><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html" title="Information associated to a key from an INI file. Includes both the value and the comments associated...">KeyData</a> instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd><code>true</code> if the key was added <code>false</code> if a key with the same name already exist in the collection </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1f904528cd1136ce6fae6044f0657faf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IniParser.Model.KeyDataCollection.AddKey </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>keyName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>keyValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a new key with the specified name and value to the collection </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyName</td><td>Name of the new key to be added. </td></tr>
+    <tr><td class="paramname">keyValue</td><td>Value associated to the key. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd><code>true</code> if the key was added <code>false</code> if a key with the same name already exist in the collection. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae1b2beecb19cf853a4267a4a10ef63a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IniParser.Model.KeyDataCollection.ClearComments </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears all comments of this section </p>
+
+</div>
+</div>
+<a class="anchor" id="ae23fde5b4e942174b20e3a00453e688b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">object IniParser.Model.KeyDataCollection.Clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new object that is a copy of the current instance. </p>
+<dl class="section return"><dt>戻り値</dt><dd>A new object that is a copy of this instance. </dd></dl>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_model_1_1_key_data_collection_ae23fde5b4e942174b20e3a00453e688b_icgraph.png" border="0" usemap="#class_ini_parser_1_1_model_1_1_key_data_collection_ae23fde5b4e942174b20e3a00453e688b_icgraph" alt=""/></div>
+<map name="class_ini_parser_1_1_model_1_1_key_data_collection_ae23fde5b4e942174b20e3a00453e688b_icgraph" id="class_ini_parser_1_1_model_1_1_key_data_collection_ae23fde5b4e942174b20e3a00453e688b_icgraph">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_model_1_1_ini_data.html#a534e5dcc3c6fc40a49bdb85a8111925f" title="IniParser.Model.IniData.\lIniData" alt="" coords="317,5,480,46"/><area shape="rect" id="node3" href="class_ini_parser_1_1_model_1_1_ini_data_case_insensitive.html#a2975c093e52494c1aefd795be396b140" title="Copies an instance of the IniParser.Model.IniDataCaseInsensitive class " alt="" coords="286,70,511,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a65fb6d62606dc5ddc37bd8c64050f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IniParser.Model.KeyDataCollection.ContainsKey </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>keyName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets if a specifyed key name exists in the collection. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyName</td><td>Key name to search</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd><code>true</code> if a key with the specified name exists in the collectoin <code>false</code> otherwise</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac755e76630a3441bc016d7683ffa9b5c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator&lt;<a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html">KeyData</a>&gt; IniParser.Model.KeyDataCollection.GetEnumerator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allows iteration througt the collection. </p>
+<dl class="section return"><dt>戻り値</dt><dd>A strong-typed IEnumerator </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0ffca77302ef3ed8cb24cf1fe072acc9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator IEnumerable. IniParser.Model.KeyDataCollection.GetEnumerator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementation needed </p>
+<dl class="section return"><dt>戻り値</dt><dd>A weak-typed IEnumerator.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad1928feb23580a76824e9893591212cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html">KeyData</a> IniParser.Model.KeyDataCollection.GetKeyData </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>keyName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the data for a specified key given its name </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyName</td><td>Name of the key to retrieve.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>A <a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html" title="Information associated to a key from an INI file. Includes both the value and the comments associated...">KeyData</a> instance holding the key information or <code>null</code> if the key wasn't found. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1fe262688a1658941d83efb4fcebc052"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html">KeyData</a> IniParser.Model.KeyDataCollection.GetLast </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4e4aa6e1f88f636ff35bc0ec469a6849"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IniParser.Model.KeyDataCollection.Merge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html">KeyDataCollection</a>&#160;</td>
+          <td class="paramname"><em>keyDataToMerge</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a70341b1852e954e5e871001ef526ee63"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IniParser.Model.KeyDataCollection.RemoveAllKeys </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deletes all keys in this collection. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac4e48b1ffb5b5505006cf94769721171"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IniParser.Model.KeyDataCollection.RemoveKey </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>keyName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deletes a previously existing key, including its associated data. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyName</td><td>The key to be removed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd><code>true</code> if a key with the specified name was removed <code>false</code> otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5b6953ad137fba3508e956f39e1711c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IniParser.Model.KeyDataCollection.SetKeyData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html">KeyData</a>&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the key data associated to a specified key. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The new <a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html" title="Information associated to a key from an INI file. Includes both the value and the comments associated...">KeyData</a> for the key.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a class="anchor" id="af2926b29e8fa6ca18084a69e4b609d64"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly Dictionary&lt;string, <a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html">KeyData</a>&gt; IniParser.Model.KeyDataCollection._keyData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Collection of <a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html" title="Information associated to a key from an INI file. Includes both the value and the comments associated...">KeyData</a> for a given section </p>
+
+</div>
+</div>
+<a class="anchor" id="a9a759f78624d9a7281befb84b207109a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEqualityComparer&lt;string&gt; IniParser.Model.KeyDataCollection._searchComparer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a class="anchor" id="ade06449e08f4f5ee59fbb0b06bc6c987"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IniParser.Model.KeyDataCollection.Count</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the number of keys in the collection </p>
+
+</div>
+</div>
+<a class="anchor" id="aecea3ac0a96f34d61c2aa1e43529ec6a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string IniParser.Model.KeyDataCollection.this[string keyName]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the value of a concrete key. </p>
+<p>If we try to assign the value of a key which doesn't exists, a new key is added with the name and the value is assigned to it. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyName</td><td>Name of the key </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>The string with key's value or null if the key was not found. </dd></dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>IniParser/Model/<a class="el" href="_key_data_collection_8cs.html">KeyDataCollection.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

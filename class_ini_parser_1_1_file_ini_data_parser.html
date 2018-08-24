@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ATCFS For OpenBVE: IniParser.FileIniDataParser クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ATCFS For OpenBVE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
+      <li><a href="namespaces.html"><span>パッケージ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>クラス一覧</span></a></li>
+      <li><a href="classes.html"><span>クラス索引</span></a></li>
+      <li><a href="inherits.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>クラスメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>名前空間</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_ini_parser.html">IniParser</a></li><li class="navelem"><a class="el" href="class_ini_parser_1_1_file_ini_data_parser.html">FileIniDataParser</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="class_ini_parser_1_1_file_ini_data_parser-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">IniParser.FileIniDataParser クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Represents an INI data parser for files.  
+ <a href="class_ini_parser_1_1_file_ini_data_parser.html#details">[詳解]</a></p>
+<div class="dynheader">
+IniParser.FileIniDataParser の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_file_ini_data_parser__inherit__graph.png" border="0" usemap="#_ini_parser_8_file_ini_data_parser_inherit__map" alt="Inheritance graph"/></div>
+<map name="_ini_parser_8_file_ini_data_parser_inherit__map" id="_ini_parser_8_file_ini_data_parser_inherit__map">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_stream_ini_data_parser.html" title="Represents an INI data parser for streams. " alt="" coords="23,5,167,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+IniParser.FileIniDataParser 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_file_ini_data_parser__coll__graph.png" border="0" usemap="#_ini_parser_8_file_ini_data_parser_coll__map" alt="Collaboration graph"/></div>
+<map name="_ini_parser_8_file_ini_data_parser_coll__map" id="_ini_parser_8_file_ini_data_parser_coll__map">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_stream_ini_data_parser.html" title="Represents an INI data parser for streams. " alt="" coords="23,5,167,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aad05f44cc62059a06324836dea4786f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_file_ini_data_parser.html#aad05f44cc62059a06324836dea4786f8">FileIniDataParser</a> ()</td></tr>
+<tr class="memdesc:aad05f44cc62059a06324836dea4786f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ctor  <a href="#aad05f44cc62059a06324836dea4786f8">[詳解]</a><br/></td></tr>
+<tr class="separator:aad05f44cc62059a06324836dea4786f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30658593332c2723c54ddd3931f5a5a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_file_ini_data_parser.html#a30658593332c2723c54ddd3931f5a5a7">FileIniDataParser</a> (<a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html">IniDataParser</a> parser)</td></tr>
+<tr class="memdesc:a30658593332c2723c54ddd3931f5a5a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ctor  <a href="#a30658593332c2723c54ddd3931f5a5a7">[詳解]</a><br/></td></tr>
+<tr class="separator:a30658593332c2723c54ddd3931f5a5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cecb9df08ae71e17ad8d73ca0d6e890"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_file_ini_data_parser.html#a3cecb9df08ae71e17ad8d73ca0d6e890">LoadFile</a> (string filePath)</td></tr>
+<tr class="separator:a3cecb9df08ae71e17ad8d73ca0d6e890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad94330c8b9d252ae4640ed5265304e60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_file_ini_data_parser.html#ad94330c8b9d252ae4640ed5265304e60">LoadFile</a> (string filePath, Encoding fileEncoding)</td></tr>
+<tr class="separator:ad94330c8b9d252ae4640ed5265304e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d747de2c974263ae678eba3a6a4b778"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_file_ini_data_parser.html#a9d747de2c974263ae678eba3a6a4b778">ReadFile</a> (string filePath)</td></tr>
+<tr class="memdesc:a9d747de2c974263ae678eba3a6a4b778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements reading ini data from a file.  <a href="#a9d747de2c974263ae678eba3a6a4b778">[詳解]</a><br/></td></tr>
+<tr class="separator:a9d747de2c974263ae678eba3a6a4b778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05af55c220cca0936eb34535482ea68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_file_ini_data_parser.html#ac05af55c220cca0936eb34535482ea68">ReadFile</a> (string filePath, Encoding fileEncoding)</td></tr>
+<tr class="memdesc:ac05af55c220cca0936eb34535482ea68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements reading ini data from a file.  <a href="#ac05af55c220cca0936eb34535482ea68">[詳解]</a><br/></td></tr>
+<tr class="separator:ac05af55c220cca0936eb34535482ea68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c379187baa4141e09793dc44e75fdc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_file_ini_data_parser.html#a8c379187baa4141e09793dc44e75fdc3">SaveFile</a> (string filePath, <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a> parsedData)</td></tr>
+<tr class="memdesc:a8c379187baa4141e09793dc44e75fdc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves INI data to a file.  <a href="#a8c379187baa4141e09793dc44e75fdc3">[詳解]</a><br/></td></tr>
+<tr class="separator:a8c379187baa4141e09793dc44e75fdc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c4b9e90a4dd35707ab46a0f54010bc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_file_ini_data_parser.html#a4c4b9e90a4dd35707ab46a0f54010bc5">WriteFile</a> (string filePath, <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a> parsedData, Encoding fileEncoding=null)</td></tr>
+<tr class="memdesc:a4c4b9e90a4dd35707ab46a0f54010bc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes INI data to a text file.  <a href="#a4c4b9e90a4dd35707ab46a0f54010bc5">[詳解]</a><br/></td></tr>
+<tr class="separator:a4c4b9e90a4dd35707ab46a0f54010bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_ini_parser_1_1_stream_ini_data_parser"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_ini_parser_1_1_stream_ini_data_parser')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_ini_parser_1_1_stream_ini_data_parser.html">IniParser.StreamIniDataParser</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:aaec76d08d50e1aeaf1839eecbe90131a inherit pub_methods_class_ini_parser_1_1_stream_ini_data_parser"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_stream_ini_data_parser.html#aaec76d08d50e1aeaf1839eecbe90131a">StreamIniDataParser</a> ()</td></tr>
+<tr class="memdesc:aaec76d08d50e1aeaf1839eecbe90131a inherit pub_methods_class_ini_parser_1_1_stream_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ctor  <a href="#aaec76d08d50e1aeaf1839eecbe90131a">[詳解]</a><br/></td></tr>
+<tr class="separator:aaec76d08d50e1aeaf1839eecbe90131a inherit pub_methods_class_ini_parser_1_1_stream_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0f6b7535e8eef49a755c807c1cbdc5 inherit pub_methods_class_ini_parser_1_1_stream_ini_data_parser"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_stream_ini_data_parser.html#acf0f6b7535e8eef49a755c807c1cbdc5">StreamIniDataParser</a> (<a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html">IniDataParser</a> parser)</td></tr>
+<tr class="memdesc:acf0f6b7535e8eef49a755c807c1cbdc5 inherit pub_methods_class_ini_parser_1_1_stream_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ctor  <a href="#acf0f6b7535e8eef49a755c807c1cbdc5">[詳解]</a><br/></td></tr>
+<tr class="separator:acf0f6b7535e8eef49a755c807c1cbdc5 inherit pub_methods_class_ini_parser_1_1_stream_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742212ce352649db2c92f28a0805d7d0 inherit pub_methods_class_ini_parser_1_1_stream_ini_data_parser"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_stream_ini_data_parser.html#a742212ce352649db2c92f28a0805d7d0">ReadData</a> (StreamReader reader)</td></tr>
+<tr class="memdesc:a742212ce352649db2c92f28a0805d7d0 inherit pub_methods_class_ini_parser_1_1_stream_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data in INI format from a stream.  <a href="#a742212ce352649db2c92f28a0805d7d0">[詳解]</a><br/></td></tr>
+<tr class="separator:a742212ce352649db2c92f28a0805d7d0 inherit pub_methods_class_ini_parser_1_1_stream_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0af917bc3c80242f87ba2dde9c4570d inherit pub_methods_class_ini_parser_1_1_stream_ini_data_parser"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_stream_ini_data_parser.html#aa0af917bc3c80242f87ba2dde9c4570d">WriteData</a> (StreamWriter writer, <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a> iniData)</td></tr>
+<tr class="memdesc:aa0af917bc3c80242f87ba2dde9c4570d inherit pub_methods_class_ini_parser_1_1_stream_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the ini data to a stream.  <a href="#aa0af917bc3c80242f87ba2dde9c4570d">[詳解]</a><br/></td></tr>
+<tr class="separator:aa0af917bc3c80242f87ba2dde9c4570d inherit pub_methods_class_ini_parser_1_1_stream_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93100ce4dd26f76febe0ba0d31c3f34b inherit pub_methods_class_ini_parser_1_1_stream_ini_data_parser"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_stream_ini_data_parser.html#a93100ce4dd26f76febe0ba0d31c3f34b">WriteData</a> (StreamWriter writer, <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a> iniData, <a class="el" href="interface_ini_parser_1_1_model_1_1_formatting_1_1_i_ini_data_formatter.html">IIniDataFormatter</a> formatter)</td></tr>
+<tr class="memdesc:a93100ce4dd26f76febe0ba0d31c3f34b inherit pub_methods_class_ini_parser_1_1_stream_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the ini data to a stream.  <a href="#a93100ce4dd26f76febe0ba0d31c3f34b">[詳解]</a><br/></td></tr>
+<tr class="separator:a93100ce4dd26f76febe0ba0d31c3f34b inherit pub_methods_class_ini_parser_1_1_stream_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header properties_class_ini_parser_1_1_stream_ini_data_parser"><td colspan="2" onclick="javascript:toggleInherit('properties_class_ini_parser_1_1_stream_ini_data_parser')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_ini_parser_1_1_stream_ini_data_parser.html">IniParser.StreamIniDataParser</a> に属する継承プロパティ</td></tr>
+<tr class="memitem:a1ab2c08b1f698a930bbfd6f90fed5df4 inherit properties_class_ini_parser_1_1_stream_ini_data_parser"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html">IniDataParser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_stream_ini_data_parser.html#a1ab2c08b1f698a930bbfd6f90fed5df4">Parser</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a1ab2c08b1f698a930bbfd6f90fed5df4 inherit properties_class_ini_parser_1_1_stream_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">This instance will handle ini data parsing and writing  <a href="#a1ab2c08b1f698a930bbfd6f90fed5df4">[詳解]</a><br/></td></tr>
+<tr class="separator:a1ab2c08b1f698a930bbfd6f90fed5df4 inherit properties_class_ini_parser_1_1_stream_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Represents an INI data parser for files. </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a class="anchor" id="aad05f44cc62059a06324836dea4786f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IniParser.FileIniDataParser.FileIniDataParser </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ctor </p>
+
+</div>
+</div>
+<a class="anchor" id="a30658593332c2723c54ddd3931f5a5a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IniParser.FileIniDataParser.FileIniDataParser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html">IniDataParser</a>&#160;</td>
+          <td class="paramname"><em>parser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ctor </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parser</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a class="anchor" id="a3cecb9df08ae71e17ad8d73ca0d6e890"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a> IniParser.FileIniDataParser.LoadFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_file_ini_data_parser_a3cecb9df08ae71e17ad8d73ca0d6e890_cgraph.png" border="0" usemap="#class_ini_parser_1_1_file_ini_data_parser_a3cecb9df08ae71e17ad8d73ca0d6e890_cgraph" alt=""/></div>
+<map name="class_ini_parser_1_1_file_ini_data_parser_a3cecb9df08ae71e17ad8d73ca0d6e890_cgraph" id="class_ini_parser_1_1_file_ini_data_parser_a3cecb9df08ae71e17ad8d73ca0d6e890_cgraph">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_file_ini_data_parser.html#a9d747de2c974263ae678eba3a6a4b778" title="Implements reading ini data from a file. " alt="" coords="238,5,421,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad94330c8b9d252ae4640ed5265304e60"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a> IniParser.FileIniDataParser.LoadFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Encoding&#160;</td>
+          <td class="paramname"><em>fileEncoding</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_file_ini_data_parser_ad94330c8b9d252ae4640ed5265304e60_cgraph.png" border="0" usemap="#class_ini_parser_1_1_file_ini_data_parser_ad94330c8b9d252ae4640ed5265304e60_cgraph" alt=""/></div>
+<map name="class_ini_parser_1_1_file_ini_data_parser_ad94330c8b9d252ae4640ed5265304e60_cgraph" id="class_ini_parser_1_1_file_ini_data_parser_ad94330c8b9d252ae4640ed5265304e60_cgraph">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_file_ini_data_parser.html#a9d747de2c974263ae678eba3a6a4b778" title="Implements reading ini data from a file. " alt="" coords="238,5,421,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d747de2c974263ae678eba3a6a4b778"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a> IniParser.FileIniDataParser.ReadFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implements reading ini data from a file. </p>
+<p>Uses Encoding.Default codification for the file. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Path to the file </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_file_ini_data_parser_a9d747de2c974263ae678eba3a6a4b778_icgraph.png" border="0" usemap="#class_ini_parser_1_1_file_ini_data_parser_a9d747de2c974263ae678eba3a6a4b778_icgraph" alt=""/></div>
+<map name="class_ini_parser_1_1_file_ini_data_parser_a9d747de2c974263ae678eba3a6a4b778_icgraph" id="class_ini_parser_1_1_file_ini_data_parser_a9d747de2c974263ae678eba3a6a4b778_icgraph">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_file_ini_data_parser.html#a3cecb9df08ae71e17ad8d73ca0d6e890" title="IniParser.FileIniDataParser.\lLoadFile" alt="" coords="238,5,421,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac05af55c220cca0936eb34535482ea68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a> IniParser.FileIniDataParser.ReadFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Encoding&#160;</td>
+          <td class="paramname"><em>fileEncoding</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implements reading ini data from a file. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Path to the file </td></tr>
+    <tr><td class="paramname">fileEncoding</td><td>File's encoding. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_file_ini_data_parser_ac05af55c220cca0936eb34535482ea68_cgraph.png" border="0" usemap="#class_ini_parser_1_1_file_ini_data_parser_ac05af55c220cca0936eb34535482ea68_cgraph" alt=""/></div>
+<map name="class_ini_parser_1_1_file_ini_data_parser_ac05af55c220cca0936eb34535482ea68_cgraph" id="class_ini_parser_1_1_file_ini_data_parser_ac05af55c220cca0936eb34535482ea68_cgraph">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_stream_ini_data_parser.html#a742212ce352649db2c92f28a0805d7d0" title="Reads data in INI format from a stream. " alt="" coords="238,5,442,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c379187baa4141e09793dc44e75fdc3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IniParser.FileIniDataParser.SaveFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a>&#160;</td>
+          <td class="paramname"><em>parsedData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saves INI data to a file. </p>
+<p>Creats an ASCII encoded file by default. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Path to the file. </td></tr>
+    <tr><td class="paramname">parsedData</td><td>IniData to be saved as an INI file. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_file_ini_data_parser_a8c379187baa4141e09793dc44e75fdc3_cgraph.png" border="0" usemap="#class_ini_parser_1_1_file_ini_data_parser_a8c379187baa4141e09793dc44e75fdc3_cgraph" alt=""/></div>
+<map name="class_ini_parser_1_1_file_ini_data_parser_a8c379187baa4141e09793dc44e75fdc3_cgraph" id="class_ini_parser_1_1_file_ini_data_parser_a8c379187baa4141e09793dc44e75fdc3_cgraph">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_file_ini_data_parser.html#a4c4b9e90a4dd35707ab46a0f54010bc5" title="Writes INI data to a text file. " alt="" coords="238,5,421,46"/><area shape="rect" id="node3" href="class_ini_parser_1_1_stream_ini_data_parser.html#aa0af917bc3c80242f87ba2dde9c4570d" title="Writes the ini data to a stream. " alt="" coords="470,5,674,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c4b9e90a4dd35707ab46a0f54010bc5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IniParser.FileIniDataParser.WriteFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a>&#160;</td>
+          <td class="paramname"><em>parsedData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Encoding&#160;</td>
+          <td class="paramname"><em>fileEncoding</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes INI data to a text file. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Path to the file. </td></tr>
+    <tr><td class="paramname">parsedData</td><td>IniData to be saved as an INI file. </td></tr>
+    <tr><td class="paramname">fileEncoding</td><td>Specifies the encoding used to create the file. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_file_ini_data_parser_a4c4b9e90a4dd35707ab46a0f54010bc5_cgraph.png" border="0" usemap="#class_ini_parser_1_1_file_ini_data_parser_a4c4b9e90a4dd35707ab46a0f54010bc5_cgraph" alt=""/></div>
+<map name="class_ini_parser_1_1_file_ini_data_parser_a4c4b9e90a4dd35707ab46a0f54010bc5_cgraph" id="class_ini_parser_1_1_file_ini_data_parser_a4c4b9e90a4dd35707ab46a0f54010bc5_cgraph">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_stream_ini_data_parser.html#aa0af917bc3c80242f87ba2dde9c4570d" title="Writes the ini data to a stream. " alt="" coords="238,5,442,46"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_file_ini_data_parser_a4c4b9e90a4dd35707ab46a0f54010bc5_icgraph.png" border="0" usemap="#class_ini_parser_1_1_file_ini_data_parser_a4c4b9e90a4dd35707ab46a0f54010bc5_icgraph" alt=""/></div>
+<map name="class_ini_parser_1_1_file_ini_data_parser_a4c4b9e90a4dd35707ab46a0f54010bc5_icgraph" id="class_ini_parser_1_1_file_ini_data_parser_a4c4b9e90a4dd35707ab46a0f54010bc5_icgraph">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_file_ini_data_parser.html#a8c379187baa4141e09793dc44e75fdc3" title="Saves INI data to a file. " alt="" coords="238,5,421,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>IniParser/<a class="el" href="_file_ini_parser_8cs.html">FileIniParser.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

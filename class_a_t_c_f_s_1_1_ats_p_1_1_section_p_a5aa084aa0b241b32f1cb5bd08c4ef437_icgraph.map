@@ -1,0 +1,4 @@
+<map id="ATCFS.AtsP.SectionP.GetSection" name="ATCFS.AtsP.SectionP.GetSection">
+<area shape="rect" id="node2" href="$class_a_t_c_f_s_1_1_ats_p_1_1_section_p.html#a290a3d664e7813ed500510d72f0c47fc" title="即時停止(非常)地上子を通過した際に実行する関数 " alt="" coords="281,5,485,46"/>
+<area shape="rect" id="node3" href="$class_a_t_c_f_s_1_1_ats_p_1_1_section_p.html#a4535437ad808dcd3615928bc2bb9388c" title="即時停止(常用)地上子を通過した際に実行する関数 " alt="" coords="281,70,485,111"/>
+</map>

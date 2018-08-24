@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ATCFS For OpenBVE: ATCFS.BaseFunc クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ATCFS For OpenBVE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
+      <li><a href="namespaces.html"><span>パッケージ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>クラス一覧</span></a></li>
+      <li><a href="classes.html"><span>クラス索引</span></a></li>
+      <li><a href="inherits.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>クラスメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>名前空間</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_a_t_c_f_s.html">ATCFS</a></li><li class="navelem"><a class="el" href="class_a_t_c_f_s_1_1_base_func.html">BaseFunc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pac-static-methods">静的関数</a> &#124;
+<a href="class_a_t_c_f_s_1_1_base_func-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">ATCFS.BaseFunc クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a5bb1d42508ebc1d4e95b1200c83701e6"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_base_func.html#a5bb1d42508ebc1d4e95b1200c83701e6">UpperBound&lt; T &gt;</a> (T[] arr, int start, int end, T value, IComparer&lt; T &gt; comparer)</td></tr>
+<tr class="memdesc:a5bb1d42508ebc1d4e95b1200c83701e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した値より大きい先頭のインデックスを返す <a href="#a5bb1d42508ebc1d4e95b1200c83701e6">[詳解]</a><br/></td></tr>
+<tr class="separator:a5bb1d42508ebc1d4e95b1200c83701e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-methods"></a>
+静的関数</h2></td></tr>
+<tr class="memitem:ad0131ff546c503c38312ae7a5b45cc1b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_base_func.html#ad0131ff546c503c38312ae7a5b45cc1b">LowerBound&lt; T &gt;</a> (T[] arr, int start, int end, T value, IComparer&lt; T &gt; comparer)</td></tr>
+<tr class="memdesc:ad0131ff546c503c38312ae7a5b45cc1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した値以上の先頭のインデックスを返す <a href="#ad0131ff546c503c38312ae7a5b45cc1b">[詳解]</a><br/></td></tr>
+<tr class="separator:ad0131ff546c503c38312ae7a5b45cc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d8d0ab52fb0fb7289681b5706357a5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_base_func.html#af7d8d0ab52fb0fb7289681b5706357a5">LowerBound&lt; T &gt;</a> (T[] arr, T value)</td></tr>
+<tr class="separator:af7d8d0ab52fb0fb7289681b5706357a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5975200a16bf67a01a69400296c7bc48"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_base_func.html#a5975200a16bf67a01a69400296c7bc48">LowerBound&lt; T &gt;</a> (List&lt; T &gt; list, int start, int end, T value, IComparer&lt; T &gt; comparer)</td></tr>
+<tr class="memdesc:a5975200a16bf67a01a69400296c7bc48"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した値以上の先頭のインデックスを返す <a href="#a5975200a16bf67a01a69400296c7bc48">[詳解]</a><br/></td></tr>
+<tr class="separator:a5975200a16bf67a01a69400296c7bc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e32723ae67344f0c779adf14fe748a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_base_func.html#a64e32723ae67344f0c779adf14fe748a">LowerBound&lt; T &gt;</a> (List&lt; T &gt; list, T value)</td></tr>
+<tr class="separator:a64e32723ae67344f0c779adf14fe748a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58591590b185e24d174920bfb666ba89"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_base_func.html#a58591590b185e24d174920bfb666ba89">UpperBound&lt; T &gt;</a> (T[] arr, T value)</td></tr>
+<tr class="separator:a58591590b185e24d174920bfb666ba89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22528c9c2f2822059f57e1bf8209333d"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_base_func.html#a22528c9c2f2822059f57e1bf8209333d">ArrayGetOrDefault&lt; T &gt;</a> (T[] a, int index)</td></tr>
+<tr class="memdesc:a22528c9c2f2822059f57e1bf8209333d"><td class="mdescLeft">&#160;</td><td class="mdescRight">配列への範囲外アクセス時にデフォルト値を返す関数  <a href="#a22528c9c2f2822059f57e1bf8209333d">[詳解]</a><br/></td></tr>
+<tr class="separator:a22528c9c2f2822059f57e1bf8209333d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a682301c4925999acd7ef3664fb48b3aa"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_base_func.html#a682301c4925999acd7ef3664fb48b3aa">ListGetOrDefault&lt; T &gt;</a> (List&lt; T &gt; l, int index)</td></tr>
+<tr class="memdesc:a682301c4925999acd7ef3664fb48b3aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">配列への範囲外アクセス時にデフォルト値を返す関数  <a href="#a682301c4925999acd7ef3664fb48b3aa">[詳解]</a><br/></td></tr>
+<tr class="separator:a682301c4925999acd7ef3664fb48b3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">メソッド詳解</h2>
+<a class="anchor" id="a22528c9c2f2822059f57e1bf8209333d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T ATCFS.BaseFunc.ArrayGetOrDefault&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">T[]&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>配列への範囲外アクセス時にデフォルト値を返す関数 </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>配列の型</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>配列オブジェクト</td></tr>
+    <tr><td class="paramname">index</td><td>インデックス</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>配列の要素またはデフォルト値</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a682301c4925999acd7ef3664fb48b3aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T ATCFS.BaseFunc.ListGetOrDefault&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>配列への範囲外アクセス時にデフォルト値を返す関数 </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>配列の型</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>配列オブジェクト</td></tr>
+    <tr><td class="paramname">index</td><td>インデックス</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>配列の要素またはデフォルト値</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad0131ff546c503c38312ae7a5b45cc1b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ATCFS.BaseFunc.LowerBound&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">T[]&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IComparer&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>comparer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定した値以上の先頭のインデックスを返す</p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>比較する値の型</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>対象の配列（※ソート済みであること）</td></tr>
+    <tr><td class="paramname">start</td><td>開始インデックス [inclusive]</td></tr>
+    <tr><td class="paramname">end</td><td>終了インデックス [exclusive]</td></tr>
+    <tr><td class="paramname">value</td><td>検索する値</td></tr>
+    <tr><td class="paramname">comparer</td><td>比較関数(インターフェイス)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>指定した値以上の先頭のインデックス</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af7d8d0ab52fb0fb7289681b5706357a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ATCFS.BaseFunc.LowerBound&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">T[]&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="typeconstraint">
+<dl><dt><b>型制約</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>IComparable</em></td><td>&#160;</td></tr>
+</table>
+</dl>
+</div>
+
+</div>
+</div>
+<a class="anchor" id="a5975200a16bf67a01a69400296c7bc48"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ATCFS.BaseFunc.LowerBound&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IComparer&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>comparer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定した値以上の先頭のインデックスを返す</p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>比較する値の型</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>対象のリスト（※ソート済みであること）</td></tr>
+    <tr><td class="paramname">start</td><td>開始インデックス [inclusive]</td></tr>
+    <tr><td class="paramname">end</td><td>終了インデックス [exclusive]</td></tr>
+    <tr><td class="paramname">value</td><td>検索する値</td></tr>
+    <tr><td class="paramname">comparer</td><td>比較関数(インターフェイス)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>指定した値以上の先頭のインデックス</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a64e32723ae67344f0c779adf14fe748a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ATCFS.BaseFunc.LowerBound&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="typeconstraint">
+<dl><dt><b>型制約</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>IComparable</em></td><td>&#160;</td></tr>
+</table>
+</dl>
+</div>
+
+</div>
+</div>
+<a class="anchor" id="a5bb1d42508ebc1d4e95b1200c83701e6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ATCFS.BaseFunc.UpperBound&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">T[]&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IComparer&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>comparer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定した値より大きい先頭のインデックスを返す</p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>比較する値の型</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>対象の配列（※ソート済みであること）</td></tr>
+    <tr><td class="paramname">start</td><td>開始インデックス [inclusive]</td></tr>
+    <tr><td class="paramname">end</td><td>終了インデックス [exclusive]</td></tr>
+    <tr><td class="paramname">value</td><td>検索する値</td></tr>
+    <tr><td class="paramname">comparer</td><td>比較関数(インターフェイス)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>指定した値より大きい先頭のインデックス</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a58591590b185e24d174920bfb666ba89"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ATCFS.BaseFunc.UpperBound&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">T[]&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li><a class="el" href="_base_func_8cs.html">BaseFunc.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

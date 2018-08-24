@@ -1,0 +1,7 @@
+<map id="ATCFS.AtsP.SetPatternList" name="ATCFS.AtsP.SetPatternList">
+<area shape="rect" id="node2" href="$class_a_t_c_f_s_1_1_ats_p.html#a0b3d79d0905e5c4d5b46eb7041afdbba" title="勾配補正設定を行う関数 " alt="" coords="240,5,435,32"/>
+<area shape="rect" id="node4" href="$class_a_t_c_f_s_1_1_ats_p.html#a27877d0b74c8df4c37995d913652c4b3" title="ゲーム開始時に呼び出される関数 " alt="" coords="262,56,413,83"/>
+<area shape="rect" id="node3" href="$class_a_t_c_f_s_1_1_ats_p.html#a1fbf93c0ef5fb752904f5370ba1fb7d1" title="SetBeaconDataで実行される関数 " alt="" coords="483,5,674,32"/>
+<area shape="rect" id="node5" href="$class_a_t_c_f_s_1_1_ats_p.html#ab1914aac1bf75c5bb1a13be44cba077b" title="ATS&#45;Pを投入する際に実行する関数 " alt="" coords="513,56,644,83"/>
+<area shape="rect" id="node6" href="$class_a_t_c_f_s_1_1_ats_p.html#a4c81f47446f8f906c9df73a31989b321" title="ATS&#45;Pを遮断する際に実行する関数 " alt="" coords="515,107,642,133"/>
+</map>

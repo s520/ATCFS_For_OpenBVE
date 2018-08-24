@@ -1,0 +1,4 @@
+<map id="IniParser.FileIniDataParser.SaveFile" name="IniParser.FileIniDataParser.SaveFile">
+<area shape="rect" id="node2" href="$class_ini_parser_1_1_file_ini_data_parser.html#a4c4b9e90a4dd35707ab46a0f54010bc5" title="Writes INI data to a text file. " alt="" coords="238,5,421,46"/>
+<area shape="rect" id="node3" href="$class_ini_parser_1_1_stream_ini_data_parser.html#aa0af917bc3c80242f87ba2dde9c4570d" title="Writes the ini data to a stream. " alt="" coords="470,5,674,46"/>
+</map>

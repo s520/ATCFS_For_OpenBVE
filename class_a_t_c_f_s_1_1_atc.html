@@ -1,0 +1,3436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ATCFS For OpenBVE: ATCFS.Atc クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ATCFS For OpenBVE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
+      <li><a href="namespaces.html"><span>パッケージ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>クラス一覧</span></a></li>
+      <li><a href="classes.html"><span>クラス索引</span></a></li>
+      <li><a href="inherits.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>クラスメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>名前空間</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_a_t_c_f_s.html">ATCFS</a></li><li class="navelem"><a class="el" href="class_a_t_c_f_s_1_1_atc.html">Atc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pac-methods">関数</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="class_a_t_c_f_s_1_1_atc-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">ATCFS.Atc クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>ATC-1, ATC-2, ATC-NS, KS-ATC, DS-ATCを再現するクラス  
+ <a href="class_a_t_c_f_s_1_1_atc.html#details">[詳解]</a></p>
+<div class="dynheader">
+ATCFS.Atc の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc__inherit__graph.png" border="0" usemap="#_a_t_c_f_s_8_atc_inherit__map" alt="Inheritance graph"/></div>
+<map name="_a_t_c_f_s_8_atc_inherit__map" id="_a_t_c_f_s_8_atc_inherit__map">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_device.html" title="抽象的な保安装置を表すクラス " alt="" coords="19,5,81,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+ATCFS.Atc 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc__coll__graph.png" border="0" usemap="#_a_t_c_f_s_8_atc_coll__map" alt="Collaboration graph"/></div>
+<map name="_a_t_c_f_s_8_atc_coll__map" id="_a_t_c_f_s_8_atc_coll__map">
+<area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_train.html" title="このプラグインによってシミュレートされる列車を表すクラス" alt="" coords="632,378,731,405"/><area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_device.html" title="抽象的な保安装置を表すクラス " alt="" coords="51,313,114,339"/><area shape="rect" id="node5" href="class_a_t_c_f_s_1_1_accel.html" title="列車の加速度を算出するクラス " alt="" coords="374,429,477,455"/><area shape="rect" id="node9" href="class_a_t_c_f_s_1_1_sub.html" title="その他機能を再現するクラス " alt="" coords="869,242,963,269"/><area shape="rect" id="node10" href="class_a_t_c_f_s_1_1_ats_p.html" title="ATS&#45;Pを再現するクラス " alt="" coords="1139,621,1237,647"/><area shape="rect" id="node11" href="class_a_t_c_f_s_1_1_ats_p_1_1_section_p.html" title="停止信号パターン関連を記述するクラス " alt="" coords="838,570,994,597"/><area shape="rect" id="node12" href="class_a_t_c_f_s_1_1_ats_p_1_1_pattern_p.html" title="制限速度パターン関連を記述するクラス " alt="" coords="839,621,993,647"/><area shape="rect" id="node13" href="class_a_t_c_f_s_1_1_atc_1_1_fuzzy.html" title="予見Fuzzy制御を再現するクラス " alt="" coords="851,111,981,138"/><area shape="rect" id="node14" href="class_a_t_c_f_s_1_1_atc_1_1_atc_a.html" title="ATC&#45;1, ATC&#45;2を再現するクラス " alt="" coords="855,297,977,323"/><area shape="rect" id="node15" href="class_a_t_c_f_s_1_1_atc_1_1_atc_d.html" title="ATC&#45;NS, KS&#45;ATC, DS&#45;ATCを再現するクラス " alt="" coords="1126,355,1250,382"/><area shape="rect" id="node16" href="class_a_t_c_f_s_1_1_atc_1_1_atc_d_1_1_pattern_d.html" title="制限速度パターン関連を記述するクラス " alt="" coords="826,355,1006,382"/><area shape="rect" id="node17" href="class_a_t_c_f_s_1_1_atc_1_1_atc_d_1_1_station_d.html" title="駅停車パターン関連を記述するクラス " alt="" coords="827,406,1005,433"/><area shape="rect" id="node18" href="class_a_t_c_f_s_1_1_atc_1_1_atc_d_1_1_section_d.html" title="停止信号パターン関連を記述するクラス " alt="" coords="825,457,1007,483"/><area shape="rect" id="node4" href="class_a_t_c_f_s_1_1_train_1_1_read_only_handles.html" title="読み込みのみ可能なハンドル操作を表すクラス" alt="" coords="321,327,530,354"/><area shape="rect" id="node6" href="class_a_t_c_f_s_1_1_device.html" title="抽象的な保安装置を表すクラス " alt="" coords="370,378,481,405"/><area shape="rect" id="node7" href="class_a_t_c_f_s_1_1_sounds.html" title="ATCFS.Sounds" alt="" coords="368,821,483,847"/><area shape="rect" id="node8" href="class_a_t_c_f_s_1_1_sounds_1_1_sound.html" title="ループ音を表すクラス" alt="" coords="5,857,160,883"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc_1_1_atc_a.html">AtcA</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATC-1, ATC-2を再現するクラス  <a href="class_a_t_c_f_s_1_1_atc_1_1_atc_a.html#details">[詳解]</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc_1_1_atc_d.html">AtcD</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATC-NS, KS-ATC, DS-ATCを再現するクラス  <a href="class_a_t_c_f_s_1_1_atc_1_1_atc_d.html#details">[詳解]</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc_1_1_fuzzy.html">Fuzzy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">予見Fuzzy制御を再現するクラス  <a href="class_a_t_c_f_s_1_1_atc_1_1_fuzzy.html#details">[詳解]</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+関数</h2></td></tr>
+<tr class="memitem:a836ec58be40b0b26b9901393e8d61ffa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a836ec58be40b0b26b9901393e8d61ffa">Atc</a> (<a class="el" href="class_a_t_c_f_s_1_1_train.html">Train</a> train)</td></tr>
+<tr class="memdesc:a836ec58be40b0b26b9901393e8d61ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">新しいインスタンスを作成する  <a href="#a836ec58be40b0b26b9901393e8d61ffa">[詳解]</a><br/></td></tr>
+<tr class="separator:a836ec58be40b0b26b9901393e8d61ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3500abc408fbdca7322b308eaee4c667"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a3500abc408fbdca7322b308eaee4c667">Initialize</a> (InitializationModes mode)</td></tr>
+<tr class="memdesc:a3500abc408fbdca7322b308eaee4c667"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲーム開始時に呼び出される関数  <a href="#a3500abc408fbdca7322b308eaee4c667">[詳解]</a><br/></td></tr>
+<tr class="separator:a3500abc408fbdca7322b308eaee4c667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f80884a0a65088f75f589d0986ff02b"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b">Elapse</a> (ElapseData data, ref bool blocking)</td></tr>
+<tr class="memdesc:a4f80884a0a65088f75f589d0986ff02b"><td class="mdescLeft">&#160;</td><td class="mdescRight">1フレームごとに呼び出される関数  <a href="#a4f80884a0a65088f75f589d0986ff02b">[詳解]</a><br/></td></tr>
+<tr class="separator:a4f80884a0a65088f75f589d0986ff02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3495e6060155c52474e5aac424cacb84"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a3495e6060155c52474e5aac424cacb84">SetReverser</a> (int reverser)</td></tr>
+<tr class="memdesc:a3495e6060155c52474e5aac424cacb84"><td class="mdescLeft">&#160;</td><td class="mdescRight">レバーサーが扱われたときに呼び出される関数  <a href="#a3495e6060155c52474e5aac424cacb84">[詳解]</a><br/></td></tr>
+<tr class="separator:a3495e6060155c52474e5aac424cacb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7e7f824bee014c72677a1b5e6ffa167"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#ac7e7f824bee014c72677a1b5e6ffa167">SetPower</a> (int powerNotch)</td></tr>
+<tr class="memdesc:ac7e7f824bee014c72677a1b5e6ffa167"><td class="mdescLeft">&#160;</td><td class="mdescRight">主ハンドルが扱われたときに呼び出される関数  <a href="#ac7e7f824bee014c72677a1b5e6ffa167">[詳解]</a><br/></td></tr>
+<tr class="separator:ac7e7f824bee014c72677a1b5e6ffa167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f0d2697b4686446dbe9f6b8d83139f8"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a8f0d2697b4686446dbe9f6b8d83139f8">SetBrake</a> (int brakeNotch)</td></tr>
+<tr class="memdesc:a8f0d2697b4686446dbe9f6b8d83139f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">ブレーキが扱われたときに呼び出される関数  <a href="#a8f0d2697b4686446dbe9f6b8d83139f8">[詳解]</a><br/></td></tr>
+<tr class="separator:a8f0d2697b4686446dbe9f6b8d83139f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab020fd3c7d4073853e0c6516485e9a75"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#ab020fd3c7d4073853e0c6516485e9a75">KeyDown</a> (VirtualKeys key)</td></tr>
+<tr class="memdesc:ab020fd3c7d4073853e0c6516485e9a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATSキーが押されたときに呼び出される関数  <a href="#ab020fd3c7d4073853e0c6516485e9a75">[詳解]</a><br/></td></tr>
+<tr class="separator:ab020fd3c7d4073853e0c6516485e9a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6db1df4d53fd45816ce1a93a7b26d56"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#ac6db1df4d53fd45816ce1a93a7b26d56">KeyUp</a> (VirtualKeys key)</td></tr>
+<tr class="memdesc:ac6db1df4d53fd45816ce1a93a7b26d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATSキーが離されたときに呼び出される関数  <a href="#ac6db1df4d53fd45816ce1a93a7b26d56">[詳解]</a><br/></td></tr>
+<tr class="separator:ac6db1df4d53fd45816ce1a93a7b26d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57338cf7ae8991d7b826b71104863935"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a57338cf7ae8991d7b826b71104863935">HornBlow</a> (HornTypes type)</td></tr>
+<tr class="memdesc:a57338cf7ae8991d7b826b71104863935"><td class="mdescLeft">&#160;</td><td class="mdescRight">警笛が扱われたときに呼び出される関数  <a href="#a57338cf7ae8991d7b826b71104863935">[詳解]</a><br/></td></tr>
+<tr class="separator:a57338cf7ae8991d7b826b71104863935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c04d4fc899b20f46cda44012a855ea"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#af4c04d4fc899b20f46cda44012a855ea">SetSignal</a> (SignalData[] signal)</td></tr>
+<tr class="memdesc:af4c04d4fc899b20f46cda44012a855ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の閉塞の信号が変化したときに呼び出される関数  <a href="#af4c04d4fc899b20f46cda44012a855ea">[詳解]</a><br/></td></tr>
+<tr class="separator:af4c04d4fc899b20f46cda44012a855ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af82f9979f63a3c2b5754f119bd6dfd29"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#af82f9979f63a3c2b5754f119bd6dfd29">SetBeacon</a> (BeaconData beacon)</td></tr>
+<tr class="memdesc:af82f9979f63a3c2b5754f119bd6dfd29"><td class="mdescLeft">&#160;</td><td class="mdescRight">地上子を越えたときに呼び出される関数  <a href="#af82f9979f63a3c2b5754f119bd6dfd29">[詳解]</a><br/></td></tr>
+<tr class="separator:af82f9979f63a3c2b5754f119bd6dfd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:a0c52009ae7b227c1e4c34566d481739c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a0c52009ae7b227c1e4c34566d481739c">atc_brake_notch_</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a0c52009ae7b227c1e4c34566d481739c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATC出力ブレーキノッチ(HBを含まない)  <a href="#a0c52009ae7b227c1e4c34566d481739c">[詳解]</a><br/></td></tr>
+<tr class="separator:a0c52009ae7b227c1e4c34566d481739c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a756907f325c585f95f360d7f8d58131e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a756907f325c585f95f360d7f8d58131e">SearchSignal</a> (int spd)</td></tr>
+<tr class="memdesc:a756907f325c585f95f360d7f8d58131e"><td class="mdescLeft">&#160;</td><td class="mdescRight">速度に対応する信号インデックスを返す関数  <a href="#a756907f325c585f95f360d7f8d58131e">[詳解]</a><br/></td></tr>
+<tr class="separator:a756907f325c585f95f360d7f8d58131e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2779448d6e34bdefe0efcfc845c4e0ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a2779448d6e34bdefe0efcfc845c4e0ce">ItoV</a> (int index)</td></tr>
+<tr class="memdesc:a2779448d6e34bdefe0efcfc845c4e0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号インデックスを速度に変換する関数  <a href="#a2779448d6e34bdefe0efcfc845c4e0ce">[詳解]</a><br/></td></tr>
+<tr class="separator:a2779448d6e34bdefe0efcfc845c4e0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2b9ae8515429c56994ff2495f4116f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#ace2b9ae8515429c56994ff2495f4116f">ItoV</a> (int index, bool is_display)</td></tr>
+<tr class="memdesc:ace2b9ae8515429c56994ff2495f4116f"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号インデックスを速度に変換する関数  <a href="#ace2b9ae8515429c56994ff2495f4116f">[詳解]</a><br/></td></tr>
+<tr class="separator:ace2b9ae8515429c56994ff2495f4116f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a710ee4d717f500af61fc102b5edeafb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a710ee4d717f500af61fc102b5edeafb2">SetPatternList</a> ()</td></tr>
+<tr class="memdesc:a710ee4d717f500af61fc102b5edeafb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">デジタルATC用速度照査パターンを作成する関数  <a href="#a710ee4d717f500af61fc102b5edeafb2">[詳解]</a><br/></td></tr>
+<tr class="separator:a710ee4d717f500af61fc102b5edeafb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295cfa832374794738329878d62831eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a295cfa832374794738329878d62831eb">Start</a> ()</td></tr>
+<tr class="memdesc:a295cfa832374794738329878d62831eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATCを投入する際に実行する関数  <a href="#a295cfa832374794738329878d62831eb">[詳解]</a><br/></td></tr>
+<tr class="separator:a295cfa832374794738329878d62831eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2608515c69a05934ddaebc5f48378754"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a2608515c69a05934ddaebc5f48378754">Exit</a> ()</td></tr>
+<tr class="memdesc:a2608515c69a05934ddaebc5f48378754"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATCを遮断する際に実行する関数  <a href="#a2608515c69a05934ddaebc5f48378754">[詳解]</a><br/></td></tr>
+<tr class="separator:a2608515c69a05934ddaebc5f48378754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a162f5132e2d5b5cb960fa9c1a369dd52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a162f5132e2d5b5cb960fa9c1a369dd52">ChangedSignal</a> (int signal)</td></tr>
+<tr class="memdesc:a162f5132e2d5b5cb960fa9c1a369dd52"><td class="mdescLeft">&#160;</td><td class="mdescRight">SetSignalで実行される関数  <a href="#a162f5132e2d5b5cb960fa9c1a369dd52">[詳解]</a><br/></td></tr>
+<tr class="separator:a162f5132e2d5b5cb960fa9c1a369dd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a153b74b73a096bc553fe7bc9db1696c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a153b74b73a096bc553fe7bc9db1696c7">PassedBeacon</a> (int index, int signal, double distance, int optional)</td></tr>
+<tr class="memdesc:a153b74b73a096bc553fe7bc9db1696c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SetBeaconDataで実行される関数  <a href="#a153b74b73a096bc553fe7bc9db1696c7">[詳解]</a><br/></td></tr>
+<tr class="separator:a153b74b73a096bc553fe7bc9db1696c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248755fc489fc8a8ef5d563dc87d8164"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a248755fc489fc8a8ef5d563dc87d8164">ChangedAtcType</a> (int atc_type)</td></tr>
+<tr class="memdesc:a248755fc489fc8a8ef5d563dc87d8164"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATC方式を切り替える関数  <a href="#a248755fc489fc8a8ef5d563dc87d8164">[詳解]</a><br/></td></tr>
+<tr class="separator:a248755fc489fc8a8ef5d563dc87d8164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfc75fc6b0b48f4fdb20eb668d371274"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#abfc75fc6b0b48f4fdb20eb668d371274">PassedLoop</a> (int signal)</td></tr>
+<tr class="memdesc:abfc75fc6b0b48f4fdb20eb668d371274"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATC-1, 2, NSにおいて停止限界(ループコイル)を通過した際に実行する関数  <a href="#abfc75fc6b0b48f4fdb20eb668d371274">[詳解]</a><br/></td></tr>
+<tr class="separator:abfc75fc6b0b48f4fdb20eb668d371274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bc1afd27b5082fb94486ed643c96b7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a4bc1afd27b5082fb94486ed643c96b7d">Reset</a> ()</td></tr>
+<tr class="memdesc:a4bc1afd27b5082fb94486ed643c96b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATC-1, 2, NSにおいて確認扱いの判定を行う関数  <a href="#a4bc1afd27b5082fb94486ed643c96b7d">[詳解]</a><br/></td></tr>
+<tr class="separator:a4bc1afd27b5082fb94486ed643c96b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a674b5e341b030ee009e4dd54853b79eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a674b5e341b030ee009e4dd54853b79eb">ResetSwDown</a> ()</td></tr>
+<tr class="memdesc:a674b5e341b030ee009e4dd54853b79eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">確認ボタンが押下された際に実行する関数  <a href="#a674b5e341b030ee009e4dd54853b79eb">[詳解]</a><br/></td></tr>
+<tr class="separator:a674b5e341b030ee009e4dd54853b79eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c157bc8dc02afd099554bf21dbecb49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a0c157bc8dc02afd099554bf21dbecb49">ResetSwUp</a> ()</td></tr>
+<tr class="memdesc:a0c157bc8dc02afd099554bf21dbecb49"><td class="mdescLeft">&#160;</td><td class="mdescRight">確認ボタンが開放された際に実行する関数  <a href="#a0c157bc8dc02afd099554bf21dbecb49">[詳解]</a><br/></td></tr>
+<tr class="separator:a0c157bc8dc02afd099554bf21dbecb49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac5f5a371f3ddca87794e2167481024"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a2ac5f5a371f3ddca87794e2167481024">SearchPattern</a> (double distance)</td></tr>
+<tr class="memdesc:a2ac5f5a371f3ddca87794e2167481024"><td class="mdescLeft">&#160;</td><td class="mdescRight">距離に対応する速度を返す関数  <a href="#a2ac5f5a371f3ddca87794e2167481024">[詳解]</a><br/></td></tr>
+<tr class="separator:a2ac5f5a371f3ddca87794e2167481024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d6d2eb23a45b3ab8ae45227b86b2dc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a2d6d2eb23a45b3ab8ae45227b86b2dc3">ValidPattern</a> (ref int tget_spd, int pattern_status)</td></tr>
+<tr class="memdesc:a2d6d2eb23a45b3ab8ae45227b86b2dc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">パターンが無効の場合に目標速度を車両ATC最高速度に修正する関数  <a href="#a2d6d2eb23a45b3ab8ae45227b86b2dc3">[詳解]</a><br/></td></tr>
+<tr class="separator:a2d6d2eb23a45b3ab8ae45227b86b2dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de62ea15575034d0a0b4ed89225606c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a0de62ea15575034d0a0b4ed89225606c">CalcPatternSpd</a> (int tget_spd, double pattern_end_loc)</td></tr>
+<tr class="memdesc:a0de62ea15575034d0a0b4ed89225606c"><td class="mdescLeft">&#160;</td><td class="mdescRight">パターン照査速度を算出する関数  <a href="#a0de62ea15575034d0a0b4ed89225606c">[詳解]</a><br/></td></tr>
+<tr class="separator:a0de62ea15575034d0a0b4ed89225606c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1cc9d4b37a7d65b9b9c580197983bb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#afa1cc9d4b37a7d65b9b9c580197983bb">CalcPatternLoc</a> (int tget_spd, double pattern_end_loc, int pattern_status)</td></tr>
+<tr class="memdesc:afa1cc9d4b37a7d65b9b9c580197983bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">パターン降下開始地点を算出する関数  <a href="#afa1cc9d4b37a7d65b9b9c580197983bb">[詳解]</a><br/></td></tr>
+<tr class="separator:afa1cc9d4b37a7d65b9b9c580197983bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97884941052bdd5c3bca2c909766d4bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a97884941052bdd5c3bca2c909766d4bc">CollectPattern</a> ()</td></tr>
+<tr class="memdesc:a97884941052bdd5c3bca2c909766d4bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">パターン情報を集約する関数  <a href="#a97884941052bdd5c3bca2c909766d4bc">[詳解]</a><br/></td></tr>
+<tr class="separator:a97884941052bdd5c3bca2c909766d4bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb3d4416df0ad11b2b0bde312bcf5b9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#abb3d4416df0ad11b2b0bde312bcf5b9b">CalcPattern</a> ()</td></tr>
+<tr class="memdesc:abb3d4416df0ad11b2b0bde312bcf5b9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">各パターン情報からパターン照査速度およびパターン降下開始地点を算出する関数  <a href="#abb3d4416df0ad11b2b0bde312bcf5b9b">[詳解]</a><br/></td></tr>
+<tr class="separator:abb3d4416df0ad11b2b0bde312bcf5b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a230855b9d6ceab06efbc58a0c2e01113"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a230855b9d6ceab06efbc58a0c2e01113">ChangedArrowSig</a> ()</td></tr>
+<tr class="memdesc:a230855b9d6ceab06efbc58a0c2e01113"><td class="mdescLeft">&#160;</td><td class="mdescRight">デジタルATC用車内信号を生成する関数  <a href="#a230855b9d6ceab06efbc58a0c2e01113">[詳解]</a><br/></td></tr>
+<tr class="separator:a230855b9d6ceab06efbc58a0c2e01113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16a6fdabf7c0f79c430670289eb5a27b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a16a6fdabf7c0f79c430670289eb5a27b">CalcBrake</a> (int index, int tget_spd, double pattern_start_loc, double pattern_end_loc)</td></tr>
+<tr class="memdesc:a16a6fdabf7c0f79c430670289eb5a27b"><td class="mdescLeft">&#160;</td><td class="mdescRight">パターンに対する最適ブレーキノッチを出力する関数  <a href="#a16a6fdabf7c0f79c430670289eb5a27b">[詳解]</a><br/></td></tr>
+<tr class="separator:a16a6fdabf7c0f79c430670289eb5a27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3943dbf015842beacf34535b6ecd9893"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a3943dbf015842beacf34535b6ecd9893">SelectBrake</a> ()</td></tr>
+<tr class="memdesc:a3943dbf015842beacf34535b6ecd9893"><td class="mdescLeft">&#160;</td><td class="mdescRight">全パターンに対する最大の最適ブレーキノッチを出力する関数  <a href="#a3943dbf015842beacf34535b6ecd9893">[詳解]</a><br/></td></tr>
+<tr class="separator:a3943dbf015842beacf34535b6ecd9893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f9a49762a5bb494285136a23dd88aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a74f9a49762a5bb494285136a23dd88aa">NonFuzzyCtrExe</a> ()</td></tr>
+<tr class="memdesc:a74f9a49762a5bb494285136a23dd88aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">予見Fuzzy制御ではないブレーキノッチを出力する関数  <a href="#a74f9a49762a5bb494285136a23dd88aa">[詳解]</a><br/></td></tr>
+<tr class="separator:a74f9a49762a5bb494285136a23dd88aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e8b29ce45c5e55e4126548f84abfc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#ab6e8b29ce45c5e55e4126548f84abfc5">BrakeExeA</a> ()</td></tr>
+<tr class="memdesc:ab6e8b29ce45c5e55e4126548f84abfc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">アナログATC用のブレーキノッチを出力する関数  <a href="#ab6e8b29ce45c5e55e4126548f84abfc5">[詳解]</a><br/></td></tr>
+<tr class="separator:ab6e8b29ce45c5e55e4126548f84abfc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c28a83a33b17c0c4b222fa8178d6dc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a9c28a83a33b17c0c4b222fa8178d6dc3">BrakeExeD</a> ()</td></tr>
+<tr class="memdesc:a9c28a83a33b17c0c4b222fa8178d6dc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">デジタルATC用のブレーキノッチを出力する関数  <a href="#a9c28a83a33b17c0c4b222fa8178d6dc3">[詳解]</a><br/></td></tr>
+<tr class="separator:a9c28a83a33b17c0c4b222fa8178d6dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3ffb8f8b19ced89089303ca4c73624"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a4c3ffb8f8b19ced89089303ca4c73624">DisplaySpd</a> (int spd, int[] display_spd)</td></tr>
+<tr class="memdesc:a4c3ffb8f8b19ced89089303ca4c73624"><td class="mdescLeft">&#160;</td><td class="mdescRight">速度を7セグに表示する関数  <a href="#a4c3ffb8f8b19ced89089303ca4c73624">[詳解]</a><br/></td></tr>
+<tr class="separator:a4c3ffb8f8b19ced89089303ca4c73624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef050fdcb53a0f13071cd92f99ee687a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#aef050fdcb53a0f13071cd92f99ee687a">ResetIndicator</a> ()</td></tr>
+<tr class="memdesc:aef050fdcb53a0f13071cd92f99ee687a"><td class="mdescLeft">&#160;</td><td class="mdescRight">インジケーターの表示を初期化する関数  <a href="#aef050fdcb53a0f13071cd92f99ee687a">[詳解]</a><br/></td></tr>
+<tr class="separator:aef050fdcb53a0f13071cd92f99ee687a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb6c3e51b8d20329c13567f5db920d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#abfb6c3e51b8d20329c13567f5db920d0">RunIndicator</a> ()</td></tr>
+<tr class="memdesc:abfb6c3e51b8d20329c13567f5db920d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">インジケーターの表示を実行する関数  <a href="#abfb6c3e51b8d20329c13567f5db920d0">[詳解]</a><br/></td></tr>
+<tr class="separator:abfb6c3e51b8d20329c13567f5db920d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8457c978e07b75016468b67956fb6a92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a8457c978e07b75016468b67956fb6a92">RunIndicatorA</a> ()</td></tr>
+<tr class="memdesc:a8457c978e07b75016468b67956fb6a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">アナログATC用インジケーターの表示を実行する関数  <a href="#a8457c978e07b75016468b67956fb6a92">[詳解]</a><br/></td></tr>
+<tr class="separator:a8457c978e07b75016468b67956fb6a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb667232faba671bd6a9e4414824a091"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#aeb667232faba671bd6a9e4414824a091">RunIndicatorD</a> ()</td></tr>
+<tr class="memdesc:aeb667232faba671bd6a9e4414824a091"><td class="mdescLeft">&#160;</td><td class="mdescRight">デジタルATC用インジケーターの表示を実行する関数  <a href="#aeb667232faba671bd6a9e4414824a091">[詳解]</a><br/></td></tr>
+<tr class="separator:aeb667232faba671bd6a9e4414824a091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae52e25ab2e9982a8272da503158168f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#ae52e25ab2e9982a8272da503158168f1">RunSubSpeedMeter</a> ()</td></tr>
+<tr class="memdesc:ae52e25ab2e9982a8272da503158168f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">副速度計の表示を実行する関数  <a href="#ae52e25ab2e9982a8272da503158168f1">[詳解]</a><br/></td></tr>
+<tr class="separator:ae52e25ab2e9982a8272da503158168f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5a4455f811446b4a7c7ffd820dbdca5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#ae5a4455f811446b4a7c7ffd820dbdca5">PassedBeacon</a> ()</td></tr>
+<tr class="memdesc:ae5a4455f811446b4a7c7ffd820dbdca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">SetBeaconDataの実行タイミングを制御するための関数  <a href="#ae5a4455f811446b4a7c7ffd820dbdca5">[詳解]</a><br/></td></tr>
+<tr class="separator:ae5a4455f811446b4a7c7ffd820dbdca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a5557520969680cb12135c61d5d66811c"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_a_t_c_f_s_1_1_train.html">Train</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a5557520969680cb12135c61d5d66811c">train_</a></td></tr>
+<tr class="separator:a5557520969680cb12135c61d5d66811c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d6a047853e5da38765f72c7d3fa94c"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_a_t_c_f_s_1_1_atc_1_1_atc_a.html">AtcA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a24d6a047853e5da38765f72c7d3fa94c">atc_a_</a></td></tr>
+<tr class="separator:a24d6a047853e5da38765f72c7d3fa94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b033de90ef7f23746712764fffb776"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_a_t_c_f_s_1_1_atc_1_1_atc_d.html">AtcD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a57b033de90ef7f23746712764fffb776">atc_d_</a></td></tr>
+<tr class="separator:a57b033de90ef7f23746712764fffb776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea52615713d4e9d799e3018dd83d295b"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_a_t_c_f_s_1_1_atc_1_1_fuzzy.html">Fuzzy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#aea52615713d4e9d799e3018dd83d295b">fuzzy_</a></td></tr>
+<tr class="separator:aea52615713d4e9d799e3018dd83d295b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf8c707764b0e35f3e90adc9be8480f8"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#abf8c707764b0e35f3e90adc9be8480f8">ALL_PATTERN</a> = 8</td></tr>
+<tr class="memdesc:abf8c707764b0e35f3e90adc9be8480f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">パターンの総数  <a href="#abf8c707764b0e35f3e90adc9be8480f8">[詳解]</a><br/></td></tr>
+<tr class="separator:abf8c707764b0e35f3e90adc9be8480f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae28ae2d72002cde0bef5fd04e25c7224"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#ae28ae2d72002cde0bef5fd04e25c7224">STA_PATTERN</a> = 3</td></tr>
+<tr class="memdesc:ae28ae2d72002cde0bef5fd04e25c7224"><td class="mdescLeft">&#160;</td><td class="mdescRight">駅停車パターンの総数  <a href="#ae28ae2d72002cde0bef5fd04e25c7224">[詳解]</a><br/></td></tr>
+<tr class="separator:ae28ae2d72002cde0bef5fd04e25c7224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05042be4d969c8503bf068c1ea3abdde"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a05042be4d969c8503bf068c1ea3abdde">USR_PATTERN</a> = 3</td></tr>
+<tr class="memdesc:a05042be4d969c8503bf068c1ea3abdde"><td class="mdescLeft">&#160;</td><td class="mdescRight">速度制限パターンの総数  <a href="#a05042be4d969c8503bf068c1ea3abdde">[詳解]</a><br/></td></tr>
+<tr class="separator:a05042be4d969c8503bf068c1ea3abdde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115b9282c16a3c0bbadc958618d96409"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a115b9282c16a3c0bbadc958618d96409">max_brake_notch_</a></td></tr>
+<tr class="memdesc:a115b9282c16a3c0bbadc958618d96409"><td class="mdescLeft">&#160;</td><td class="mdescRight">常用最大ブレーキノッチ(HBを含まない)  <a href="#a115b9282c16a3c0bbadc958618d96409">[詳解]</a><br/></td></tr>
+<tr class="separator:a115b9282c16a3c0bbadc958618d96409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad52f8506382bb53894e6d80a977e3b2d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#ad52f8506382bb53894e6d80a977e3b2d">brake_notch_</a></td></tr>
+<tr class="memdesc:ad52f8506382bb53894e6d80a977e3b2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">出力ブレーキノッチ(HBを含まない)  <a href="#ad52f8506382bb53894e6d80a977e3b2d">[詳解]</a><br/></td></tr>
+<tr class="separator:ad52f8506382bb53894e6d80a977e3b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1146701f88cc5f29e17e7929333c7ff2"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a1146701f88cc5f29e17e7929333c7ff2">default_notch_</a></td></tr>
+<tr class="memdesc:a1146701f88cc5f29e17e7929333c7ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">標準ブレーキノッチ  <a href="#a1146701f88cc5f29e17e7929333c7ff2">[詳解]</a><br/></td></tr>
+<tr class="separator:a1146701f88cc5f29e17e7929333c7ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa1d7957a886732b0a25ef9f153edb24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#aaa1d7957a886732b0a25ef9f153edb24">max_signal_</a></td></tr>
+<tr class="memdesc:aaa1d7957a886732b0a25ef9f153edb24"><td class="mdescLeft">&#160;</td><td class="mdescRight">車両ATC最高速度に対応する信号インデックス  <a href="#aaa1d7957a886732b0a25ef9f153edb24">[詳解]</a><br/></td></tr>
+<tr class="separator:aaa1d7957a886732b0a25ef9f153edb24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a9534b0daac86e63fa92a26f8d097d9"><td class="memItemLeft" align="right" valign="top">double[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a3a9534b0daac86e63fa92a26f8d097d9">pattern_list_</a></td></tr>
+<tr class="memdesc:a3a9534b0daac86e63fa92a26f8d097d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">デジタルATC用速度照査パターン  <a href="#a3a9534b0daac86e63fa92a26f8d097d9">[詳解]</a><br/></td></tr>
+<tr class="separator:a3a9534b0daac86e63fa92a26f8d097d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3be4362f8fb31d0f3fd9fa00c3f6a50"><td class="memItemLeft" align="right" valign="top">double[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#ab3be4362f8fb31d0f3fd9fa00c3f6a50">pattarn_end_loc_list_</a></td></tr>
+<tr class="memdesc:ab3be4362f8fb31d0f3fd9fa00c3f6a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">全パターンの減速完了地点[m]  <a href="#ab3be4362f8fb31d0f3fd9fa00c3f6a50">[詳解]</a><br/></td></tr>
+<tr class="separator:ab3be4362f8fb31d0f3fd9fa00c3f6a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46139300fcd2f317a0116e6f0bff267c"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a46139300fcd2f317a0116e6f0bff267c">pattern_is_valid_list_</a></td></tr>
+<tr class="memdesc:a46139300fcd2f317a0116e6f0bff267c"><td class="mdescLeft">&#160;</td><td class="mdescRight">全パターンの状態(0: 無効, 1: 有効)  <a href="#a46139300fcd2f317a0116e6f0bff267c">[詳解]</a><br/></td></tr>
+<tr class="separator:a46139300fcd2f317a0116e6f0bff267c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacab85cf3b1ebd90e0e44ed2f5b0843b"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#aacab85cf3b1ebd90e0e44ed2f5b0843b">pattern_tget_spd_list_</a></td></tr>
+<tr class="memdesc:aacab85cf3b1ebd90e0e44ed2f5b0843b"><td class="mdescLeft">&#160;</td><td class="mdescRight">全パターンの目標速度[km/h]  <a href="#aacab85cf3b1ebd90e0e44ed2f5b0843b">[詳解]</a><br/></td></tr>
+<tr class="separator:aacab85cf3b1ebd90e0e44ed2f5b0843b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e36d93bfa08525994281ab67fdf83d"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a71e36d93bfa08525994281ab67fdf83d">pattern_arrow_spd_list_</a></td></tr>
+<tr class="memdesc:a71e36d93bfa08525994281ab67fdf83d"><td class="mdescLeft">&#160;</td><td class="mdescRight">全パターンのパターン照査速度[km/h]  <a href="#a71e36d93bfa08525994281ab67fdf83d">[詳解]</a><br/></td></tr>
+<tr class="separator:a71e36d93bfa08525994281ab67fdf83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a3d24ed60a7b983d582d9c349a3603"><td class="memItemLeft" align="right" valign="top">double[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#ad1a3d24ed60a7b983d582d9c349a3603">pattern_start_loc_list_</a></td></tr>
+<tr class="memdesc:ad1a3d24ed60a7b983d582d9c349a3603"><td class="mdescLeft">&#160;</td><td class="mdescRight">全パターンのパターン降下開始地点[m]  <a href="#ad1a3d24ed60a7b983d582d9c349a3603">[詳解]</a><br/></td></tr>
+<tr class="separator:ad1a3d24ed60a7b983d582d9c349a3603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c6e1a6fe3fbbfab3e9e0ca406ece64"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a47c6e1a6fe3fbbfab3e9e0ca406ece64">debug_timer_</a></td></tr>
+<tr class="memdesc:a47c6e1a6fe3fbbfab3e9e0ca406ece64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug出力する次のゲーム内時刻[ms].  <a href="#a47c6e1a6fe3fbbfab3e9e0ca406ece64">[詳解]</a><br/></td></tr>
+<tr class="separator:a47c6e1a6fe3fbbfab3e9e0ca406ece64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c4bc17b9dd329b497c6318f566c125"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a64c4bc17b9dd329b497c6318f566c125">brake_timer_</a></td></tr>
+<tr class="memdesc:a64c4bc17b9dd329b497c6318f566c125"><td class="mdescLeft">&#160;</td><td class="mdescRight">ブレーキノッチを変更する次のゲーム内時刻[ms]  <a href="#a64c4bc17b9dd329b497c6318f566c125">[詳解]</a><br/></td></tr>
+<tr class="separator:a64c4bc17b9dd329b497c6318f566c125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96b8f8abbf779de9eec8549f292687ef"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a96b8f8abbf779de9eec8549f292687ef">max_deceleration_</a></td></tr>
+<tr class="memdesc:a96b8f8abbf779de9eec8549f292687ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">常用最大減速度[km/h/s]  <a href="#a96b8f8abbf779de9eec8549f292687ef">[詳解]</a><br/></td></tr>
+<tr class="separator:a96b8f8abbf779de9eec8549f292687ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacc7e31d181a2d68bb617e4596fcc725"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#aacc7e31d181a2d68bb617e4596fcc725">atc_power_</a></td></tr>
+<tr class="memdesc:aacc7e31d181a2d68bb617e4596fcc725"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATC電源(0: 消灯, 1: 点灯)  <a href="#aacc7e31d181a2d68bb617e4596fcc725">[詳解]</a><br/></td></tr>
+<tr class="separator:aacc7e31d181a2d68bb617e4596fcc725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc31bd5d0466b63d5f8a2f4f1e5402f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#abbc31bd5d0466b63d5f8a2f4f1e5402f">atc_use_</a></td></tr>
+<tr class="memdesc:abbc31bd5d0466b63d5f8a2f4f1e5402f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATC(0: 消灯, 1: 点灯)  <a href="#abbc31bd5d0466b63d5f8a2f4f1e5402f">[詳解]</a><br/></td></tr>
+<tr class="separator:abbc31bd5d0466b63d5f8a2f4f1e5402f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf61e2ff220520c216c538a47d7b2b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a5bf61e2ff220520c216c538a47d7b2b6">atc_type_</a></td></tr>
+<tr class="memdesc:a5bf61e2ff220520c216c538a47d7b2b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATC方式(0: ATC-1, 1: ATC-2, 2: ATC-NS, 3: KS-ATC, 4: DS-ATC)  <a href="#a5bf61e2ff220520c216c538a47d7b2b6">[詳解]</a><br/></td></tr>
+<tr class="separator:a5bf61e2ff220520c216c538a47d7b2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9301212bc2a93c7bec7d157e7f27d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#afa9301212bc2a93c7bec7d157e7f27d2">atc_max_spd_</a></td></tr>
+<tr class="memdesc:afa9301212bc2a93c7bec7d157e7f27d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">車両ATC最高速度[km/h]  <a href="#afa9301212bc2a93c7bec7d157e7f27d2">[詳解]</a><br/></td></tr>
+<tr class="separator:afa9301212bc2a93c7bec7d157e7f27d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac333fcf4667a641d5a1b237c0af342"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#adac333fcf4667a641d5a1b237c0af342">atc_spd_list_</a></td></tr>
+<tr class="memdesc:adac333fcf4667a641d5a1b237c0af342"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号インデックスに対応する速度[km/h]  <a href="#adac333fcf4667a641d5a1b237c0af342">[詳解]</a><br/></td></tr>
+<tr class="separator:adac333fcf4667a641d5a1b237c0af342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad4e2112c4f9486bb0936827a9e87340"><td class="memItemLeft" align="right" valign="top">double[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#aad4e2112c4f9486bb0936827a9e87340">atc_deceleration_</a></td></tr>
+<tr class="memdesc:aad4e2112c4f9486bb0936827a9e87340"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATCブレーキ減速度[km/h/s].  <a href="#aad4e2112c4f9486bb0936827a9e87340">[詳解]</a><br/></td></tr>
+<tr class="separator:aad4e2112c4f9486bb0936827a9e87340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379702033c40ea73ed3a8bc2558a1b10"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a379702033c40ea73ed3a8bc2558a1b10">atc_reset_sw_</a></td></tr>
+<tr class="memdesc:a379702033c40ea73ed3a8bc2558a1b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">確認ボタンの状態(0: 解放, 1: 押下)  <a href="#a379702033c40ea73ed3a8bc2558a1b10">[詳解]</a><br/></td></tr>
+<tr class="separator:a379702033c40ea73ed3a8bc2558a1b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64705ce71883ddebcad973001f556db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#ae64705ce71883ddebcad973001f556db">atc_red_signal_</a></td></tr>
+<tr class="memdesc:ae64705ce71883ddebcad973001f556db"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止現示(0: 消灯, 1: 点灯)  <a href="#ae64705ce71883ddebcad973001f556db">[詳解]</a><br/></td></tr>
+<tr class="separator:ae64705ce71883ddebcad973001f556db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bb2dc561a48b7e4cd136029aeadd444"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a5bb2dc561a48b7e4cd136029aeadd444">atc_green_signal_</a></td></tr>
+<tr class="memdesc:a5bb2dc561a48b7e4cd136029aeadd444"><td class="mdescLeft">&#160;</td><td class="mdescRight">進行現示(0: 消灯, 1: 点灯)  <a href="#a5bb2dc561a48b7e4cd136029aeadd444">[詳解]</a><br/></td></tr>
+<tr class="separator:a5bb2dc561a48b7e4cd136029aeadd444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a119e55633c09998beef896e204b60c3e"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a119e55633c09998beef896e204b60c3e">atc_sig_indicator_</a></td></tr>
+<tr class="memdesc:a119e55633c09998beef896e204b60c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATC速度表示インジケータ(0: 消灯, 1: 点灯)  <a href="#a119e55633c09998beef896e204b60c3e">[詳解]</a><br/></td></tr>
+<tr class="separator:a119e55633c09998beef896e204b60c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba1e2ae7192ac129605acf0e5c8815b0"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#aba1e2ae7192ac129605acf0e5c8815b0">atc_spd_7seg_</a></td></tr>
+<tr class="memdesc:aba1e2ae7192ac129605acf0e5c8815b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">7セグ用ATC速度表示  <a href="#aba1e2ae7192ac129605acf0e5c8815b0">[詳解]</a><br/></td></tr>
+<tr class="separator:aba1e2ae7192ac129605acf0e5c8815b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e9579dee8ecc05e71fdf531d9d716f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a54e9579dee8ecc05e71fdf531d9d716f">atc_signal_index_</a></td></tr>
+<tr class="memdesc:a54e9579dee8ecc05e71fdf531d9d716f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATC速度に対応する信号インデックス  <a href="#a54e9579dee8ecc05e71fdf531d9d716f">[詳解]</a><br/></td></tr>
+<tr class="separator:a54e9579dee8ecc05e71fdf531d9d716f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07fea663ae3fe80e5574d6965f53ca53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a07fea663ae3fe80e5574d6965f53ca53">atc_spd_</a></td></tr>
+<tr class="memdesc:a07fea663ae3fe80e5574d6965f53ca53"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATC速度[km/h].  <a href="#a07fea663ae3fe80e5574d6965f53ca53">[詳解]</a><br/></td></tr>
+<tr class="separator:a07fea663ae3fe80e5574d6965f53ca53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90e91ad92a330853ddc4c85dcb96d4a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a90e91ad92a330853ddc4c85dcb96d4a4">dsatc_arrow_spd_</a></td></tr>
+<tr class="memdesc:a90e91ad92a330853ddc4c85dcb96d4a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">DS-ATC用パターン照査速度[km/h].  <a href="#a90e91ad92a330853ddc4c85dcb96d4a4">[詳解]</a><br/></td></tr>
+<tr class="separator:a90e91ad92a330853ddc4c85dcb96d4a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5217e0b9270a69461acb4e1be2505a6"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#ad5217e0b9270a69461acb4e1be2505a6">sub_spd_label_1_</a></td></tr>
+<tr class="memdesc:ad5217e0b9270a69461acb4e1be2505a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">副速度計用目盛 ATC速度-20 km/h  <a href="#ad5217e0b9270a69461acb4e1be2505a6">[詳解]</a><br/></td></tr>
+<tr class="separator:ad5217e0b9270a69461acb4e1be2505a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2882e719e807f9bb3c40b31dd77f9d3b"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a2882e719e807f9bb3c40b31dd77f9d3b">sub_spd_label_2_</a></td></tr>
+<tr class="memdesc:a2882e719e807f9bb3c40b31dd77f9d3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">副速度計用目盛 ATC速度-10 km/h  <a href="#a2882e719e807f9bb3c40b31dd77f9d3b">[詳解]</a><br/></td></tr>
+<tr class="separator:a2882e719e807f9bb3c40b31dd77f9d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea10599514b3daf9cf951e22947e4eee"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#aea10599514b3daf9cf951e22947e4eee">sub_spd_label_3_</a></td></tr>
+<tr class="memdesc:aea10599514b3daf9cf951e22947e4eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">副速度計用目盛 ATC速度  <a href="#aea10599514b3daf9cf951e22947e4eee">[詳解]</a><br/></td></tr>
+<tr class="separator:aea10599514b3daf9cf951e22947e4eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2d45f4c77d1d27529d8e42acd41b8f3"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#aa2d45f4c77d1d27529d8e42acd41b8f3">sub_spd_label_4_</a></td></tr>
+<tr class="memdesc:aa2d45f4c77d1d27529d8e42acd41b8f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">副速度計用目盛 ATC速度+10 km/h  <a href="#aa2d45f4c77d1d27529d8e42acd41b8f3">[詳解]</a><br/></td></tr>
+<tr class="separator:aa2d45f4c77d1d27529d8e42acd41b8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e45d2cdc670aa35dd066e860d51d72"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a66e45d2cdc670aa35dd066e860d51d72">sub_atc_spd_</a></td></tr>
+<tr class="memdesc:a66e45d2cdc670aa35dd066e860d51d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">副速度計用 ATC速度[km/h]  <a href="#a66e45d2cdc670aa35dd066e860d51d72">[詳解]</a><br/></td></tr>
+<tr class="separator:a66e45d2cdc670aa35dd066e860d51d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98b219644b158081ce30ba104ddf84bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a98b219644b158081ce30ba104ddf84bd">sub_train_spd_</a></td></tr>
+<tr class="memdesc:a98b219644b158081ce30ba104ddf84bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">副速度計用 列車速度[km/h]  <a href="#a98b219644b158081ce30ba104ddf84bd">[詳解]</a><br/></td></tr>
+<tr class="separator:a98b219644b158081ce30ba104ddf84bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82108c526bcb7382271002bfb20c58ef"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a82108c526bcb7382271002bfb20c58ef">lever_delay_</a></td></tr>
+<tr class="memdesc:a82108c526bcb7382271002bfb20c58ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">ブレーキハンドルの操作から指令出力までの遅れ時間[s]  <a href="#a82108c526bcb7382271002bfb20c58ef">[詳解]</a><br/></td></tr>
+<tr class="separator:a82108c526bcb7382271002bfb20c58ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633b18668b3207fba15365248f2dc3c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a633b18668b3207fba15365248f2dc3c8">atc_eb_lamp_</a></td></tr>
+<tr class="memdesc:a633b18668b3207fba15365248f2dc3c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATC非常(0: 消灯, 1: 点灯)  <a href="#a633b18668b3207fba15365248f2dc3c8">[詳解]</a><br/></td></tr>
+<tr class="separator:a633b18668b3207fba15365248f2dc3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa8a17af70b9e2d627966776592bd7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a9fa8a17af70b9e2d627966776592bd7e">atc_svc_lamp_</a></td></tr>
+<tr class="memdesc:a9fa8a17af70b9e2d627966776592bd7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATC常用(0: 消灯, 1: 点灯)  <a href="#a9fa8a17af70b9e2d627966776592bd7e">[詳解]</a><br/></td></tr>
+<tr class="separator:a9fa8a17af70b9e2d627966776592bd7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02f10509f9daf0aaaaefce290930c43"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#af02f10509f9daf0aaaaefce290930c43">Xe</a></td></tr>
+<tr class="memdesc:af02f10509f9daf0aaaaefce290930c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">減速完了地点からの許容誤差[m]  <a href="#af02f10509f9daf0aaaaefce290930c43">[詳解]</a><br/></td></tr>
+<tr class="separator:af02f10509f9daf0aaaaefce290930c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae941c61ddd12786f8425b435f3719978"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#ae941c61ddd12786f8425b435f3719978">Xo</a></td></tr>
+<tr class="memdesc:ae941c61ddd12786f8425b435f3719978"><td class="mdescLeft">&#160;</td><td class="mdescRight">減速完了地点からの過走限界距離[m]  <a href="#ae941c61ddd12786f8425b435f3719978">[詳解]</a><br/></td></tr>
+<tr class="separator:ae941c61ddd12786f8425b435f3719978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95db20758001db06272589de52e363f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#aa95db20758001db06272589de52e363f">Xk</a></td></tr>
+<tr class="memdesc:aa95db20758001db06272589de52e363f"><td class="mdescLeft">&#160;</td><td class="mdescRight">XeおよびXoを高速域で拡大させる係数  <a href="#aa95db20758001db06272589de52e363f">[詳解]</a><br/></td></tr>
+<tr class="separator:aa95db20758001db06272589de52e363f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66cedd5e09d680262a5506c1c5de12b9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a66cedd5e09d680262a5506c1c5de12b9">train_spd_</a></td></tr>
+<tr class="memdesc:a66cedd5e09d680262a5506c1c5de12b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">列車速度[km/h]  <a href="#a66cedd5e09d680262a5506c1c5de12b9">[詳解]</a><br/></td></tr>
+<tr class="separator:a66cedd5e09d680262a5506c1c5de12b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e4a0d9ab59dbe6f64aba3a2a651877"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#ad4e4a0d9ab59dbe6f64aba3a2a651877">time_</a></td></tr>
+<tr class="memdesc:ad4e4a0d9ab59dbe6f64aba3a2a651877"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲーム内時刻[ms]  <a href="#ad4e4a0d9ab59dbe6f64aba3a2a651877">[詳解]</a><br/></td></tr>
+<tr class="separator:ad4e4a0d9ab59dbe6f64aba3a2a651877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e417d2c95f5f66db8ec24bf4f4cdd8b"><td class="memItemLeft" align="right" valign="top">List&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a3e417d2c95f5f66db8ec24bf4f4cdd8b">beacon_type_</a></td></tr>
+<tr class="memdesc:a3e417d2c95f5f66db8ec24bf4f4cdd8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">地上子種別  <a href="#a3e417d2c95f5f66db8ec24bf4f4cdd8b">[詳解]</a><br/></td></tr>
+<tr class="separator:a3e417d2c95f5f66db8ec24bf4f4cdd8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a212af1aabf1e6fd8a61ce2febffc737f"><td class="memItemLeft" align="right" valign="top">List&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a212af1aabf1e6fd8a61ce2febffc737f">beacon_sig_</a></td></tr>
+<tr class="memdesc:a212af1aabf1e6fd8a61ce2febffc737f"><td class="mdescLeft">&#160;</td><td class="mdescRight">対となるセクションの信号  <a href="#a212af1aabf1e6fd8a61ce2febffc737f">[詳解]</a><br/></td></tr>
+<tr class="separator:a212af1aabf1e6fd8a61ce2febffc737f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9bedf89153d1948797cc34c14811baa"><td class="memItemLeft" align="right" valign="top">List&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#af9bedf89153d1948797cc34c14811baa">beacon_dist_</a></td></tr>
+<tr class="memdesc:af9bedf89153d1948797cc34c14811baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">対となるセクションまでの距離[m]  <a href="#af9bedf89153d1948797cc34c14811baa">[詳解]</a><br/></td></tr>
+<tr class="separator:af9bedf89153d1948797cc34c14811baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f3b4c142a52a539181aeae9e4e142da"><td class="memItemLeft" align="right" valign="top">List&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc.html#a5f3b4c142a52a539181aeae9e4e142da">beacon_opt_</a></td></tr>
+<tr class="memdesc:a5f3b4c142a52a539181aeae9e4e142da"><td class="mdescLeft">&#160;</td><td class="mdescRight">地上子に設定された任意の値  <a href="#a5f3b4c142a52a539181aeae9e4e142da">[詳解]</a><br/></td></tr>
+<tr class="separator:a5f3b4c142a52a539181aeae9e4e142da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>ATC-1, ATC-2, ATC-NS, KS-ATC, DS-ATCを再現するクラス </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a class="anchor" id="a836ec58be40b0b26b9901393e8d61ffa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ATCFS.Atc.Atc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_t_c_f_s_1_1_train.html">Train</a>&#160;</td>
+          <td class="paramname"><em>train</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>新しいインスタンスを作成する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">train</td><td>Trainクラスのインスタンス</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a class="anchor" id="ab6e8b29ce45c5e55e4126548f84abfc5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.BrakeExeA </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アナログATC用のブレーキノッチを出力する関数 </p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_ab6e8b29ce45c5e55e4126548f84abfc5_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_ab6e8b29ce45c5e55e4126548f84abfc5_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_ab6e8b29ce45c5e55e4126548f84abfc5_cgraph" id="class_a_t_c_f_s_1_1_atc_ab6e8b29ce45c5e55e4126548f84abfc5_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a2779448d6e34bdefe0efcfc845c4e0ce" title="信号インデックスを速度に変換する関数 " alt="" coords="251,5,370,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a74f9a49762a5bb494285136a23dd88aa" title="予見Fuzzy制御ではないブレーキノッチを出力する関数 " alt="" coords="213,56,408,83"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_ab6e8b29ce45c5e55e4126548f84abfc5_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_ab6e8b29ce45c5e55e4126548f84abfc5_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_ab6e8b29ce45c5e55e4126548f84abfc5_icgraph" id="class_a_t_c_f_s_1_1_atc_ab6e8b29ce45c5e55e4126548f84abfc5_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="214,5,349,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c28a83a33b17c0c4b222fa8178d6dc3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.BrakeExeD </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デジタルATC用のブレーキノッチを出力する関数 </p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a9c28a83a33b17c0c4b222fa8178d6dc3_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a9c28a83a33b17c0c4b222fa8178d6dc3_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a9c28a83a33b17c0c4b222fa8178d6dc3_cgraph" id="class_a_t_c_f_s_1_1_atc_a9c28a83a33b17c0c4b222fa8178d6dc3_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a3943dbf015842beacf34535b6ecd9893" title="全パターンに対する最大の最適ブレーキノッチを出力する関数 " alt="" coords="216,5,381,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a16a6fdabf7c0f79c430670289eb5a27b" title="パターンに対する最適ブレーキノッチを出力する関数 " alt="" coords="429,5,584,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a9c28a83a33b17c0c4b222fa8178d6dc3_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a9c28a83a33b17c0c4b222fa8178d6dc3_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a9c28a83a33b17c0c4b222fa8178d6dc3_icgraph" id="class_a_t_c_f_s_1_1_atc_a9c28a83a33b17c0c4b222fa8178d6dc3_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="217,5,351,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a16a6fdabf7c0f79c430670289eb5a27b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.CalcBrake </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tget_spd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pattern_start_loc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pattern_end_loc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パターンに対する最適ブレーキノッチを出力する関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>パターン番号</td></tr>
+    <tr><td class="paramname">tget_spd</td><td>目標速度[km/h]</td></tr>
+    <tr><td class="paramname">pattern_start_loc</td><td>パターン降下開始地点[m]</td></tr>
+    <tr><td class="paramname">pattern_end_loc</td><td>減速完了地点[m]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>最適ブレーキノッチ</dd></dl>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a16a6fdabf7c0f79c430670289eb5a27b_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a16a6fdabf7c0f79c430670289eb5a27b_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a16a6fdabf7c0f79c430670289eb5a27b_icgraph" id="class_a_t_c_f_s_1_1_atc_a16a6fdabf7c0f79c430670289eb5a27b_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a3943dbf015842beacf34535b6ecd9893" title="全パターンに対する最大の最適ブレーキノッチを出力する関数 " alt="" coords="208,5,373,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a9c28a83a33b17c0c4b222fa8178d6dc3" title="デジタルATC用のブレーキノッチを出力する関数 " alt="" coords="422,5,583,32"/><area shape="rect" id="node4" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="633,5,767,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abb3d4416df0ad11b2b0bde312bcf5b9b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.CalcPattern </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>各パターン情報からパターン照査速度およびパターン降下開始地点を算出する関数 </p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_abb3d4416df0ad11b2b0bde312bcf5b9b_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_abb3d4416df0ad11b2b0bde312bcf5b9b_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_abb3d4416df0ad11b2b0bde312bcf5b9b_cgraph" id="class_a_t_c_f_s_1_1_atc_abb3d4416df0ad11b2b0bde312bcf5b9b_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a2d6d2eb23a45b3ab8ae45227b86b2dc3" title="パターンが無効の場合に目標速度を車両ATC最高速度に修正する関数 " alt="" coords="227,5,392,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a0de62ea15575034d0a0b4ed89225606c" title="パターン照査速度を算出する関数 " alt="" coords="216,56,403,83"/><area shape="rect" id="node5" href="class_a_t_c_f_s_1_1_atc.html#afa1cc9d4b37a7d65b9b9c580197983bb" title="パターン降下開始地点を算出する関数 " alt="" coords="217,107,401,133"/><area shape="rect" id="node4" href="class_a_t_c_f_s_1_1_atc.html#a2ac5f5a371f3ddca87794e2167481024" title="距離に対応する速度を返す関数 " alt="" coords="451,56,629,83"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_abb3d4416df0ad11b2b0bde312bcf5b9b_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_abb3d4416df0ad11b2b0bde312bcf5b9b_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_abb3d4416df0ad11b2b0bde312bcf5b9b_icgraph" id="class_a_t_c_f_s_1_1_atc_abb3d4416df0ad11b2b0bde312bcf5b9b_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="217,5,351,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afa1cc9d4b37a7d65b9b9c580197983bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ATCFS.Atc.CalcPatternLoc </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tget_spd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pattern_end_loc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pattern_status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パターン降下開始地点を算出する関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tget_spd</td><td>目標速度[km/h]</td></tr>
+    <tr><td class="paramname">pattern_end_loc</td><td>減速完了地点[m]</td></tr>
+    <tr><td class="paramname">pattern_status</td><td>パターン状態(0: 無効, 1: 有効)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>パターン降下開始地点[m]</dd></dl>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_afa1cc9d4b37a7d65b9b9c580197983bb_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_afa1cc9d4b37a7d65b9b9c580197983bb_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_afa1cc9d4b37a7d65b9b9c580197983bb_icgraph" id="class_a_t_c_f_s_1_1_atc_afa1cc9d4b37a7d65b9b9c580197983bb_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#abb3d4416df0ad11b2b0bde312bcf5b9b" title="各パターン情報からパターン照査速度およびパターン降下開始地点を算出する関数 " alt="" coords="237,5,400,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="449,5,583,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0de62ea15575034d0a0b4ed89225606c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.CalcPatternSpd </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tget_spd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pattern_end_loc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パターン照査速度を算出する関数 </p>
+<p>減速完了地点内方は目標速度のフラットパターンとなる</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tget_spd</td><td>目標速度[km/h]</td></tr>
+    <tr><td class="paramname">pattern_end_loc</td><td>減速完了地点[m]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>パターン照査速度[km/h]</dd></dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a0de62ea15575034d0a0b4ed89225606c_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a0de62ea15575034d0a0b4ed89225606c_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a0de62ea15575034d0a0b4ed89225606c_cgraph" id="class_a_t_c_f_s_1_1_atc_a0de62ea15575034d0a0b4ed89225606c_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a2ac5f5a371f3ddca87794e2167481024" title="距離に対応する速度を返す関数 " alt="" coords="241,5,418,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a0de62ea15575034d0a0b4ed89225606c_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a0de62ea15575034d0a0b4ed89225606c_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a0de62ea15575034d0a0b4ed89225606c_icgraph" id="class_a_t_c_f_s_1_1_atc_a0de62ea15575034d0a0b4ed89225606c_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#abb3d4416df0ad11b2b0bde312bcf5b9b" title="各パターン情報からパターン照査速度およびパターン降下開始地点を算出する関数 " alt="" coords="240,5,403,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="451,5,586,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a230855b9d6ceab06efbc58a0c2e01113"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.ChangedArrowSig </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デジタルATC用車内信号を生成する関数 </p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a230855b9d6ceab06efbc58a0c2e01113_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a230855b9d6ceab06efbc58a0c2e01113_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a230855b9d6ceab06efbc58a0c2e01113_cgraph" id="class_a_t_c_f_s_1_1_atc_a230855b9d6ceab06efbc58a0c2e01113_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a756907f325c585f95f360d7f8d58131e" title="速度に対応する信号インデックスを返す関数 " alt="" coords="253,5,424,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a2779448d6e34bdefe0efcfc845c4e0ce" title="信号インデックスを速度に変換する関数 " alt="" coords="279,56,398,83"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a230855b9d6ceab06efbc58a0c2e01113_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a230855b9d6ceab06efbc58a0c2e01113_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a230855b9d6ceab06efbc58a0c2e01113_icgraph" id="class_a_t_c_f_s_1_1_atc_a230855b9d6ceab06efbc58a0c2e01113_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="254,5,389,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a248755fc489fc8a8ef5d563dc87d8164"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.ChangedAtcType </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>atc_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATC方式を切り替える関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">atc_type</td><td>ATC方式</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a248755fc489fc8a8ef5d563dc87d8164_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a248755fc489fc8a8ef5d563dc87d8164_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a248755fc489fc8a8ef5d563dc87d8164_icgraph" id="class_a_t_c_f_s_1_1_atc_a248755fc489fc8a8ef5d563dc87d8164_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a153b74b73a096bc553fe7bc9db1696c7" title="SetBeaconDataで実行される関数 " alt="" coords="249,5,431,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a162f5132e2d5b5cb960fa9c1a369dd52"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.ChangedSignal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>signal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SetSignalで実行される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signal</td><td>現在のセクションの信号番号</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a162f5132e2d5b5cb960fa9c1a369dd52_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a162f5132e2d5b5cb960fa9c1a369dd52_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a162f5132e2d5b5cb960fa9c1a369dd52_icgraph" id="class_a_t_c_f_s_1_1_atc_a162f5132e2d5b5cb960fa9c1a369dd52_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#af4c04d4fc899b20f46cda44012a855ea" title="現在の閉塞の信号が変化したときに呼び出される関数 " alt="" coords="238,5,389,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a97884941052bdd5c3bca2c909766d4bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.CollectPattern </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パターン情報を集約する関数 </p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a97884941052bdd5c3bca2c909766d4bc_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a97884941052bdd5c3bca2c909766d4bc_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a97884941052bdd5c3bca2c909766d4bc_icgraph" id="class_a_t_c_f_s_1_1_atc_a97884941052bdd5c3bca2c909766d4bc_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="233,5,367,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c3ffb8f8b19ced89089303ca4c73624"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.DisplaySpd </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>spd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int[]&#160;</td>
+          <td class="paramname"><em>display_spd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>速度を7セグに表示する関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spd</td><td>速度[km/h]</td></tr>
+    <tr><td class="paramname">display_spd</td><td>速度を表示する配列</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a4c3ffb8f8b19ced89089303ca4c73624_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a4c3ffb8f8b19ced89089303ca4c73624_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a4c3ffb8f8b19ced89089303ca4c73624_icgraph" id="class_a_t_c_f_s_1_1_atc_a4c3ffb8f8b19ced89089303ca4c73624_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a8457c978e07b75016468b67956fb6a92" title="アナログATC用インジケーターの表示を実行する関数 " alt="" coords="217,5,394,32"/><area shape="rect" id="node5" href="class_a_t_c_f_s_1_1_atc.html#aeb667232faba671bd6a9e4414824a091" title="デジタルATC用インジケーターの表示を実行する関数 " alt="" coords="216,56,395,83"/><area shape="rect" id="node6" href="class_a_t_c_f_s_1_1_atc.html#ae52e25ab2e9982a8272da503158168f1" title="副速度計の表示を実行する関数 " alt="" coords="443,107,653,133"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#abfb6c3e51b8d20329c13567f5db920d0" title="インジケーターの表示を実行する関数 " alt="" coords="464,56,632,83"/><area shape="rect" id="node4" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="702,81,837,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f80884a0a65088f75f589d0986ff02b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Atc.Elapse </td>
+          <td>(</td>
+          <td class="paramtype">ElapseData&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref bool&#160;</td>
+          <td class="paramname"><em>blocking</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>1フレームごとに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The data.</td></tr>
+    <tr><td class="paramname">blocking</td><td>保安装置がブロックされているか、後続の保安装置をブロックするかどうか。</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#ac2ee081f2aa6906f6b3d11cbccaa2d9d">ATCFS.Device</a>を実装しています。</p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a4f80884a0a65088f75f589d0986ff02b_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a4f80884a0a65088f75f589d0986ff02b_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a4f80884a0a65088f75f589d0986ff02b_cgraph" id="class_a_t_c_f_s_1_1_atc_a4f80884a0a65088f75f589d0986ff02b_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#ae5a4455f811446b4a7c7ffd820dbdca5" title="SetBeaconDataの実行タイミングを制御するための関数 " alt="" coords="198,5,381,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#ab6e8b29ce45c5e55e4126548f84abfc5" title="アナログATC用のブレーキノッチを出力する関数 " alt="" coords="209,157,369,184"/><area shape="rect" id="node4" href="class_a_t_c_f_s_1_1_atc.html#a2779448d6e34bdefe0efcfc845c4e0ce" title="信号インデックスを速度に変換する関数 " alt="" coords="726,157,845,184"/><area shape="rect" id="node6" href="class_a_t_c_f_s_1_1_atc.html#a97884941052bdd5c3bca2c909766d4bc" title="パターン情報を集約する関数 " alt="" coords="201,411,378,437"/><area shape="rect" id="node7" href="class_a_t_c_f_s_1_1_atc.html#abb3d4416df0ad11b2b0bde312bcf5b9b" title="各パターン情報からパターン照査速度およびパターン降下開始地点を算出する関数 " alt="" coords="208,461,371,488"/><area shape="rect" id="node12" href="class_a_t_c_f_s_1_1_atc.html#a230855b9d6ceab06efbc58a0c2e01113" title="デジタルATC用車内信号を生成する関数 " alt="" coords="190,259,389,285"/><area shape="rect" id="node14" href="class_a_t_c_f_s_1_1_atc.html#a9c28a83a33b17c0c4b222fa8178d6dc3" title="デジタルATC用のブレーキノッチを出力する関数 " alt="" coords="209,512,370,539"/><area shape="rect" id="node17" href="class_a_t_c_f_s_1_1_atc.html#aef050fdcb53a0f13071cd92f99ee687a" title="インジケーターの表示を初期化する関数 " alt="" coords="200,563,379,589"/><area shape="rect" id="node18" href="class_a_t_c_f_s_1_1_atc.html#abfb6c3e51b8d20329c13567f5db920d0" title="インジケーターの表示を実行する関数 " alt="" coords="205,309,373,336"/><area shape="rect" id="node22" href="class_a_t_c_f_s_1_1_atc.html#ae52e25ab2e9982a8272da503158168f1" title="副速度計の表示を実行する関数 " alt="" coords="437,411,648,437"/><area shape="rect" id="node5" href="class_a_t_c_f_s_1_1_atc.html#a74f9a49762a5bb494285136a23dd88aa" title="予見Fuzzy制御ではないブレーキノッチを出力する関数 " alt="" coords="445,157,640,184"/><area shape="rect" id="node8" href="class_a_t_c_f_s_1_1_atc.html#a2d6d2eb23a45b3ab8ae45227b86b2dc3" title="パターンが無効の場合に目標速度を車両ATC最高速度に修正する関数 " alt="" coords="460,461,625,488"/><area shape="rect" id="node9" href="class_a_t_c_f_s_1_1_atc.html#a0de62ea15575034d0a0b4ed89225606c" title="パターン照査速度を算出する関数 " alt="" coords="449,512,636,539"/><area shape="rect" id="node11" href="class_a_t_c_f_s_1_1_atc.html#afa1cc9d4b37a7d65b9b9c580197983bb" title="パターン降下開始地点を算出する関数 " alt="" coords="451,563,635,589"/><area shape="rect" id="node10" href="class_a_t_c_f_s_1_1_atc.html#a2ac5f5a371f3ddca87794e2167481024" title="距離に対応する速度を返す関数 " alt="" coords="697,512,874,539"/><area shape="rect" id="node13" href="class_a_t_c_f_s_1_1_atc.html#a756907f325c585f95f360d7f8d58131e" title="速度に対応する信号インデックスを返す関数 " alt="" coords="457,259,628,285"/><area shape="rect" id="node15" href="class_a_t_c_f_s_1_1_atc.html#a3943dbf015842beacf34535b6ecd9893" title="全パターンに対する最大の最適ブレーキノッチを出力する関数 " alt="" coords="460,613,625,640"/><area shape="rect" id="node16" href="class_a_t_c_f_s_1_1_atc.html#a16a6fdabf7c0f79c430670289eb5a27b" title="パターンに対する最適ブレーキノッチを出力する関数 " alt="" coords="708,613,863,640"/><area shape="rect" id="node19" href="class_a_t_c_f_s_1_1_atc.html#a8457c978e07b75016468b67956fb6a92" title="アナログATC用インジケーターの表示を実行する関数 " alt="" coords="454,309,631,336"/><area shape="rect" id="node21" href="class_a_t_c_f_s_1_1_atc.html#aeb667232faba671bd6a9e4414824a091" title="デジタルATC用インジケーターの表示を実行する関数 " alt="" coords="453,360,632,387"/><area shape="rect" id="node20" href="class_a_t_c_f_s_1_1_atc.html#a4c3ffb8f8b19ced89089303ca4c73624" title="速度を7セグに表示する関数 " alt="" coords="705,360,866,387"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2608515c69a05934ddaebc5f48378754"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.Exit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATCを遮断する際に実行する関数 </p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a2608515c69a05934ddaebc5f48378754_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a2608515c69a05934ddaebc5f48378754_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a2608515c69a05934ddaebc5f48378754_cgraph" id="class_a_t_c_f_s_1_1_atc_a2608515c69a05934ddaebc5f48378754_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a3500abc408fbdca7322b308eaee4c667" title="ゲーム開始時に呼び出される関数 " alt="" coords="171,31,314,57"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a756907f325c585f95f360d7f8d58131e" title="速度に対応する信号インデックスを返す関数 " alt="" coords="367,5,537,32"/><area shape="rect" id="node4" href="class_a_t_c_f_s_1_1_atc.html#a710ee4d717f500af61fc102b5edeafb2" title="デジタルATC用速度照査パターンを作成する関数 " alt="" coords="363,56,541,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a57338cf7ae8991d7b826b71104863935"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Atc.HornBlow </td>
+          <td>(</td>
+          <td class="paramtype">HornTypes&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>警笛が扱われたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>警笛のタイプ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#a883d905fb712d202fff4b7b1faa13cc2">ATCFS.Device</a>を実装しています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3500abc408fbdca7322b308eaee4c667"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Atc.Initialize </td>
+          <td>(</td>
+          <td class="paramtype">InitializationModes&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ゲーム開始時に呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>初期化モード</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#adf16b139b50fae039518a4c902c62e99">ATCFS.Device</a>を実装しています。</p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a3500abc408fbdca7322b308eaee4c667_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a3500abc408fbdca7322b308eaee4c667_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a3500abc408fbdca7322b308eaee4c667_cgraph" id="class_a_t_c_f_s_1_1_atc_a3500abc408fbdca7322b308eaee4c667_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a756907f325c585f95f360d7f8d58131e" title="速度に対応する信号インデックスを返す関数 " alt="" coords="201,5,372,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a710ee4d717f500af61fc102b5edeafb2" title="デジタルATC用速度照査パターンを作成する関数 " alt="" coords="198,56,375,83"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a3500abc408fbdca7322b308eaee4c667_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a3500abc408fbdca7322b308eaee4c667_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a3500abc408fbdca7322b308eaee4c667_icgraph" id="class_a_t_c_f_s_1_1_atc_a3500abc408fbdca7322b308eaee4c667_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a295cfa832374794738329878d62831eb" title="ATCを投入する際に実行する関数 " alt="" coords="197,5,320,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a2608515c69a05934ddaebc5f48378754" title="ATCを遮断する際に実行する関数 " alt="" coords="200,56,317,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2779448d6e34bdefe0efcfc845c4e0ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.ItoV </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>信号インデックスを速度に変換する関数 </p>
+<p>ATC-1のみ220km/h以上300km/h未満は"対応速度+5km/h"、300km/h以上は"対応速度+3km/h"を返す</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>信号インデックス</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>信号インデックスに対応する速度[km/h]</dd></dl>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a2779448d6e34bdefe0efcfc845c4e0ce_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a2779448d6e34bdefe0efcfc845c4e0ce_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a2779448d6e34bdefe0efcfc845c4e0ce_icgraph" id="class_a_t_c_f_s_1_1_atc_a2779448d6e34bdefe0efcfc845c4e0ce_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a230855b9d6ceab06efbc58a0c2e01113" title="デジタルATC用車内信号を生成する関数 " alt="" coords="401,5,599,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="649,81,783,108"/><area shape="rect" id="node4" href="class_a_t_c_f_s_1_1_atc.html#ab6e8b29ce45c5e55e4126548f84abfc5" title="アナログATC用のブレーキノッチを出力する関数 " alt="" coords="183,107,343,133"/><area shape="rect" id="node5" href="class_a_t_c_f_s_1_1_atc.html#a8457c978e07b75016468b67956fb6a92" title="アナログATC用インジケーターの表示を実行する関数 " alt="" coords="174,157,351,184"/><area shape="rect" id="node6" href="class_a_t_c_f_s_1_1_atc.html#abfb6c3e51b8d20329c13567f5db920d0" title="インジケーターの表示を実行する関数 " alt="" coords="416,157,584,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ace2b9ae8515429c56994ff2495f4116f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.ItoV </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_display</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>信号インデックスを速度に変換する関数 </p>
+<p><em>is_display</em> が偽かつATC-1のみ220km/h以上300km/h未満は"対応速度+5km/h"、300km/h以上は"対応速度+3km/h"を返す</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>信号インデックス</td></tr>
+    <tr><td class="paramname">is_display</td><td>パネル表示用かどうか</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>信号インデックスに対応する速度[km/h]</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab020fd3c7d4073853e0c6516485e9a75"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Atc.KeyDown </td>
+          <td>(</td>
+          <td class="paramtype">VirtualKeys&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATSキーが押されたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>ATSキー</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#a54bf507974b957d821683c51a2e38438">ATCFS.Device</a>を実装しています。</p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_ab020fd3c7d4073853e0c6516485e9a75_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_ab020fd3c7d4073853e0c6516485e9a75_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_ab020fd3c7d4073853e0c6516485e9a75_cgraph" id="class_a_t_c_f_s_1_1_atc_ab020fd3c7d4073853e0c6516485e9a75_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a674b5e341b030ee009e4dd54853b79eb" title="確認ボタンが押下された際に実行する関数 " alt="" coords="206,5,389,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a4bc1afd27b5082fb94486ed643c96b7d" title="ATC&#45;1, 2, NSにおいて確認扱いの判定を行う関数 " alt="" coords="438,5,567,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6db1df4d53fd45816ce1a93a7b26d56"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Atc.KeyUp </td>
+          <td>(</td>
+          <td class="paramtype">VirtualKeys&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATSキーが離されたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>ATSキー</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#ac5bc6c1a8c15c5387b478374dbde7f17">ATCFS.Device</a>を実装しています。</p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_ac6db1df4d53fd45816ce1a93a7b26d56_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_ac6db1df4d53fd45816ce1a93a7b26d56_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_ac6db1df4d53fd45816ce1a93a7b26d56_cgraph" id="class_a_t_c_f_s_1_1_atc_ac6db1df4d53fd45816ce1a93a7b26d56_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a0c157bc8dc02afd099554bf21dbecb49" title="確認ボタンが開放された際に実行する関数 " alt="" coords="189,5,355,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a74f9a49762a5bb494285136a23dd88aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.NonFuzzyCtrExe </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>予見Fuzzy制御ではないブレーキノッチを出力する関数 </p>
+<dl class="section return"><dt>戻り値</dt><dd>ブレーキノッチ</dd></dl>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a74f9a49762a5bb494285136a23dd88aa_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a74f9a49762a5bb494285136a23dd88aa_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a74f9a49762a5bb494285136a23dd88aa_icgraph" id="class_a_t_c_f_s_1_1_atc_a74f9a49762a5bb494285136a23dd88aa_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#ab6e8b29ce45c5e55e4126548f84abfc5" title="アナログATC用のブレーキノッチを出力する関数 " alt="" coords="248,5,408,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="457,5,591,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a153b74b73a096bc553fe7bc9db1696c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.PassedBeacon </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>signal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>distance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>optional</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SetBeaconDataで実行される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>地上子種別</td></tr>
+    <tr><td class="paramname">signal</td><td>対となるセクションの信号番号</td></tr>
+    <tr><td class="paramname">distance</td><td>対となるセクションまでの距離[m]</td></tr>
+    <tr><td class="paramname">optional</td><td>地上子に設定された任意の値</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a153b74b73a096bc553fe7bc9db1696c7_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a153b74b73a096bc553fe7bc9db1696c7_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a153b74b73a096bc553fe7bc9db1696c7_cgraph" id="class_a_t_c_f_s_1_1_atc_a153b74b73a096bc553fe7bc9db1696c7_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#abfc75fc6b0b48f4fdb20eb668d371274" title="ATC&#45;1, 2, NSにおいて停止限界(ループコイル)を通過した際に実行する関数 " alt="" coords="251,5,418,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a248755fc489fc8a8ef5d563dc87d8164" title="ATC方式を切り替える関数 " alt="" coords="237,56,432,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae5a4455f811446b4a7c7ffd820dbdca5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.PassedBeacon </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SetBeaconDataの実行タイミングを制御するための関数 </p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_ae5a4455f811446b4a7c7ffd820dbdca5_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_ae5a4455f811446b4a7c7ffd820dbdca5_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_ae5a4455f811446b4a7c7ffd820dbdca5_icgraph" id="class_a_t_c_f_s_1_1_atc_ae5a4455f811446b4a7c7ffd820dbdca5_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="238,5,373,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abfc75fc6b0b48f4fdb20eb668d371274"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.PassedLoop </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>signal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATC-1, 2, NSにおいて停止限界(ループコイル)を通過した際に実行する関数 </p>
+<p>信号番号が0の際に03信号を発信する</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signal</td><td>対となるセクションの信号番号</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_abfc75fc6b0b48f4fdb20eb668d371274_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_abfc75fc6b0b48f4fdb20eb668d371274_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_abfc75fc6b0b48f4fdb20eb668d371274_icgraph" id="class_a_t_c_f_s_1_1_atc_abfc75fc6b0b48f4fdb20eb668d371274_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a153b74b73a096bc553fe7bc9db1696c7" title="SetBeaconDataで実行される関数 " alt="" coords="222,5,405,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4bc1afd27b5082fb94486ed643c96b7d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATC-1, 2, NSにおいて確認扱いの判定を行う関数 </p>
+<p>ATC-03信号の場合は列車速度が0km/h、ATC-30信号の場合は30km/h以下である場合、ブレーキ開放フラグがONになる</p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a4bc1afd27b5082fb94486ed643c96b7d_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a4bc1afd27b5082fb94486ed643c96b7d_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a4bc1afd27b5082fb94486ed643c96b7d_icgraph" id="class_a_t_c_f_s_1_1_atc_a4bc1afd27b5082fb94486ed643c96b7d_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a674b5e341b030ee009e4dd54853b79eb" title="確認ボタンが押下された際に実行する関数 " alt="" coords="185,5,367,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#ab020fd3c7d4073853e0c6516485e9a75" title="ATSキーが押されたときに呼び出される関数 " alt="" coords="417,5,567,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aef050fdcb53a0f13071cd92f99ee687a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.ResetIndicator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>インジケーターの表示を初期化する関数 </p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_aef050fdcb53a0f13071cd92f99ee687a_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_aef050fdcb53a0f13071cd92f99ee687a_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_aef050fdcb53a0f13071cd92f99ee687a_icgraph" id="class_a_t_c_f_s_1_1_atc_aef050fdcb53a0f13071cd92f99ee687a_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="233,5,367,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a674b5e341b030ee009e4dd54853b79eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.ResetSwDown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>確認ボタンが押下された際に実行する関数 </p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a674b5e341b030ee009e4dd54853b79eb_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a674b5e341b030ee009e4dd54853b79eb_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a674b5e341b030ee009e4dd54853b79eb_cgraph" id="class_a_t_c_f_s_1_1_atc_a674b5e341b030ee009e4dd54853b79eb_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a4bc1afd27b5082fb94486ed643c96b7d" title="ATC&#45;1, 2, NSにおいて確認扱いの判定を行う関数 " alt="" coords="238,5,367,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a674b5e341b030ee009e4dd54853b79eb_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a674b5e341b030ee009e4dd54853b79eb_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a674b5e341b030ee009e4dd54853b79eb_icgraph" id="class_a_t_c_f_s_1_1_atc_a674b5e341b030ee009e4dd54853b79eb_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#ab020fd3c7d4073853e0c6516485e9a75" title="ATSキーが押されたときに呼び出される関数 " alt="" coords="238,5,389,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c157bc8dc02afd099554bf21dbecb49"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.ResetSwUp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>確認ボタンが開放された際に実行する関数 </p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a0c157bc8dc02afd099554bf21dbecb49_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a0c157bc8dc02afd099554bf21dbecb49_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a0c157bc8dc02afd099554bf21dbecb49_icgraph" id="class_a_t_c_f_s_1_1_atc_a0c157bc8dc02afd099554bf21dbecb49_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#ac6db1df4d53fd45816ce1a93a7b26d56" title="ATSキーが離されたときに呼び出される関数 " alt="" coords="219,5,354,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abfb6c3e51b8d20329c13567f5db920d0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.RunIndicator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>インジケーターの表示を実行する関数 </p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_abfb6c3e51b8d20329c13567f5db920d0_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_abfb6c3e51b8d20329c13567f5db920d0_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_abfb6c3e51b8d20329c13567f5db920d0_cgraph" id="class_a_t_c_f_s_1_1_atc_abfb6c3e51b8d20329c13567f5db920d0_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a8457c978e07b75016468b67956fb6a92" title="アナログATC用インジケーターの表示を実行する関数 " alt="" coords="222,5,399,32"/><area shape="rect" id="node5" href="class_a_t_c_f_s_1_1_atc.html#aeb667232faba671bd6a9e4414824a091" title="デジタルATC用インジケーターの表示を実行する関数 " alt="" coords="221,56,400,83"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a2779448d6e34bdefe0efcfc845c4e0ce" title="信号インデックスを速度に変換する関数 " alt="" coords="470,5,589,32"/><area shape="rect" id="node4" href="class_a_t_c_f_s_1_1_atc.html#a4c3ffb8f8b19ced89089303ca4c73624" title="速度を7セグに表示する関数 " alt="" coords="449,56,610,83"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_abfb6c3e51b8d20329c13567f5db920d0_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_abfb6c3e51b8d20329c13567f5db920d0_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_abfb6c3e51b8d20329c13567f5db920d0_icgraph" id="class_a_t_c_f_s_1_1_atc_abfb6c3e51b8d20329c13567f5db920d0_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="222,5,357,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8457c978e07b75016468b67956fb6a92"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.RunIndicatorA </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アナログATC用インジケーターの表示を実行する関数 </p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a8457c978e07b75016468b67956fb6a92_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a8457c978e07b75016468b67956fb6a92_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a8457c978e07b75016468b67956fb6a92_cgraph" id="class_a_t_c_f_s_1_1_atc_a8457c978e07b75016468b67956fb6a92_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a2779448d6e34bdefe0efcfc845c4e0ce" title="信号インデックスを速度に変換する関数 " alt="" coords="254,5,373,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a4c3ffb8f8b19ced89089303ca4c73624" title="速度を7セグに表示する関数 " alt="" coords="233,56,394,83"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a8457c978e07b75016468b67956fb6a92_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a8457c978e07b75016468b67956fb6a92_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a8457c978e07b75016468b67956fb6a92_icgraph" id="class_a_t_c_f_s_1_1_atc_a8457c978e07b75016468b67956fb6a92_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#abfb6c3e51b8d20329c13567f5db920d0" title="インジケーターの表示を実行する関数 " alt="" coords="232,5,400,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="449,5,583,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb667232faba671bd6a9e4414824a091"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.RunIndicatorD </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デジタルATC用インジケーターの表示を実行する関数 </p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_aeb667232faba671bd6a9e4414824a091_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_aeb667232faba671bd6a9e4414824a091_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_aeb667232faba671bd6a9e4414824a091_cgraph" id="class_a_t_c_f_s_1_1_atc_aeb667232faba671bd6a9e4414824a091_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a4c3ffb8f8b19ced89089303ca4c73624" title="速度を7セグに表示する関数 " alt="" coords="233,5,394,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_aeb667232faba671bd6a9e4414824a091_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_aeb667232faba671bd6a9e4414824a091_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_aeb667232faba671bd6a9e4414824a091_icgraph" id="class_a_t_c_f_s_1_1_atc_aeb667232faba671bd6a9e4414824a091_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#abfb6c3e51b8d20329c13567f5db920d0" title="インジケーターの表示を実行する関数 " alt="" coords="232,5,400,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="449,5,583,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae52e25ab2e9982a8272da503158168f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.RunSubSpeedMeter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>副速度計の表示を実行する関数 </p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_ae52e25ab2e9982a8272da503158168f1_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_ae52e25ab2e9982a8272da503158168f1_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_ae52e25ab2e9982a8272da503158168f1_cgraph" id="class_a_t_c_f_s_1_1_atc_ae52e25ab2e9982a8272da503158168f1_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a4c3ffb8f8b19ced89089303ca4c73624" title="速度を7セグに表示する関数 " alt="" coords="265,5,426,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_ae52e25ab2e9982a8272da503158168f1_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_ae52e25ab2e9982a8272da503158168f1_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_ae52e25ab2e9982a8272da503158168f1_icgraph" id="class_a_t_c_f_s_1_1_atc_ae52e25ab2e9982a8272da503158168f1_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="265,5,399,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ac5f5a371f3ddca87794e2167481024"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.SearchPattern </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>distance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>距離に対応する速度を返す関数 </p>
+<p>指定された距離の近似値に対応する速度を検索する</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">distance</td><td>距離[m]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>距離に対応する速度[km/h]</dd></dl>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a2ac5f5a371f3ddca87794e2167481024_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a2ac5f5a371f3ddca87794e2167481024_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a2ac5f5a371f3ddca87794e2167481024_icgraph" id="class_a_t_c_f_s_1_1_atc_a2ac5f5a371f3ddca87794e2167481024_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a0de62ea15575034d0a0b4ed89225606c" title="パターン照査速度を算出する関数 " alt="" coords="232,5,419,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#abb3d4416df0ad11b2b0bde312bcf5b9b" title="各パターン情報からパターン照査速度およびパターン降下開始地点を算出する関数 " alt="" coords="467,5,629,32"/><area shape="rect" id="node4" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="678,5,813,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a756907f325c585f95f360d7f8d58131e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.SearchSignal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>spd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>速度に対応する信号インデックスを返す関数 </p>
+<p>指定された速度以下の近似値に対応する信号インデックスを検索する</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spd</td><td>速度[km/h]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>速度に対応する信号インデックス</dd></dl>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a756907f325c585f95f360d7f8d58131e_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a756907f325c585f95f360d7f8d58131e_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a756907f325c585f95f360d7f8d58131e_icgraph" id="class_a_t_c_f_s_1_1_atc_a756907f325c585f95f360d7f8d58131e_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a230855b9d6ceab06efbc58a0c2e01113" title="デジタルATC用車内信号を生成する関数 " alt="" coords="225,5,423,32"/><area shape="rect" id="node4" href="class_a_t_c_f_s_1_1_atc.html#a3500abc408fbdca7322b308eaee4c667" title="ゲーム開始時に呼び出される関数 " alt="" coords="253,56,395,83"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="473,5,607,32"/><area shape="rect" id="node5" href="class_a_t_c_f_s_1_1_atc.html#a295cfa832374794738329878d62831eb" title="ATCを投入する際に実行する関数 " alt="" coords="479,56,601,83"/><area shape="rect" id="node6" href="class_a_t_c_f_s_1_1_atc.html#a2608515c69a05934ddaebc5f48378754" title="ATCを遮断する際に実行する関数 " alt="" coords="481,107,599,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3943dbf015842beacf34535b6ecd9893"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.SelectBrake </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全パターンに対する最大の最適ブレーキノッチを出力する関数 </p>
+<dl class="section return"><dt>戻り値</dt><dd>最適ブレーキノッチ</dd></dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a3943dbf015842beacf34535b6ecd9893_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a3943dbf015842beacf34535b6ecd9893_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a3943dbf015842beacf34535b6ecd9893_cgraph" id="class_a_t_c_f_s_1_1_atc_a3943dbf015842beacf34535b6ecd9893_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a16a6fdabf7c0f79c430670289eb5a27b" title="パターンに対する最適ブレーキノッチを出力する関数 " alt="" coords="219,5,373,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a3943dbf015842beacf34535b6ecd9893_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a3943dbf015842beacf34535b6ecd9893_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a3943dbf015842beacf34535b6ecd9893_icgraph" id="class_a_t_c_f_s_1_1_atc_a3943dbf015842beacf34535b6ecd9893_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a9c28a83a33b17c0c4b222fa8178d6dc3" title="デジタルATC用のブレーキノッチを出力する関数 " alt="" coords="219,5,381,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="430,5,565,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af82f9979f63a3c2b5754f119bd6dfd29"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Atc.SetBeacon </td>
+          <td>(</td>
+          <td class="paramtype">BeaconData&#160;</td>
+          <td class="paramname"><em>beacon</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>地上子を越えたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">beacon</td><td>車上子で受け取った情報</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#aed213602939b7c96668a9dc953678377">ATCFS.Device</a>を実装しています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f0d2697b4686446dbe9f6b8d83139f8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Atc.SetBrake </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>brakeNotch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ブレーキが扱われたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">brakeNotch</td><td>ブレーキノッチ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#a9a83e70a0b16a942f72587f8d4b42045">ATCFS.Device</a>を実装しています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a710ee4d717f500af61fc102b5edeafb2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.SetPatternList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デジタルATC用速度照査パターンを作成する関数 </p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a710ee4d717f500af61fc102b5edeafb2_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a710ee4d717f500af61fc102b5edeafb2_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a710ee4d717f500af61fc102b5edeafb2_icgraph" id="class_a_t_c_f_s_1_1_atc_a710ee4d717f500af61fc102b5edeafb2_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a3500abc408fbdca7322b308eaee4c667" title="ゲーム開始時に呼び出される関数 " alt="" coords="233,31,375,57"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a295cfa832374794738329878d62831eb" title="ATCを投入する際に実行する関数 " alt="" coords="424,5,547,32"/><area shape="rect" id="node4" href="class_a_t_c_f_s_1_1_atc.html#a2608515c69a05934ddaebc5f48378754" title="ATCを遮断する際に実行する関数 " alt="" coords="427,56,544,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac7e7f824bee014c72677a1b5e6ffa167"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Atc.SetPower </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>powerNotch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>主ハンドルが扱われたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">powerNotch</td><td>力行ノッチ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#a07c6fb1ddeb34eb506c22cc7907a2c36">ATCFS.Device</a>を実装しています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3495e6060155c52474e5aac424cacb84"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Atc.SetReverser </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>reverser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>レバーサーが扱われたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reverser</td><td>レバーサ位置</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#a2f6b3074eb98a96384ba720d23dafbcd">ATCFS.Device</a>を実装しています。</p>
+
+</div>
+</div>
+<a class="anchor" id="af4c04d4fc899b20f46cda44012a855ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Atc.SetSignal </td>
+          <td>(</td>
+          <td class="paramtype">SignalData[]&#160;</td>
+          <td class="paramname"><em>signal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の閉塞の信号が変化したときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signal</td><td>信号番号</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#adb8acc1202aa20ef6624ca9ed702634a">ATCFS.Device</a>を実装しています。</p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_af4c04d4fc899b20f46cda44012a855ea_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_af4c04d4fc899b20f46cda44012a855ea_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_af4c04d4fc899b20f46cda44012a855ea_cgraph" id="class_a_t_c_f_s_1_1_atc_af4c04d4fc899b20f46cda44012a855ea_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a162f5132e2d5b5cb960fa9c1a369dd52" title="SetSignalで実行される関数 " alt="" coords="206,5,389,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a295cfa832374794738329878d62831eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATCを投入する際に実行する関数 </p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a295cfa832374794738329878d62831eb_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a295cfa832374794738329878d62831eb_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a295cfa832374794738329878d62831eb_cgraph" id="class_a_t_c_f_s_1_1_atc_a295cfa832374794738329878d62831eb_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#a3500abc408fbdca7322b308eaee4c667" title="ゲーム開始時に呼び出される関数 " alt="" coords="177,31,319,57"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a756907f325c585f95f360d7f8d58131e" title="速度に対応する信号インデックスを返す関数 " alt="" coords="372,5,543,32"/><area shape="rect" id="node4" href="class_a_t_c_f_s_1_1_atc.html#a710ee4d717f500af61fc102b5edeafb2" title="デジタルATC用速度照査パターンを作成する関数 " alt="" coords="369,56,546,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d6d2eb23a45b3ab8ae45227b86b2dc3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.ValidPattern </td>
+          <td>(</td>
+          <td class="paramtype">ref int&#160;</td>
+          <td class="paramname"><em>tget_spd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pattern_status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パターンが無効の場合に目標速度を車両ATC最高速度に修正する関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tget_spd</td><td>目標速度[km/h]</td></tr>
+    <tr><td class="paramname">pattern_status</td><td>パターン状態(0: 無効, 1: 有効)</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_a2d6d2eb23a45b3ab8ae45227b86b2dc3_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_atc_a2d6d2eb23a45b3ab8ae45227b86b2dc3_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_atc_a2d6d2eb23a45b3ab8ae45227b86b2dc3_icgraph" id="class_a_t_c_f_s_1_1_atc_a2d6d2eb23a45b3ab8ae45227b86b2dc3_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_atc.html#abb3d4416df0ad11b2b0bde312bcf5b9b" title="各パターン情報からパターン照査速度およびパターン降下開始地点を算出する関数 " alt="" coords="219,5,381,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="430,5,565,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a class="anchor" id="abf8c707764b0e35f3e90adc9be8480f8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ATCFS.Atc.ALL_PATTERN = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パターンの総数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a24d6a047853e5da38765f72c7d3fa94c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="class_a_t_c_f_s_1_1_atc_1_1_atc_a.html">AtcA</a> ATCFS.Atc.atc_a_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a57b033de90ef7f23746712764fffb776"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="class_a_t_c_f_s_1_1_atc_1_1_atc_d.html">AtcD</a> ATCFS.Atc.atc_d_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aad4e2112c4f9486bb0936827a9e87340"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [] ATCFS.Atc.atc_deceleration_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATCブレーキ減速度[km/h/s]. </p>
+
+</div>
+</div>
+<a class="anchor" id="a633b18668b3207fba15365248f2dc3c8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.atc_eb_lamp_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATC非常(0: 消灯, 1: 点灯) </p>
+
+</div>
+</div>
+<a class="anchor" id="a5bb2dc561a48b7e4cd136029aeadd444"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.atc_green_signal_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>進行現示(0: 消灯, 1: 点灯) </p>
+
+</div>
+</div>
+<a class="anchor" id="afa9301212bc2a93c7bec7d157e7f27d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.atc_max_spd_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>車両ATC最高速度[km/h] </p>
+
+</div>
+</div>
+<a class="anchor" id="aacc7e31d181a2d68bb617e4596fcc725"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.atc_power_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATC電源(0: 消灯, 1: 点灯) </p>
+
+</div>
+</div>
+<a class="anchor" id="ae64705ce71883ddebcad973001f556db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.atc_red_signal_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>停止現示(0: 消灯, 1: 点灯) </p>
+
+</div>
+</div>
+<a class="anchor" id="a379702033c40ea73ed3a8bc2558a1b10"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.atc_reset_sw_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>確認ボタンの状態(0: 解放, 1: 押下) </p>
+
+</div>
+</div>
+<a class="anchor" id="a119e55633c09998beef896e204b60c3e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int [] ATCFS.Atc.atc_sig_indicator_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATC速度表示インジケータ(0: 消灯, 1: 点灯) </p>
+
+</div>
+</div>
+<a class="anchor" id="a54e9579dee8ecc05e71fdf531d9d716f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.atc_signal_index_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATC速度に対応する信号インデックス </p>
+
+</div>
+</div>
+<a class="anchor" id="a07fea663ae3fe80e5574d6965f53ca53"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.atc_spd_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATC速度[km/h]. </p>
+
+</div>
+</div>
+<a class="anchor" id="aba1e2ae7192ac129605acf0e5c8815b0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int [] ATCFS.Atc.atc_spd_7seg_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>7セグ用ATC速度表示 </p>
+
+</div>
+</div>
+<a class="anchor" id="adac333fcf4667a641d5a1b237c0af342"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int [] ATCFS.Atc.atc_spd_list_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>信号インデックスに対応する速度[km/h] </p>
+
+</div>
+</div>
+<a class="anchor" id="a9fa8a17af70b9e2d627966776592bd7e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.atc_svc_lamp_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATC常用(0: 消灯, 1: 点灯) </p>
+
+</div>
+</div>
+<a class="anchor" id="a5bf61e2ff220520c216c538a47d7b2b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.atc_type_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATC方式(0: ATC-1, 1: ATC-2, 2: ATC-NS, 3: KS-ATC, 4: DS-ATC) </p>
+
+</div>
+</div>
+<a class="anchor" id="abbc31bd5d0466b63d5f8a2f4f1e5402f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.atc_use_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATC(0: 消灯, 1: 点灯) </p>
+
+</div>
+</div>
+<a class="anchor" id="af9bedf89153d1948797cc34c14811baa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;double&gt; ATCFS.Atc.beacon_dist_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>対となるセクションまでの距離[m] </p>
+
+</div>
+</div>
+<a class="anchor" id="a5f3b4c142a52a539181aeae9e4e142da"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;int&gt; ATCFS.Atc.beacon_opt_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>地上子に設定された任意の値 </p>
+
+</div>
+</div>
+<a class="anchor" id="a212af1aabf1e6fd8a61ce2febffc737f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;int&gt; ATCFS.Atc.beacon_sig_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>対となるセクションの信号 </p>
+
+</div>
+</div>
+<a class="anchor" id="a3e417d2c95f5f66db8ec24bf4f4cdd8b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;int&gt; ATCFS.Atc.beacon_type_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>地上子種別 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad52f8506382bb53894e6d80a977e3b2d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.brake_notch_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>出力ブレーキノッチ(HBを含まない) </p>
+
+</div>
+</div>
+<a class="anchor" id="a64c4bc17b9dd329b497c6318f566c125"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ATCFS.Atc.brake_timer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ブレーキノッチを変更する次のゲーム内時刻[ms] </p>
+
+</div>
+</div>
+<a class="anchor" id="a47c6e1a6fe3fbbfab3e9e0ca406ece64"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ATCFS.Atc.debug_timer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Debug出力する次のゲーム内時刻[ms]. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1146701f88cc5f29e17e7929333c7ff2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int [] ATCFS.Atc.default_notch_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>標準ブレーキノッチ </p>
+
+</div>
+</div>
+<a class="anchor" id="a90e91ad92a330853ddc4c85dcb96d4a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.dsatc_arrow_spd_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>DS-ATC用パターン照査速度[km/h]. </p>
+
+</div>
+</div>
+<a class="anchor" id="aea52615713d4e9d799e3018dd83d295b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="class_a_t_c_f_s_1_1_atc_1_1_fuzzy.html">Fuzzy</a> ATCFS.Atc.fuzzy_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a82108c526bcb7382271002bfb20c58ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ATCFS.Atc.lever_delay_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ブレーキハンドルの操作から指令出力までの遅れ時間[s] </p>
+
+</div>
+</div>
+<a class="anchor" id="a115b9282c16a3c0bbadc958618d96409"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.max_brake_notch_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>常用最大ブレーキノッチ(HBを含まない) </p>
+
+</div>
+</div>
+<a class="anchor" id="a96b8f8abbf779de9eec8549f292687ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ATCFS.Atc.max_deceleration_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>常用最大減速度[km/h/s] </p>
+
+</div>
+</div>
+<a class="anchor" id="aaa1d7957a886732b0a25ef9f153edb24"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.max_signal_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>車両ATC最高速度に対応する信号インデックス </p>
+
+</div>
+</div>
+<a class="anchor" id="ab3be4362f8fb31d0f3fd9fa00c3f6a50"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [] ATCFS.Atc.pattarn_end_loc_list_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全パターンの減速完了地点[m] </p>
+
+</div>
+</div>
+<a class="anchor" id="a71e36d93bfa08525994281ab67fdf83d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int [] ATCFS.Atc.pattern_arrow_spd_list_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全パターンのパターン照査速度[km/h] </p>
+
+</div>
+</div>
+<a class="anchor" id="a46139300fcd2f317a0116e6f0bff267c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int [] ATCFS.Atc.pattern_is_valid_list_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全パターンの状態(0: 無効, 1: 有効) </p>
+
+</div>
+</div>
+<a class="anchor" id="a3a9534b0daac86e63fa92a26f8d097d9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [] ATCFS.Atc.pattern_list_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デジタルATC用速度照査パターン </p>
+
+</div>
+</div>
+<a class="anchor" id="ad1a3d24ed60a7b983d582d9c349a3603"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double [] ATCFS.Atc.pattern_start_loc_list_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全パターンのパターン降下開始地点[m] </p>
+
+</div>
+</div>
+<a class="anchor" id="aacab85cf3b1ebd90e0e44ed2f5b0843b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int [] ATCFS.Atc.pattern_tget_spd_list_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全パターンの目標速度[km/h] </p>
+
+</div>
+</div>
+<a class="anchor" id="ae28ae2d72002cde0bef5fd04e25c7224"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ATCFS.Atc.STA_PATTERN = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>駅停車パターンの総数 </p>
+
+</div>
+</div>
+<a class="anchor" id="a66e45d2cdc670aa35dd066e860d51d72"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.sub_atc_spd_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>副速度計用 ATC速度[km/h] </p>
+
+</div>
+</div>
+<a class="anchor" id="ad5217e0b9270a69461acb4e1be2505a6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int [] ATCFS.Atc.sub_spd_label_1_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>副速度計用目盛 ATC速度-20 km/h </p>
+
+</div>
+</div>
+<a class="anchor" id="a2882e719e807f9bb3c40b31dd77f9d3b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int [] ATCFS.Atc.sub_spd_label_2_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>副速度計用目盛 ATC速度-10 km/h </p>
+
+</div>
+</div>
+<a class="anchor" id="aea10599514b3daf9cf951e22947e4eee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int [] ATCFS.Atc.sub_spd_label_3_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>副速度計用目盛 ATC速度 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa2d45f4c77d1d27529d8e42acd41b8f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int [] ATCFS.Atc.sub_spd_label_4_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>副速度計用目盛 ATC速度+10 km/h </p>
+
+</div>
+</div>
+<a class="anchor" id="a98b219644b158081ce30ba104ddf84bd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.sub_train_spd_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>副速度計用 列車速度[km/h] </p>
+
+</div>
+</div>
+<a class="anchor" id="ad4e4a0d9ab59dbe6f64aba3a2a651877"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ATCFS.Atc.time_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ゲーム内時刻[ms] </p>
+
+</div>
+</div>
+<a class="anchor" id="a5557520969680cb12135c61d5d66811c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="class_a_t_c_f_s_1_1_train.html">Train</a> ATCFS.Atc.train_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a66cedd5e09d680262a5506c1c5de12b9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ATCFS.Atc.train_spd_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>列車速度[km/h] </p>
+
+</div>
+</div>
+<a class="anchor" id="a05042be4d969c8503bf068c1ea3abdde"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ATCFS.Atc.USR_PATTERN = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>速度制限パターンの総数 </p>
+
+</div>
+</div>
+<a class="anchor" id="af02f10509f9daf0aaaaefce290930c43"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ATCFS.Atc.Xe</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>減速完了地点からの許容誤差[m] </p>
+
+</div>
+</div>
+<a class="anchor" id="aa95db20758001db06272589de52e363f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ATCFS.Atc.Xk</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>XeおよびXoを高速域で拡大させる係数 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae941c61ddd12786f8425b435f3719978"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ATCFS.Atc.Xo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>減速完了地点からの過走限界距離[m] </p>
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a class="anchor" id="a0c52009ae7b227c1e4c34566d481739c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.atc_brake_notch_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATC出力ブレーキノッチ(HBを含まない) </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li><a class="el" href="_atc_8cs.html">Atc.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

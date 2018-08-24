@@ -1,0 +1,12 @@
+<map id="ATCFS.AtsP.Elapse" name="ATCFS.AtsP.Elapse">
+<area shape="rect" id="node2" href="$class_a_t_c_f_s_1_1_ats_p.html#ac173537dc84883821bd105ce617a5c3e" title="SetBeaconDataの実行タイミングを制御するための関数 " alt="" coords="198,5,389,32"/>
+<area shape="rect" id="node3" href="$class_a_t_c_f_s_1_1_ats_p.html#a6e54186f6c37193a0e5d019c9c19721b" title="パターン情報を集約する関数 " alt="" coords="200,56,387,83"/>
+<area shape="rect" id="node4" href="$class_a_t_c_f_s_1_1_ats_p.html#a43893589213c41d449b4980f90ad1894" title="各パターン情報からパターン照査速度を算出し、パターン接近警報の状態を取得する関数 " alt="" coords="207,107,379,133"/>
+<area shape="rect" id="node9" href="$class_a_t_c_f_s_1_1_ats_p.html#adf7d8f807e2698ac68a7c808b4de4ce7" title="フラグのON, OFFを行う関数 " alt="" coords="209,157,377,184"/>
+<area shape="rect" id="node10" href="$class_a_t_c_f_s_1_1_ats_p.html#a41b525be96f8aaba80e9193e60faed1f" title="ブレーキノッチを出力する関数 " alt="" coords="213,208,373,235"/>
+<area shape="rect" id="node11" href="$class_a_t_c_f_s_1_1_ats_p.html#ad2bebc40818ec37912039e3a5de76ab3" title="ランプの点灯, 消灯を行う関数 " alt="" coords="204,259,383,285"/>
+<area shape="rect" id="node5" href="$class_a_t_c_f_s_1_1_ats_p.html#aeb5a25bcc646d209c3b5e79905f54934" title="パターンが無効の場合に目標速度を車両ATS&#45;P最高速度に修正する関数 " alt="" coords="446,56,621,83"/>
+<area shape="rect" id="node6" href="$class_a_t_c_f_s_1_1_ats_p.html#a8d990c4024c6b601ef7f1159a2eb745d" title="パターン照査速度を算出する関数 " alt="" coords="677,132,872,159"/>
+<area shape="rect" id="node8" href="$class_a_t_c_f_s_1_1_ats_p.html#a6d79e2483c10afa68ece2454b2741426" title="パターン接近警報を発信する関数 " alt="" coords="438,157,629,184"/>
+<area shape="rect" id="node7" href="$class_a_t_c_f_s_1_1_ats_p.html#aa42acb5d2bb22ec66cad7dde8e4b41d3" title="距離に対応する速度を返す関数 " alt="" coords="920,132,1107,159"/>
+</map>

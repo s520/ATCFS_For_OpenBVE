@@ -1,0 +1,6 @@
+<map id="ATCFS.AtsP.SearchPattern" name="ATCFS.AtsP.SearchPattern">
+<area shape="rect" id="node2" href="$class_a_t_c_f_s_1_1_ats_p.html#a8d990c4024c6b601ef7f1159a2eb745d" title="パターン照査速度を算出する関数 " alt="" coords="240,31,435,57"/>
+<area shape="rect" id="node3" href="$class_a_t_c_f_s_1_1_ats_p.html#a6d79e2483c10afa68ece2454b2741426" title="パターン接近警報を発信する関数 " alt="" coords="483,5,674,32"/>
+<area shape="rect" id="node4" href="$class_a_t_c_f_s_1_1_ats_p.html#a43893589213c41d449b4980f90ad1894" title="各パターン情報からパターン照査速度を算出し、パターン接近警報の状態を取得する関数 " alt="" coords="723,31,895,57"/>
+<area shape="rect" id="node5" href="$class_a_t_c_f_s_1_1_ats_p.html#a1b03d9dd846493c5f51e3477b8c1ee85" title="1フレームごとに呼び出される関数 " alt="" coords="945,31,1087,57"/>
+</map>

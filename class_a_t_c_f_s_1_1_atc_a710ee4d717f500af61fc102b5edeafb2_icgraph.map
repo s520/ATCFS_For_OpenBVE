@@ -1,0 +1,5 @@
+<map id="ATCFS.Atc.SetPatternList" name="ATCFS.Atc.SetPatternList">
+<area shape="rect" id="node2" href="$class_a_t_c_f_s_1_1_atc.html#a3500abc408fbdca7322b308eaee4c667" title="ゲーム開始時に呼び出される関数 " alt="" coords="233,31,375,57"/>
+<area shape="rect" id="node3" href="$class_a_t_c_f_s_1_1_atc.html#a295cfa832374794738329878d62831eb" title="ATCを投入する際に実行する関数 " alt="" coords="424,5,547,32"/>
+<area shape="rect" id="node4" href="$class_a_t_c_f_s_1_1_atc.html#a2608515c69a05934ddaebc5f48378754" title="ATCを遮断する際に実行する関数 " alt="" coords="427,56,544,83"/>
+</map>

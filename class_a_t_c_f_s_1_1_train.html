@@ -1,0 +1,876 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ATCFS For OpenBVE: ATCFS.Train クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ATCFS For OpenBVE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
+      <li><a href="namespaces.html"><span>パッケージ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>クラス一覧</span></a></li>
+      <li><a href="classes.html"><span>クラス索引</span></a></li>
+      <li><a href="inherits.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>クラスメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>名前空間</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_a_t_c_f_s.html">ATCFS</a></li><li class="navelem"><a class="el" href="class_a_t_c_f_s_1_1_train.html">Train</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pac-methods">関数</a> &#124;
+<a href="#pac-attribs">変数</a> &#124;
+<a href="class_a_t_c_f_s_1_1_train-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">ATCFS.Train クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>このプラグインによってシミュレートされる列車を表すクラス 
+ <a href="class_a_t_c_f_s_1_1_train.html#details">[詳解]</a></p>
+<div class="dynheader">
+ATCFS.Train 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_train__coll__graph.png" border="0" usemap="#_a_t_c_f_s_8_train_coll__map" alt="Collaboration graph"/></div>
+<map name="_a_t_c_f_s_8_train_coll__map" id="_a_t_c_f_s_8_train_coll__map">
+<area shape="rect" id="node8" href="class_a_t_c_f_s_1_1_atc.html" title="ATC&#45;1, ATC&#45;2, ATC&#45;NS, KS&#45;ATC, DS&#45;ATCを再現するクラス " alt="" coords="1397,557,1488,584"/><area shape="rect" id="node9" href="class_a_t_c_f_s_1_1_atc_1_1_fuzzy.html" title="予見Fuzzy制御を再現するクラス " alt="" coords="1024,524,1155,551"/><area shape="rect" id="node10" href="class_a_t_c_f_s_1_1_atc_1_1_atc_a.html" title="ATC&#45;1, ATC&#45;2を再現するクラス " alt="" coords="1028,581,1151,608"/><area shape="rect" id="node11" href="class_a_t_c_f_s_1_1_atc_1_1_atc_d.html" title="ATC&#45;NS, KS&#45;ATC, DS&#45;ATCを再現するクラス " alt="" coords="1179,688,1303,715"/><area shape="rect" id="node12" href="class_a_t_c_f_s_1_1_atc_1_1_atc_d_1_1_pattern_d.html" title="制限速度パターン関連を記述するクラス " alt="" coords="818,688,998,715"/><area shape="rect" id="node13" href="class_a_t_c_f_s_1_1_atc_1_1_atc_d_1_1_station_d.html" title="駅停車パターン関連を記述するクラス " alt="" coords="819,789,997,816"/><area shape="rect" id="node14" href="class_a_t_c_f_s_1_1_atc_1_1_atc_d_1_1_section_d.html" title="停止信号パターン関連を記述するクラス " alt="" coords="817,848,999,875"/><area shape="rect" id="node15" href="class_a_t_c_f_s_1_1_sub.html" title="その他機能を再現するクラス " alt="" coords="861,739,955,765"/><area shape="rect" id="node16" href="class_a_t_c_f_s_1_1_ats_p.html" title="ATS&#45;Pを再現するクラス " alt="" coords="1192,247,1291,273"/><area shape="rect" id="node17" href="class_a_t_c_f_s_1_1_ats_p_1_1_section_p.html" title="停止信号パターン関連を記述するクラス " alt="" coords="830,196,986,223"/><area shape="rect" id="node18" href="class_a_t_c_f_s_1_1_ats_p_1_1_pattern_p.html" title="制限速度パターン関連を記述するクラス " alt="" coords="831,247,985,273"/><area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_train_1_1_read_only_handles.html" title="読み込みのみ可能なハンドル操作を表すクラス" alt="" coords="321,564,530,591"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_accel.html" title="列車の加速度を算出するクラス " alt="" coords="374,669,477,696"/><area shape="rect" id="node4" href="class_a_t_c_f_s_1_1_device.html" title="抽象的な保安装置を表すクラス " alt="" coords="51,803,114,829"/><area shape="rect" id="node5" href="class_a_t_c_f_s_1_1_device.html" title="抽象的な保安装置を表すクラス " alt="" coords="370,513,481,540"/><area shape="rect" id="node6" href="class_a_t_c_f_s_1_1_sounds.html" title="ATCFS.Sounds" alt="" coords="368,95,483,121"/><area shape="rect" id="node7" href="class_a_t_c_f_s_1_1_sounds_1_1_sound.html" title="ループ音を表すクラス" alt="" coords="5,95,160,121"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train_1_1_read_only_handles.html">ReadOnlyHandles</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">読み込みのみ可能なハンドル操作を表すクラス <a href="class_a_t_c_f_s_1_1_train_1_1_read_only_handles.html#details">[詳解]</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a9f4adb7c5103be730706e30854a72949"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#a9f4adb7c5103be730706e30854a72949">DoorChange</a> (DoorStates oldState, DoorStates newState)</td></tr>
+<tr class="memdesc:a9f4adb7c5103be730706e30854a72949"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is called when the state of the doors changes. <a href="#a9f4adb7c5103be730706e30854a72949">[詳解]</a><br/></td></tr>
+<tr class="separator:a9f4adb7c5103be730706e30854a72949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+関数</h2></td></tr>
+<tr class="memitem:a79979ca073529c81e207ac4dffddc7dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#a79979ca073529c81e207ac4dffddc7dd">Train</a> (int[] panel, PlaySoundDelegate playSound)</td></tr>
+<tr class="memdesc:a79979ca073529c81e207ac4dffddc7dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">新しいインスタンスを作成する <a href="#a79979ca073529c81e207ac4dffddc7dd">[詳解]</a><br/></td></tr>
+<tr class="separator:a79979ca073529c81e207ac4dffddc7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa77c20615debd0c0ef60aaccd8636a84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#aa77c20615debd0c0ef60aaccd8636a84">Initialize</a> (InitializationModes mode)</td></tr>
+<tr class="memdesc:aa77c20615debd0c0ef60aaccd8636a84"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲーム開始時に呼び出される関数 <a href="#aa77c20615debd0c0ef60aaccd8636a84">[詳解]</a><br/></td></tr>
+<tr class="separator:aa77c20615debd0c0ef60aaccd8636a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a334844d8bf20e25d4cbafec8977bea68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#a334844d8bf20e25d4cbafec8977bea68">Elapse</a> (ElapseData data)</td></tr>
+<tr class="memdesc:a334844d8bf20e25d4cbafec8977bea68"><td class="mdescLeft">&#160;</td><td class="mdescRight">1フレームごとに呼び出される関数 <a href="#a334844d8bf20e25d4cbafec8977bea68">[詳解]</a><br/></td></tr>
+<tr class="separator:a334844d8bf20e25d4cbafec8977bea68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03da8b73a9b2f60a9426d65e9fb4ae00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#a03da8b73a9b2f60a9426d65e9fb4ae00">SetReverser</a> (int reverser)</td></tr>
+<tr class="memdesc:a03da8b73a9b2f60a9426d65e9fb4ae00"><td class="mdescLeft">&#160;</td><td class="mdescRight">レバーサーが扱われたときに呼び出される関数 <a href="#a03da8b73a9b2f60a9426d65e9fb4ae00">[詳解]</a><br/></td></tr>
+<tr class="separator:a03da8b73a9b2f60a9426d65e9fb4ae00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eaeb70788831647044ad30d3ded494b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#a3eaeb70788831647044ad30d3ded494b">SetPower</a> (int powerNotch)</td></tr>
+<tr class="memdesc:a3eaeb70788831647044ad30d3ded494b"><td class="mdescLeft">&#160;</td><td class="mdescRight">主ハンドルが扱われたときに呼び出される関数 <a href="#a3eaeb70788831647044ad30d3ded494b">[詳解]</a><br/></td></tr>
+<tr class="separator:a3eaeb70788831647044ad30d3ded494b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f4ac531df2ec505ac088845156f7613"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#a3f4ac531df2ec505ac088845156f7613">SetBrake</a> (int brakeNotch)</td></tr>
+<tr class="memdesc:a3f4ac531df2ec505ac088845156f7613"><td class="mdescLeft">&#160;</td><td class="mdescRight">ブレーキが扱われたときに呼び出される関数 <a href="#a3f4ac531df2ec505ac088845156f7613">[詳解]</a><br/></td></tr>
+<tr class="separator:a3f4ac531df2ec505ac088845156f7613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42110cd905168e7e0750ada0e46c7020"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#a42110cd905168e7e0750ada0e46c7020">KeyDown</a> (VirtualKeys key)</td></tr>
+<tr class="memdesc:a42110cd905168e7e0750ada0e46c7020"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATSキーが押されたときに呼び出される関数 <a href="#a42110cd905168e7e0750ada0e46c7020">[詳解]</a><br/></td></tr>
+<tr class="separator:a42110cd905168e7e0750ada0e46c7020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab25b8309e9d6f6bfdcdea2ba50070854"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#ab25b8309e9d6f6bfdcdea2ba50070854">KeyUp</a> (VirtualKeys key)</td></tr>
+<tr class="memdesc:ab25b8309e9d6f6bfdcdea2ba50070854"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATSキーが離されたときに呼び出される関数 <a href="#ab25b8309e9d6f6bfdcdea2ba50070854">[詳解]</a><br/></td></tr>
+<tr class="separator:ab25b8309e9d6f6bfdcdea2ba50070854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab05e97440deb94ce5ece5d2a8661844"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#aab05e97440deb94ce5ece5d2a8661844">HornBlow</a> (HornTypes type)</td></tr>
+<tr class="memdesc:aab05e97440deb94ce5ece5d2a8661844"><td class="mdescLeft">&#160;</td><td class="mdescRight">警笛が扱われたときに呼び出される関数 <a href="#aab05e97440deb94ce5ece5d2a8661844">[詳解]</a><br/></td></tr>
+<tr class="separator:aab05e97440deb94ce5ece5d2a8661844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62bda48969875e886fe547765da7202e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#a62bda48969875e886fe547765da7202e">SetSignal</a> (SignalData[] signal)</td></tr>
+<tr class="memdesc:a62bda48969875e886fe547765da7202e"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の閉塞の信号が変化したときに呼び出される関数 <a href="#a62bda48969875e886fe547765da7202e">[詳解]</a><br/></td></tr>
+<tr class="separator:a62bda48969875e886fe547765da7202e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac865f2a7e2226a22ebfec56fc18a2865"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#ac865f2a7e2226a22ebfec56fc18a2865">SetBeacon</a> (BeaconData beacon)</td></tr>
+<tr class="memdesc:ac865f2a7e2226a22ebfec56fc18a2865"><td class="mdescLeft">&#160;</td><td class="mdescRight">地上子を越えたときに呼び出される関数 <a href="#ac865f2a7e2226a22ebfec56fc18a2865">[詳解]</a><br/></td></tr>
+<tr class="separator:ac865f2a7e2226a22ebfec56fc18a2865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+変数</h2></td></tr>
+<tr class="memitem:ac4ed6533ccca4bc4f0c84add73bbc0a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#ac4ed6533ccca4bc4f0c84add73bbc0a8">PluginInitializing</a></td></tr>
+<tr class="memdesc:ac4ed6533ccca4bc4f0c84add73bbc0a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">プラグインが現在初期化中かどうか。これは、メニューから駅にジャンプするときなどに、InitializeとElapseの間で発生する。 <a href="#ac4ed6533ccca4bc4f0c84add73bbc0a8">[詳解]</a><br/></td></tr>
+<tr class="separator:ac4ed6533ccca4bc4f0c84add73bbc0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0bf2288ea03bd82c406e1bb5a3ac9b7"><td class="memItemLeft" align="right" valign="top">VehicleSpecs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#aa0bf2288ea03bd82c406e1bb5a3ac9b7">Specs</a></td></tr>
+<tr class="memdesc:aa0bf2288ea03bd82c406e1bb5a3ac9b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">車両諸元 <a href="#aa0bf2288ea03bd82c406e1bb5a3ac9b7">[詳解]</a><br/></td></tr>
+<tr class="separator:aa0bf2288ea03bd82c406e1bb5a3ac9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad931a86dc453f26f97e65b79d55870f2"><td class="memItemLeft" align="right" valign="top">VehicleState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#ad931a86dc453f26f97e65b79d55870f2">State</a></td></tr>
+<tr class="memdesc:ad931a86dc453f26f97e65b79d55870f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の列車の状態 <a href="#ad931a86dc453f26f97e65b79d55870f2">[詳解]</a><br/></td></tr>
+<tr class="separator:ad931a86dc453f26f97e65b79d55870f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82039a68e9ee3091ee6fcac10b0315c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_t_c_f_s_1_1_train_1_1_read_only_handles.html">ReadOnlyHandles</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#a82039a68e9ee3091ee6fcac10b0315c2">Handles</a></td></tr>
+<tr class="memdesc:a82039a68e9ee3091ee6fcac10b0315c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">最後にElapseが呼び出された際のハンドル操作 <a href="#a82039a68e9ee3091ee6fcac10b0315c2">[詳解]</a><br/></td></tr>
+<tr class="separator:a82039a68e9ee3091ee6fcac10b0315c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68c0a43dd42dfd19a771de7dcb0811e"><td class="memItemLeft" align="right" valign="top">DoorStates&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#aa68c0a43dd42dfd19a771de7dcb0811e">Doors</a></td></tr>
+<tr class="memdesc:aa68c0a43dd42dfd19a771de7dcb0811e"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の客室ドアの状態 <a href="#aa68c0a43dd42dfd19a771de7dcb0811e">[詳解]</a><br/></td></tr>
+<tr class="separator:aa68c0a43dd42dfd19a771de7dcb0811e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeff084d223a25615160a6df01138d56"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#adeff084d223a25615160a6df01138d56">Panel</a></td></tr>
+<tr class="memdesc:adeff084d223a25615160a6df01138d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">パネルに渡す値 <a href="#adeff084d223a25615160a6df01138d56">[詳解]</a><br/></td></tr>
+<tr class="separator:adeff084d223a25615160a6df01138d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72726aad3902691a711ffdb1cf96afa7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_t_c_f_s_1_1_sounds.html">Sounds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#a72726aad3902691a711ffdb1cf96afa7">Sounds</a></td></tr>
+<tr class="memdesc:a72726aad3902691a711ffdb1cf96afa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">この列車で使用されるサウンド <a href="#a72726aad3902691a711ffdb1cf96afa7">[詳解]</a><br/></td></tr>
+<tr class="separator:a72726aad3902691a711ffdb1cf96afa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b50b585515ea8015da3b844f2d0936"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_t_c_f_s_1_1_accel.html">Accel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#a20b50b585515ea8015da3b844f2d0936">Accel</a></td></tr>
+<tr class="memdesc:a20b50b585515ea8015da3b844f2d0936"><td class="mdescLeft">&#160;</td><td class="mdescRight">加速度 <a href="#a20b50b585515ea8015da3b844f2d0936">[詳解]</a><br/></td></tr>
+<tr class="separator:a20b50b585515ea8015da3b844f2d0936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca59632b8b72db81b233b272c485932"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_t_c_f_s_1_1_atc.html">Atc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#a3ca59632b8b72db81b233b272c485932">Atc</a></td></tr>
+<tr class="memdesc:a3ca59632b8b72db81b233b272c485932"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATC <a href="#a3ca59632b8b72db81b233b272c485932">[詳解]</a><br/></td></tr>
+<tr class="separator:a3ca59632b8b72db81b233b272c485932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb79f80d3013d9558052e753418825db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_t_c_f_s_1_1_ats_p.html">AtsP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#abb79f80d3013d9558052e753418825db">AtsP</a></td></tr>
+<tr class="memdesc:abb79f80d3013d9558052e753418825db"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATS-P <a href="#abb79f80d3013d9558052e753418825db">[詳解]</a><br/></td></tr>
+<tr class="separator:abb79f80d3013d9558052e753418825db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a44bedd818db2210c99d5bf483a892"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_t_c_f_s_1_1_sub.html">Sub</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#a17a44bedd818db2210c99d5bf483a892">Sub</a></td></tr>
+<tr class="memdesc:a17a44bedd818db2210c99d5bf483a892"><td class="mdescLeft">&#160;</td><td class="mdescRight">その他機能 <a href="#a17a44bedd818db2210c99d5bf483a892">[詳解]</a><br/></td></tr>
+<tr class="separator:a17a44bedd818db2210c99d5bf483a892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6095b7b56dd86d90077e931115c0f922"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_t_c_f_s_1_1_device.html">Device</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_train.html#a6095b7b56dd86d90077e931115c0f922">Devices</a></td></tr>
+<tr class="memdesc:a6095b7b56dd86d90077e931115c0f922"><td class="mdescLeft">&#160;</td><td class="mdescRight">この列車に搭載されているすべての保安装置のリスト。保安装置はEB、ATC、ATS-P、ATS-Sxの順でなければならない。 <a href="#a6095b7b56dd86d90077e931115c0f922">[詳解]</a><br/></td></tr>
+<tr class="separator:a6095b7b56dd86d90077e931115c0f922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>このプラグインによってシミュレートされる列車を表すクラス</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a class="anchor" id="a79979ca073529c81e207ac4dffddc7dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ATCFS.Train.Train </td>
+          <td>(</td>
+          <td class="paramtype">int[]&#160;</td>
+          <td class="paramname"><em>panel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PlaySoundDelegate&#160;</td>
+          <td class="paramname"><em>playSound</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>新しいインスタンスを作成する</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">panel</td><td>パネルに渡す値</td></tr>
+    <tr><td class="paramname">playSound</td><td>サウンドを再生するためのデリゲート</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a class="anchor" id="a9f4adb7c5103be730706e30854a72949"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Train.DoorChange </td>
+          <td>(</td>
+          <td class="paramtype">DoorStates&#160;</td>
+          <td class="paramname"><em>oldState</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DoorStates&#160;</td>
+          <td class="paramname"><em>newState</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is called when the state of the doors changes.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oldState</td><td>The old state of the doors.</td></tr>
+    <tr><td class="paramname">newState</td><td>The new state of the doors.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a334844d8bf20e25d4cbafec8977bea68"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Train.Elapse </td>
+          <td>(</td>
+          <td class="paramtype">ElapseData&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>1フレームごとに呼び出される関数</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aab05e97440deb94ce5ece5d2a8661844"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Train.HornBlow </td>
+          <td>(</td>
+          <td class="paramtype">HornTypes&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>警笛が扱われたときに呼び出される関数</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>警笛のタイプ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa77c20615debd0c0ef60aaccd8636a84"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Train.Initialize </td>
+          <td>(</td>
+          <td class="paramtype">InitializationModes&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ゲーム開始時に呼び出される関数</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>初期化モード</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a42110cd905168e7e0750ada0e46c7020"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Train.KeyDown </td>
+          <td>(</td>
+          <td class="paramtype">VirtualKeys&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATSキーが押されたときに呼び出される関数</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>ATSキー</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab25b8309e9d6f6bfdcdea2ba50070854"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Train.KeyUp </td>
+          <td>(</td>
+          <td class="paramtype">VirtualKeys&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATSキーが離されたときに呼び出される関数</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>ATSキー</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac865f2a7e2226a22ebfec56fc18a2865"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Train.SetBeacon </td>
+          <td>(</td>
+          <td class="paramtype">BeaconData&#160;</td>
+          <td class="paramname"><em>beacon</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>地上子を越えたときに呼び出される関数</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">beacon</td><td>車上子で受け取った情報</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3f4ac531df2ec505ac088845156f7613"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Train.SetBrake </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>brakeNotch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ブレーキが扱われたときに呼び出される関数</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">brakeNotch</td><td>ブレーキノッチ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3eaeb70788831647044ad30d3ded494b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Train.SetPower </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>powerNotch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>主ハンドルが扱われたときに呼び出される関数</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">powerNotch</td><td>力行ノッチ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a03da8b73a9b2f60a9426d65e9fb4ae00"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Train.SetReverser </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>reverser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>レバーサーが扱われたときに呼び出される関数</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reverser</td><td>レバーサ位置</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a62bda48969875e886fe547765da7202e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Train.SetSignal </td>
+          <td>(</td>
+          <td class="paramtype">SignalData[]&#160;</td>
+          <td class="paramname"><em>signal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の閉塞の信号が変化したときに呼び出される関数</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signal</td><td>信号番号</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a class="anchor" id="a20b50b585515ea8015da3b844f2d0936"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_t_c_f_s_1_1_accel.html">Accel</a> ATCFS.Train.Accel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>加速度</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ca59632b8b72db81b233b272c485932"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_t_c_f_s_1_1_atc.html">Atc</a> ATCFS.Train.Atc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATC</p>
+
+</div>
+</div>
+<a class="anchor" id="abb79f80d3013d9558052e753418825db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_t_c_f_s_1_1_ats_p.html">AtsP</a> ATCFS.Train.AtsP</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATS-P</p>
+
+</div>
+</div>
+<a class="anchor" id="a6095b7b56dd86d90077e931115c0f922"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_t_c_f_s_1_1_device.html">Device</a> [] ATCFS.Train.Devices</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>この列車に搭載されているすべての保安装置のリスト。保安装置はEB、ATC、ATS-P、ATS-Sxの順でなければならない。</p>
+
+</div>
+</div>
+<a class="anchor" id="aa68c0a43dd42dfd19a771de7dcb0811e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DoorStates ATCFS.Train.Doors</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の客室ドアの状態</p>
+
+</div>
+</div>
+<a class="anchor" id="a82039a68e9ee3091ee6fcac10b0315c2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_t_c_f_s_1_1_train_1_1_read_only_handles.html">ReadOnlyHandles</a> ATCFS.Train.Handles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>最後にElapseが呼び出された際のハンドル操作</p>
+
+</div>
+</div>
+<a class="anchor" id="adeff084d223a25615160a6df01138d56"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int [] ATCFS.Train.Panel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パネルに渡す値</p>
+
+</div>
+</div>
+<a class="anchor" id="ac4ed6533ccca4bc4f0c84add73bbc0a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ATCFS.Train.PluginInitializing</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>プラグインが現在初期化中かどうか。これは、メニューから駅にジャンプするときなどに、InitializeとElapseの間で発生する。</p>
+
+</div>
+</div>
+<a class="anchor" id="a72726aad3902691a711ffdb1cf96afa7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_t_c_f_s_1_1_sounds.html">Sounds</a> ATCFS.Train.Sounds</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>この列車で使用されるサウンド</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0bf2288ea03bd82c406e1bb5a3ac9b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VehicleSpecs ATCFS.Train.Specs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>車両諸元</p>
+
+</div>
+</div>
+<a class="anchor" id="ad931a86dc453f26f97e65b79d55870f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VehicleState ATCFS.Train.State</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の列車の状態</p>
+
+</div>
+</div>
+<a class="anchor" id="a17a44bedd818db2210c99d5bf483a892"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_t_c_f_s_1_1_sub.html">Sub</a> ATCFS.Train.Sub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>その他機能</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li><a class="el" href="_train_8cs.html">Train.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

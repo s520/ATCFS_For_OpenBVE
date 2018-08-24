@@ -1,0 +1,4 @@
+<map id="クラス階層図" name="クラス階層図">
+<area shape="rect" id="node1" href="$class_ini_parser_1_1_parser_1_1_ini_data_parser.html" title="Responsible for parsing an string from an ini file, and creating an IniData structure. " alt="" coords="5,5,168,46"/>
+<area shape="rect" id="node2" href="$class_ini_parser_1_1_parser_1_1_concatenate_duplicated_keys_ini_data_parser.html" title="IniParser.Parser.Concatenate\lDuplicatedKeysIniDataParser" alt="" coords="216,5,411,46"/>
+</map>

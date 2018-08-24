@@ -1,0 +1,4 @@
+<map id="ATCFS.Accel.Elapse" name="ATCFS.Accel.Elapse">
+<area shape="rect" id="node2" href="$class_a_t_c_f_s_1_1_accel.html#a3a50162bb3e57141e79d050aaa9001aa" title="列車の生の加速度を算出する関数 " alt="" coords="214,5,381,32"/>
+<area shape="rect" id="node3" href="$class_a_t_c_f_s_1_1_accel.html#ad40f20c634295c0ac30e5278913d04f9" title="列車の指数移動平均加速度を算出する関数 " alt="" coords="200,56,395,83"/>
+</map>

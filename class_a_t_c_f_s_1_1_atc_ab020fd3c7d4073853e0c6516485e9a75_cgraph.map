@@ -1,0 +1,4 @@
+<map id="ATCFS.Atc.KeyDown" name="ATCFS.Atc.KeyDown">
+<area shape="rect" id="node2" href="$class_a_t_c_f_s_1_1_atc.html#a674b5e341b030ee009e4dd54853b79eb" title="確認ボタンが押下された際に実行する関数 " alt="" coords="206,5,389,32"/>
+<area shape="rect" id="node3" href="$class_a_t_c_f_s_1_1_atc.html#a4bc1afd27b5082fb94486ed643c96b7d" title="ATC&#45;1, 2, NSにおいて確認扱いの判定を行う関数 " alt="" coords="438,5,567,32"/>
+</map>

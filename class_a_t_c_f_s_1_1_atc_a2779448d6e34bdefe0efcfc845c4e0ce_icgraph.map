@@ -1,0 +1,7 @@
+<map id="ATCFS.Atc.ItoV" name="ATCFS.Atc.ItoV">
+<area shape="rect" id="node2" href="$class_a_t_c_f_s_1_1_atc.html#a230855b9d6ceab06efbc58a0c2e01113" title="デジタルATC用車内信号を生成する関数 " alt="" coords="401,5,599,32"/>
+<area shape="rect" id="node3" href="$class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="649,81,783,108"/>
+<area shape="rect" id="node4" href="$class_a_t_c_f_s_1_1_atc.html#ab6e8b29ce45c5e55e4126548f84abfc5" title="アナログATC用のブレーキノッチを出力する関数 " alt="" coords="183,107,343,133"/>
+<area shape="rect" id="node5" href="$class_a_t_c_f_s_1_1_atc.html#a8457c978e07b75016468b67956fb6a92" title="アナログATC用インジケーターの表示を実行する関数 " alt="" coords="174,157,351,184"/>
+<area shape="rect" id="node6" href="$class_a_t_c_f_s_1_1_atc.html#abfb6c3e51b8d20329c13567f5db920d0" title="インジケーターの表示を実行する関数 " alt="" coords="416,157,584,184"/>
+</map>

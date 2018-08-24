@@ -1,0 +1,4 @@
+<map id="ATCFS.AtsP.Reset" name="ATCFS.AtsP.Reset">
+<area shape="rect" id="node2" href="$class_a_t_c_f_s_1_1_ats_p.html#a16131ccfbc5740697822188398ad921b" title="復帰ボタンが押下された際に実行する関数 " alt="" coords="193,5,383,32"/>
+<area shape="rect" id="node3" href="$class_a_t_c_f_s_1_1_ats_p.html#a2e5f7c8389e7ccd651792e92f29d4c64" title="ATSキーが押されたときに呼び出される関数 " alt="" coords="432,5,592,32"/>
+</map>

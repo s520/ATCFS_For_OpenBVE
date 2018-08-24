@@ -1,0 +1,4 @@
+<map id="ATCFS.Atc.PassedBeacon" name="ATCFS.Atc.PassedBeacon">
+<area shape="rect" id="node2" href="$class_a_t_c_f_s_1_1_atc.html#abfc75fc6b0b48f4fdb20eb668d371274" title="ATC&#45;1, 2, NSにおいて停止限界(ループコイル)を通過した際に実行する関数 " alt="" coords="251,5,418,32"/>
+<area shape="rect" id="node3" href="$class_a_t_c_f_s_1_1_atc.html#a248755fc489fc8a8ef5d563dc87d8164" title="ATC方式を切り替える関数 " alt="" coords="237,56,432,83"/>
+</map>

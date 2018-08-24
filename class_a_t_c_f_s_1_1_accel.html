@@ -1,0 +1,782 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ATCFS For OpenBVE: ATCFS.Accel クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ATCFS For OpenBVE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
+      <li><a href="namespaces.html"><span>パッケージ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>クラス一覧</span></a></li>
+      <li><a href="classes.html"><span>クラス索引</span></a></li>
+      <li><a href="inherits.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>クラスメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>名前空間</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_a_t_c_f_s.html">ATCFS</a></li><li class="navelem"><a class="el" href="class_a_t_c_f_s_1_1_accel.html">Accel</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pac-methods">関数</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="class_a_t_c_f_s_1_1_accel-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">ATCFS.Accel クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>列車の加速度を算出するクラス  
+ <a href="class_a_t_c_f_s_1_1_accel.html#details">[詳解]</a></p>
+<div class="dynheader">
+ATCFS.Accel の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_accel__inherit__graph.png" border="0" usemap="#_a_t_c_f_s_8_accel_inherit__map" alt="Inheritance graph"/></div>
+<map name="_a_t_c_f_s_8_accel_inherit__map" id="_a_t_c_f_s_8_accel_inherit__map">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_device.html" title="抽象的な保安装置を表すクラス " alt="" coords="25,5,87,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+ATCFS.Accel 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_accel__coll__graph.png" border="0" usemap="#_a_t_c_f_s_8_accel_coll__map" alt="Collaboration graph"/></div>
+<map name="_a_t_c_f_s_8_accel_coll__map" id="_a_t_c_f_s_8_accel_coll__map">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_device.html" title="抽象的な保安装置を表すクラス " alt="" coords="25,5,87,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+関数</h2></td></tr>
+<tr class="memitem:a3c139b211116188fbef45b1636a7a898"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_accel.html#a3c139b211116188fbef45b1636a7a898">Accel</a> ()</td></tr>
+<tr class="memdesc:a3c139b211116188fbef45b1636a7a898"><td class="mdescLeft">&#160;</td><td class="mdescRight">新しいインスタンスを作成する  <a href="#a3c139b211116188fbef45b1636a7a898">[詳解]</a><br/></td></tr>
+<tr class="separator:a3c139b211116188fbef45b1636a7a898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33bc1c6d0f2645f9df51494521c71145"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_accel.html#a33bc1c6d0f2645f9df51494521c71145">Initialize</a> (InitializationModes mode)</td></tr>
+<tr class="memdesc:a33bc1c6d0f2645f9df51494521c71145"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲーム開始時に呼び出される関数  <a href="#a33bc1c6d0f2645f9df51494521c71145">[詳解]</a><br/></td></tr>
+<tr class="separator:a33bc1c6d0f2645f9df51494521c71145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e7791c3e51c33bd3fd76802c0212e8a"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_accel.html#a8e7791c3e51c33bd3fd76802c0212e8a">Elapse</a> (ElapseData data, ref bool blocking)</td></tr>
+<tr class="memdesc:a8e7791c3e51c33bd3fd76802c0212e8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">1フレームごとに呼び出される関数  <a href="#a8e7791c3e51c33bd3fd76802c0212e8a">[詳解]</a><br/></td></tr>
+<tr class="separator:a8e7791c3e51c33bd3fd76802c0212e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f6a1bd0d318a658e986c885ce83c8d6"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_accel.html#a4f6a1bd0d318a658e986c885ce83c8d6">SetReverser</a> (int reverser)</td></tr>
+<tr class="memdesc:a4f6a1bd0d318a658e986c885ce83c8d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">レバーサーが扱われたときに呼び出される関数  <a href="#a4f6a1bd0d318a658e986c885ce83c8d6">[詳解]</a><br/></td></tr>
+<tr class="separator:a4f6a1bd0d318a658e986c885ce83c8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a966752ac3b0c66f15e4581a53a9ca83c"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_accel.html#a966752ac3b0c66f15e4581a53a9ca83c">SetPower</a> (int powerNotch)</td></tr>
+<tr class="memdesc:a966752ac3b0c66f15e4581a53a9ca83c"><td class="mdescLeft">&#160;</td><td class="mdescRight">主ハンドルが扱われたときに呼び出される関数  <a href="#a966752ac3b0c66f15e4581a53a9ca83c">[詳解]</a><br/></td></tr>
+<tr class="separator:a966752ac3b0c66f15e4581a53a9ca83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bdd7ebcc6a9d8478453cce13150b469"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_accel.html#a6bdd7ebcc6a9d8478453cce13150b469">SetBrake</a> (int brakeNotch)</td></tr>
+<tr class="memdesc:a6bdd7ebcc6a9d8478453cce13150b469"><td class="mdescLeft">&#160;</td><td class="mdescRight">ブレーキが扱われたときに呼び出される関数  <a href="#a6bdd7ebcc6a9d8478453cce13150b469">[詳解]</a><br/></td></tr>
+<tr class="separator:a6bdd7ebcc6a9d8478453cce13150b469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4bf268a403e433ea6c44dbb1832d1b"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_accel.html#adf4bf268a403e433ea6c44dbb1832d1b">KeyDown</a> (VirtualKeys key)</td></tr>
+<tr class="memdesc:adf4bf268a403e433ea6c44dbb1832d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATSキーが押されたときに呼び出される関数  <a href="#adf4bf268a403e433ea6c44dbb1832d1b">[詳解]</a><br/></td></tr>
+<tr class="separator:adf4bf268a403e433ea6c44dbb1832d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada91b58203248c9f7bf2591345125112"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_accel.html#ada91b58203248c9f7bf2591345125112">KeyUp</a> (VirtualKeys key)</td></tr>
+<tr class="memdesc:ada91b58203248c9f7bf2591345125112"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATSキーが離されたときに呼び出される関数  <a href="#ada91b58203248c9f7bf2591345125112">[詳解]</a><br/></td></tr>
+<tr class="separator:ada91b58203248c9f7bf2591345125112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7fb12b29529709aca0a04614c05ece3"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_accel.html#ae7fb12b29529709aca0a04614c05ece3">HornBlow</a> (HornTypes type)</td></tr>
+<tr class="memdesc:ae7fb12b29529709aca0a04614c05ece3"><td class="mdescLeft">&#160;</td><td class="mdescRight">警笛が扱われたときに呼び出される関数  <a href="#ae7fb12b29529709aca0a04614c05ece3">[詳解]</a><br/></td></tr>
+<tr class="separator:ae7fb12b29529709aca0a04614c05ece3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c514beb30292f079ff1c392d7c135d"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_accel.html#a00c514beb30292f079ff1c392d7c135d">SetSignal</a> (SignalData[] signal)</td></tr>
+<tr class="memdesc:a00c514beb30292f079ff1c392d7c135d"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の閉塞の信号が変化したときに呼び出される関数  <a href="#a00c514beb30292f079ff1c392d7c135d">[詳解]</a><br/></td></tr>
+<tr class="separator:a00c514beb30292f079ff1c392d7c135d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a246a49e0c8f023712959201eb96b9237"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_accel.html#a246a49e0c8f023712959201eb96b9237">SetBeacon</a> (BeaconData beacon)</td></tr>
+<tr class="memdesc:a246a49e0c8f023712959201eb96b9237"><td class="mdescLeft">&#160;</td><td class="mdescRight">地上子を越えたときに呼び出される関数  <a href="#a246a49e0c8f023712959201eb96b9237">[詳解]</a><br/></td></tr>
+<tr class="separator:a246a49e0c8f023712959201eb96b9237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:ab9c17ebc2e6318cf0761702b0f68215c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_accel.html#ab9c17ebc2e6318cf0761702b0f68215c">raw_accel_</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab9c17ebc2e6318cf0761702b0f68215c"><td class="mdescLeft">&#160;</td><td class="mdescRight">生の加速度[km/h/s]  <a href="#ab9c17ebc2e6318cf0761702b0f68215c">[詳解]</a><br/></td></tr>
+<tr class="separator:ab9c17ebc2e6318cf0761702b0f68215c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeacf5c5f0e76e150d23bc16709b5b7ff"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_accel.html#aeacf5c5f0e76e150d23bc16709b5b7ff">ema_accel_</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aeacf5c5f0e76e150d23bc16709b5b7ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">指数移動平均加速度[km/h/s]  <a href="#aeacf5c5f0e76e150d23bc16709b5b7ff">[詳解]</a><br/></td></tr>
+<tr class="separator:aeacf5c5f0e76e150d23bc16709b5b7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3a50162bb3e57141e79d050aaa9001aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_accel.html#a3a50162bb3e57141e79d050aaa9001aa">CalcAccel</a> (double speed, double deltaTime)</td></tr>
+<tr class="memdesc:a3a50162bb3e57141e79d050aaa9001aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">列車の生の加速度を算出する関数  <a href="#a3a50162bb3e57141e79d050aaa9001aa">[詳解]</a><br/></td></tr>
+<tr class="separator:a3a50162bb3e57141e79d050aaa9001aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad40f20c634295c0ac30e5278913d04f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_accel.html#ad40f20c634295c0ac30e5278913d04f9">CalcEmaAccel</a> ()</td></tr>
+<tr class="memdesc:ad40f20c634295c0ac30e5278913d04f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">列車の指数移動平均加速度を算出する関数  <a href="#ad40f20c634295c0ac30e5278913d04f9">[詳解]</a><br/></td></tr>
+<tr class="separator:ad40f20c634295c0ac30e5278913d04f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:acf47c25b9fd8b8512b8e45073be4a78e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_accel.html#acf47c25b9fd8b8512b8e45073be4a78e">prev_spd_</a></td></tr>
+<tr class="memdesc:acf47c25b9fd8b8512b8e45073be4a78e"><td class="mdescLeft">&#160;</td><td class="mdescRight">1フレーム前の列車速度[km/h]  <a href="#acf47c25b9fd8b8512b8e45073be4a78e">[詳解]</a><br/></td></tr>
+<tr class="separator:acf47c25b9fd8b8512b8e45073be4a78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae13696a2ebddcbeaf72c634f6c629b36"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_accel.html#ae13696a2ebddcbeaf72c634f6c629b36">prev_raw_accel_</a></td></tr>
+<tr class="memdesc:ae13696a2ebddcbeaf72c634f6c629b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">1フレーム前の生の加速度[km/h/s]  <a href="#ae13696a2ebddcbeaf72c634f6c629b36">[詳解]</a><br/></td></tr>
+<tr class="separator:ae13696a2ebddcbeaf72c634f6c629b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5030b28f6a27d8248937469d3139ca2d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_accel.html#a5030b28f6a27d8248937469d3139ca2d">alpha_</a> = 0.2</td></tr>
+<tr class="memdesc:a5030b28f6a27d8248937469d3139ca2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">平滑化係数(0&lt;α&lt;1)  <a href="#a5030b28f6a27d8248937469d3139ca2d">[詳解]</a><br/></td></tr>
+<tr class="separator:a5030b28f6a27d8248937469d3139ca2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>列車の加速度を算出するクラス </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a class="anchor" id="a3c139b211116188fbef45b1636a7a898"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ATCFS.Accel.Accel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>新しいインスタンスを作成する </p>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a class="anchor" id="a3a50162bb3e57141e79d050aaa9001aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Accel.CalcAccel </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>speed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>deltaTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>列車の生の加速度を算出する関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td>列車速度[km/h]</td></tr>
+    <tr><td class="paramname">deltaTime</td><td>微小時間[s]</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_accel_a3a50162bb3e57141e79d050aaa9001aa_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_accel_a3a50162bb3e57141e79d050aaa9001aa_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_accel_a3a50162bb3e57141e79d050aaa9001aa_icgraph" id="class_a_t_c_f_s_1_1_accel_a3a50162bb3e57141e79d050aaa9001aa_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_accel.html#a8e7791c3e51c33bd3fd76802c0212e8a" title="1フレームごとに呼び出される関数 " alt="" coords="221,5,368,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad40f20c634295c0ac30e5278913d04f9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Accel.CalcEmaAccel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>列車の指数移動平均加速度を算出する関数 </p>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_accel_ad40f20c634295c0ac30e5278913d04f9_icgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_accel_ad40f20c634295c0ac30e5278913d04f9_icgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_accel_ad40f20c634295c0ac30e5278913d04f9_icgraph" id="class_a_t_c_f_s_1_1_accel_ad40f20c634295c0ac30e5278913d04f9_icgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_accel.html#a8e7791c3e51c33bd3fd76802c0212e8a" title="1フレームごとに呼び出される関数 " alt="" coords="248,5,395,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8e7791c3e51c33bd3fd76802c0212e8a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Accel.Elapse </td>
+          <td>(</td>
+          <td class="paramtype">ElapseData&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref bool&#160;</td>
+          <td class="paramname"><em>blocking</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>1フレームごとに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The data.</td></tr>
+    <tr><td class="paramname">blocking</td><td>保安装置がブロックされているか、後続の保安装置をブロックするかどうか。</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#ac2ee081f2aa6906f6b3d11cbccaa2d9d">ATCFS.Device</a>を実装しています。</p>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_accel_a8e7791c3e51c33bd3fd76802c0212e8a_cgraph.png" border="0" usemap="#class_a_t_c_f_s_1_1_accel_a8e7791c3e51c33bd3fd76802c0212e8a_cgraph" alt=""/></div>
+<map name="class_a_t_c_f_s_1_1_accel_a8e7791c3e51c33bd3fd76802c0212e8a_cgraph" id="class_a_t_c_f_s_1_1_accel_a8e7791c3e51c33bd3fd76802c0212e8a_cgraph">
+<area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_accel.html#a3a50162bb3e57141e79d050aaa9001aa" title="列車の生の加速度を算出する関数 " alt="" coords="214,5,381,32"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_accel.html#ad40f20c634295c0ac30e5278913d04f9" title="列車の指数移動平均加速度を算出する関数 " alt="" coords="200,56,395,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae7fb12b29529709aca0a04614c05ece3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Accel.HornBlow </td>
+          <td>(</td>
+          <td class="paramtype">HornTypes&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>警笛が扱われたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>警笛のタイプ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#a883d905fb712d202fff4b7b1faa13cc2">ATCFS.Device</a>を実装しています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a33bc1c6d0f2645f9df51494521c71145"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Accel.Initialize </td>
+          <td>(</td>
+          <td class="paramtype">InitializationModes&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ゲーム開始時に呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>初期化モード</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#adf16b139b50fae039518a4c902c62e99">ATCFS.Device</a>を実装しています。</p>
+
+</div>
+</div>
+<a class="anchor" id="adf4bf268a403e433ea6c44dbb1832d1b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Accel.KeyDown </td>
+          <td>(</td>
+          <td class="paramtype">VirtualKeys&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATSキーが押されたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>ATSキー</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#a54bf507974b957d821683c51a2e38438">ATCFS.Device</a>を実装しています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ada91b58203248c9f7bf2591345125112"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Accel.KeyUp </td>
+          <td>(</td>
+          <td class="paramtype">VirtualKeys&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATSキーが離されたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>ATSキー</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#ac5bc6c1a8c15c5387b478374dbde7f17">ATCFS.Device</a>を実装しています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a246a49e0c8f023712959201eb96b9237"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Accel.SetBeacon </td>
+          <td>(</td>
+          <td class="paramtype">BeaconData&#160;</td>
+          <td class="paramname"><em>beacon</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>地上子を越えたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">beacon</td><td>車上子で受け取った情報</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#aed213602939b7c96668a9dc953678377">ATCFS.Device</a>を実装しています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6bdd7ebcc6a9d8478453cce13150b469"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Accel.SetBrake </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>brakeNotch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ブレーキが扱われたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">brakeNotch</td><td>ブレーキノッチ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#a9a83e70a0b16a942f72587f8d4b42045">ATCFS.Device</a>を実装しています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a966752ac3b0c66f15e4581a53a9ca83c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Accel.SetPower </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>powerNotch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>主ハンドルが扱われたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">powerNotch</td><td>力行ノッチ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#a07c6fb1ddeb34eb506c22cc7907a2c36">ATCFS.Device</a>を実装しています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f6a1bd0d318a658e986c885ce83c8d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Accel.SetReverser </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>reverser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>レバーサーが扱われたときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reverser</td><td>レバーサ位置</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#a2f6b3074eb98a96384ba720d23dafbcd">ATCFS.Device</a>を実装しています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a00c514beb30292f079ff1c392d7c135d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void ATCFS.Accel.SetSignal </td>
+          <td>(</td>
+          <td class="paramtype">SignalData[]&#160;</td>
+          <td class="paramname"><em>signal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の閉塞の信号が変化したときに呼び出される関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signal</td><td>信号番号</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="class_a_t_c_f_s_1_1_device.html#adb8acc1202aa20ef6624ca9ed702634a">ATCFS.Device</a>を実装しています。</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a class="anchor" id="a5030b28f6a27d8248937469d3139ca2d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ATCFS.Accel.alpha_ = 0.2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>平滑化係数(0&lt;α&lt;1) </p>
+
+</div>
+</div>
+<a class="anchor" id="ae13696a2ebddcbeaf72c634f6c629b36"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ATCFS.Accel.prev_raw_accel_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>1フレーム前の生の加速度[km/h/s] </p>
+
+</div>
+</div>
+<a class="anchor" id="acf47c25b9fd8b8512b8e45073be4a78e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ATCFS.Accel.prev_spd_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>1フレーム前の列車速度[km/h] </p>
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a class="anchor" id="aeacf5c5f0e76e150d23bc16709b5b7ff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ATCFS.Accel.ema_accel_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指数移動平均加速度[km/h/s] </p>
+
+</div>
+</div>
+<a class="anchor" id="ab9c17ebc2e6318cf0761702b0f68215c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ATCFS.Accel.raw_accel_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>生の加速度[km/h/s] </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li><a class="el" href="_accel_8cs.html">Accel.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

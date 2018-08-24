@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ATCFS For OpenBVE: IniParser.Model.KeyData クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ATCFS For OpenBVE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
+      <li><a href="namespaces.html"><span>パッケージ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>クラス一覧</span></a></li>
+      <li><a href="classes.html"><span>クラス索引</span></a></li>
+      <li><a href="inherits.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>クラスメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>名前空間</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_ini_parser.html">IniParser</a></li><li class="navelem"><a class="el" href="namespace_ini_parser_1_1_model.html">Model</a></li><li class="navelem"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html">KeyData</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="class_ini_parser_1_1_model_1_1_key_data-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">IniParser.Model.KeyData クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Information associated to a key from an INI file. Includes both the value and the comments associated to the key.  
+ <a href="class_ini_parser_1_1_model_1_1_key_data.html#details">[詳解]</a></p>
+<div class="dynheader">
+IniParser.Model.KeyData の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_model_1_1_key_data__inherit__graph.png" border="0" usemap="#_ini_parser_8_model_8_key_data_inherit__map" alt="Inheritance graph"/></div>
+<map name="_ini_parser_8_model_8_key_data_inherit__map" id="_ini_parser_8_model_8_key_data_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+IniParser.Model.KeyData 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_model_1_1_key_data__coll__graph.png" border="0" usemap="#_ini_parser_8_model_8_key_data_coll__map" alt="Collaboration graph"/></div>
+<map name="_ini_parser_8_model_8_key_data_coll__map" id="_ini_parser_8_model_8_key_data_coll__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a4c4c5653e5b73b54b7ed952251ba4394"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html#a4c4c5653e5b73b54b7ed952251ba4394">KeyData</a> (string keyName)</td></tr>
+<tr class="memdesc:a4c4c5653e5b73b54b7ed952251ba4394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html" title="Information associated to a key from an INI file. Includes both the value and the comments associated...">KeyData</a> class.  <a href="#a4c4c5653e5b73b54b7ed952251ba4394">[詳解]</a><br/></td></tr>
+<tr class="separator:a4c4c5653e5b73b54b7ed952251ba4394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aab8c5f00f10bf362da8d0e176b66ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html#a4aab8c5f00f10bf362da8d0e176b66ff">KeyData</a> (<a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html">KeyData</a> ori)</td></tr>
+<tr class="memdesc:a4aab8c5f00f10bf362da8d0e176b66ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html" title="Information associated to a key from an INI file. Includes both the value and the comments associated...">KeyData</a> class from a previous instance of <a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html" title="Information associated to a key from an INI file. Includes both the value and the comments associated...">KeyData</a>.  <a href="#a4aab8c5f00f10bf362da8d0e176b66ff">[詳解]</a><br/></td></tr>
+<tr class="separator:a4aab8c5f00f10bf362da8d0e176b66ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae13dc4b20fe8fc0aa8e991ddad6851fc"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html#ae13dc4b20fe8fc0aa8e991ddad6851fc">Clone</a> ()</td></tr>
+<tr class="memdesc:ae13dc4b20fe8fc0aa8e991ddad6851fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new object that is a copy of the current instance.  <a href="#ae13dc4b20fe8fc0aa8e991ddad6851fc">[詳解]</a><br/></td></tr>
+<tr class="separator:ae13dc4b20fe8fc0aa8e991ddad6851fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:a977661395d22a959651d0f78a5c52bf0"><td class="memItemLeft" align="right" valign="top">List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html#a977661395d22a959651d0f78a5c52bf0">Comments</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a977661395d22a959651d0f78a5c52bf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the comment list associated to this key.  <a href="#a977661395d22a959651d0f78a5c52bf0">[詳解]</a><br/></td></tr>
+<tr class="separator:a977661395d22a959651d0f78a5c52bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a466c624755d53ba5b241faa1b1d5dbf9"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html#a466c624755d53ba5b241faa1b1d5dbf9">Value</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a466c624755d53ba5b241faa1b1d5dbf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the value associated to this key.  <a href="#a466c624755d53ba5b241faa1b1d5dbf9">[詳解]</a><br/></td></tr>
+<tr class="separator:a466c624755d53ba5b241faa1b1d5dbf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a95b460676fc6bad44641afaea25b21"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html#a6a95b460676fc6bad44641afaea25b21">KeyName</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a6a95b460676fc6bad44641afaea25b21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the name of the key.  <a href="#a6a95b460676fc6bad44641afaea25b21">[詳解]</a><br/></td></tr>
+<tr class="separator:a6a95b460676fc6bad44641afaea25b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a1e7d8095c70746c80ff099de534168c1"><td class="memItemLeft" align="right" valign="top">List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html#a1e7d8095c70746c80ff099de534168c1">_comments</a></td></tr>
+<tr class="separator:a1e7d8095c70746c80ff099de534168c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a003876e3393d762516d90b9718255817"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html#a003876e3393d762516d90b9718255817">_value</a></td></tr>
+<tr class="separator:a003876e3393d762516d90b9718255817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46bbfd7f9ea1488f1715a76c1f7586cc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html#a46bbfd7f9ea1488f1715a76c1f7586cc">_keyName</a></td></tr>
+<tr class="separator:a46bbfd7f9ea1488f1715a76c1f7586cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Information associated to a key from an INI file. Includes both the value and the comments associated to the key. </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a class="anchor" id="a4c4c5653e5b73b54b7ed952251ba4394"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IniParser.Model.KeyData.KeyData </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>keyName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html" title="Information associated to a key from an INI file. Includes both the value and the comments associated...">KeyData</a> class. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4aab8c5f00f10bf362da8d0e176b66ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IniParser.Model.KeyData.KeyData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html">KeyData</a>&#160;</td>
+          <td class="paramname"><em>ori</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html" title="Information associated to a key from an INI file. Includes both the value and the comments associated...">KeyData</a> class from a previous instance of <a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html" title="Information associated to a key from an INI file. Includes both the value and the comments associated...">KeyData</a>. </p>
+<p>Data is deeply copied </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ori</td><td>The instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_key_data.html" title="Information associated to a key from an INI file. Includes both the value and the comments associated...">KeyData</a> class used to create the new instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a class="anchor" id="ae13dc4b20fe8fc0aa8e991ddad6851fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">object IniParser.Model.KeyData.Clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new object that is a copy of the current instance. </p>
+<dl class="section return"><dt>戻り値</dt><dd>A new object that is a copy of this instance. </dd></dl>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_model_1_1_key_data_ae13dc4b20fe8fc0aa8e991ddad6851fc_icgraph.png" border="0" usemap="#class_ini_parser_1_1_model_1_1_key_data_ae13dc4b20fe8fc0aa8e991ddad6851fc_icgraph" alt=""/></div>
+<map name="class_ini_parser_1_1_model_1_1_key_data_ae13dc4b20fe8fc0aa8e991ddad6851fc_icgraph" id="class_ini_parser_1_1_model_1_1_key_data_ae13dc4b20fe8fc0aa8e991ddad6851fc_icgraph">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#a5331d63d3566617e5e4a349d43fd806e" title="Initializes a new instance of the KeyDataCollection class from a previous instance of KeyDataCollecti..." alt="" coords="227,5,458,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a class="anchor" id="a1e7d8095c70746c80ff099de534168c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;string&gt; IniParser.Model.KeyData._comments</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a46bbfd7f9ea1488f1715a76c1f7586cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string IniParser.Model.KeyData._keyName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a003876e3393d762516d90b9718255817"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string IniParser.Model.KeyData._value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a class="anchor" id="a977661395d22a959651d0f78a5c52bf0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;string&gt; IniParser.Model.KeyData.Comments</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the comment list associated to this key. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6a95b460676fc6bad44641afaea25b21"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string IniParser.Model.KeyData.KeyName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the name of the key. </p>
+
+</div>
+</div>
+<a class="anchor" id="a466c624755d53ba5b241faa1b1d5dbf9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string IniParser.Model.KeyData.Value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the value associated to this key. </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>IniParser/Model/<a class="el" href="_key_data_8cs.html">KeyData.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

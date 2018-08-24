@@ -1,0 +1,6 @@
+<map id="ATCFS.Atc.CalcPattern" name="ATCFS.Atc.CalcPattern">
+<area shape="rect" id="node2" href="$class_a_t_c_f_s_1_1_atc.html#a2d6d2eb23a45b3ab8ae45227b86b2dc3" title="パターンが無効の場合に目標速度を車両ATC最高速度に修正する関数 " alt="" coords="227,5,392,32"/>
+<area shape="rect" id="node3" href="$class_a_t_c_f_s_1_1_atc.html#a0de62ea15575034d0a0b4ed89225606c" title="パターン照査速度を算出する関数 " alt="" coords="216,56,403,83"/>
+<area shape="rect" id="node5" href="$class_a_t_c_f_s_1_1_atc.html#afa1cc9d4b37a7d65b9b9c580197983bb" title="パターン降下開始地点を算出する関数 " alt="" coords="217,107,401,133"/>
+<area shape="rect" id="node4" href="$class_a_t_c_f_s_1_1_atc.html#a2ac5f5a371f3ddca87794e2167481024" title="距離に対応する速度を返す関数 " alt="" coords="451,56,629,83"/>
+</map>

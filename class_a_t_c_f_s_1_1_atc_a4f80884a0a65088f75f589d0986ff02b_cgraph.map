@@ -1,0 +1,23 @@
+<map id="ATCFS.Atc.Elapse" name="ATCFS.Atc.Elapse">
+<area shape="rect" id="node2" href="$class_a_t_c_f_s_1_1_atc.html#ae5a4455f811446b4a7c7ffd820dbdca5" title="SetBeaconDataの実行タイミングを制御するための関数 " alt="" coords="198,5,381,32"/>
+<area shape="rect" id="node3" href="$class_a_t_c_f_s_1_1_atc.html#ab6e8b29ce45c5e55e4126548f84abfc5" title="アナログATC用のブレーキノッチを出力する関数 " alt="" coords="209,157,369,184"/>
+<area shape="rect" id="node4" href="$class_a_t_c_f_s_1_1_atc.html#a2779448d6e34bdefe0efcfc845c4e0ce" title="信号インデックスを速度に変換する関数 " alt="" coords="726,157,845,184"/>
+<area shape="rect" id="node6" href="$class_a_t_c_f_s_1_1_atc.html#a97884941052bdd5c3bca2c909766d4bc" title="パターン情報を集約する関数 " alt="" coords="201,411,378,437"/>
+<area shape="rect" id="node7" href="$class_a_t_c_f_s_1_1_atc.html#abb3d4416df0ad11b2b0bde312bcf5b9b" title="各パターン情報からパターン照査速度およびパターン降下開始地点を算出する関数 " alt="" coords="208,461,371,488"/>
+<area shape="rect" id="node12" href="$class_a_t_c_f_s_1_1_atc.html#a230855b9d6ceab06efbc58a0c2e01113" title="デジタルATC用車内信号を生成する関数 " alt="" coords="190,259,389,285"/>
+<area shape="rect" id="node14" href="$class_a_t_c_f_s_1_1_atc.html#a9c28a83a33b17c0c4b222fa8178d6dc3" title="デジタルATC用のブレーキノッチを出力する関数 " alt="" coords="209,512,370,539"/>
+<area shape="rect" id="node17" href="$class_a_t_c_f_s_1_1_atc.html#aef050fdcb53a0f13071cd92f99ee687a" title="インジケーターの表示を初期化する関数 " alt="" coords="200,563,379,589"/>
+<area shape="rect" id="node18" href="$class_a_t_c_f_s_1_1_atc.html#abfb6c3e51b8d20329c13567f5db920d0" title="インジケーターの表示を実行する関数 " alt="" coords="205,309,373,336"/>
+<area shape="rect" id="node22" href="$class_a_t_c_f_s_1_1_atc.html#ae52e25ab2e9982a8272da503158168f1" title="副速度計の表示を実行する関数 " alt="" coords="437,411,648,437"/>
+<area shape="rect" id="node5" href="$class_a_t_c_f_s_1_1_atc.html#a74f9a49762a5bb494285136a23dd88aa" title="予見Fuzzy制御ではないブレーキノッチを出力する関数 " alt="" coords="445,157,640,184"/>
+<area shape="rect" id="node8" href="$class_a_t_c_f_s_1_1_atc.html#a2d6d2eb23a45b3ab8ae45227b86b2dc3" title="パターンが無効の場合に目標速度を車両ATC最高速度に修正する関数 " alt="" coords="460,461,625,488"/>
+<area shape="rect" id="node9" href="$class_a_t_c_f_s_1_1_atc.html#a0de62ea15575034d0a0b4ed89225606c" title="パターン照査速度を算出する関数 " alt="" coords="449,512,636,539"/>
+<area shape="rect" id="node11" href="$class_a_t_c_f_s_1_1_atc.html#afa1cc9d4b37a7d65b9b9c580197983bb" title="パターン降下開始地点を算出する関数 " alt="" coords="451,563,635,589"/>
+<area shape="rect" id="node10" href="$class_a_t_c_f_s_1_1_atc.html#a2ac5f5a371f3ddca87794e2167481024" title="距離に対応する速度を返す関数 " alt="" coords="697,512,874,539"/>
+<area shape="rect" id="node13" href="$class_a_t_c_f_s_1_1_atc.html#a756907f325c585f95f360d7f8d58131e" title="速度に対応する信号インデックスを返す関数 " alt="" coords="457,259,628,285"/>
+<area shape="rect" id="node15" href="$class_a_t_c_f_s_1_1_atc.html#a3943dbf015842beacf34535b6ecd9893" title="全パターンに対する最大の最適ブレーキノッチを出力する関数 " alt="" coords="460,613,625,640"/>
+<area shape="rect" id="node16" href="$class_a_t_c_f_s_1_1_atc.html#a16a6fdabf7c0f79c430670289eb5a27b" title="パターンに対する最適ブレーキノッチを出力する関数 " alt="" coords="708,613,863,640"/>
+<area shape="rect" id="node19" href="$class_a_t_c_f_s_1_1_atc.html#a8457c978e07b75016468b67956fb6a92" title="アナログATC用インジケーターの表示を実行する関数 " alt="" coords="454,309,631,336"/>
+<area shape="rect" id="node21" href="$class_a_t_c_f_s_1_1_atc.html#aeb667232faba671bd6a9e4414824a091" title="デジタルATC用インジケーターの表示を実行する関数 " alt="" coords="453,360,632,387"/>
+<area shape="rect" id="node20" href="$class_a_t_c_f_s_1_1_atc.html#a4c3ffb8f8b19ced89089303ca4c73624" title="速度を7セグに表示する関数 " alt="" coords="705,360,866,387"/>
+</map>

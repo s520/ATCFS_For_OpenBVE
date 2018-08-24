@@ -1,0 +1,641 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ATCFS For OpenBVE: IniParser.Model.SectionDataCollection クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ATCFS For OpenBVE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
+      <li><a href="namespaces.html"><span>パッケージ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>クラス一覧</span></a></li>
+      <li><a href="classes.html"><span>クラス索引</span></a></li>
+      <li><a href="inherits.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>クラスメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>名前空間</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_ini_parser.html">IniParser</a></li><li class="navelem"><a class="el" href="namespace_ini_parser_1_1_model.html">Model</a></li><li class="navelem"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="class_ini_parser_1_1_model_1_1_section_data_collection-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">IniParser.Model.SectionDataCollection クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p> 
+ <a href="class_ini_parser_1_1_model_1_1_section_data_collection.html#details">[詳解]</a></p>
+<div class="dynheader">
+IniParser.Model.SectionDataCollection の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_model_1_1_section_data_collection__inherit__graph.png" border="0" usemap="#_ini_parser_8_model_8_section_data_collection_inherit__map" alt="Inheritance graph"/></div>
+<map name="_ini_parser_8_model_8_section_data_collection_inherit__map" id="_ini_parser_8_model_8_section_data_collection_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+IniParser.Model.SectionDataCollection 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_model_1_1_section_data_collection__coll__graph.png" border="0" usemap="#_ini_parser_8_model_8_section_data_collection_coll__map" alt="Collaboration graph"/></div>
+<map name="_ini_parser_8_model_8_section_data_collection_coll__map" id="_ini_parser_8_model_8_section_data_collection_coll__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:afba95ef0c724bd1d404dbe9997a37d79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html#afba95ef0c724bd1d404dbe9997a37d79">SectionDataCollection</a> ()</td></tr>
+<tr class="memdesc:afba95ef0c724bd1d404dbe9997a37d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a> class.  <a href="#afba95ef0c724bd1d404dbe9997a37d79">[詳解]</a><br/></td></tr>
+<tr class="separator:afba95ef0c724bd1d404dbe9997a37d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a285c952468a4fb96680a377c237f169f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html#a285c952468a4fb96680a377c237f169f">SectionDataCollection</a> (IEqualityComparer&lt; string &gt; searchComparer)</td></tr>
+<tr class="memdesc:a285c952468a4fb96680a377c237f169f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">IniParser.Model.SectionDataCollection</a> class.  <a href="#a285c952468a4fb96680a377c237f169f">[詳解]</a><br/></td></tr>
+<tr class="separator:a285c952468a4fb96680a377c237f169f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9afe9bf1031a18982519caac0b1c368"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html#ad9afe9bf1031a18982519caac0b1c368">SectionDataCollection</a> (<a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a> ori, IEqualityComparer&lt; string &gt; searchComparer)</td></tr>
+<tr class="memdesc:ad9afe9bf1031a18982519caac0b1c368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a> class from a previous instance of <a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a>.  <a href="#ad9afe9bf1031a18982519caac0b1c368">[詳解]</a><br/></td></tr>
+<tr class="separator:ad9afe9bf1031a18982519caac0b1c368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55de0766176ef13f8cf2b3d6379f23b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html#a55de0766176ef13f8cf2b3d6379f23b2">AddSection</a> (string keyName)</td></tr>
+<tr class="memdesc:a55de0766176ef13f8cf2b3d6379f23b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new section with empty data.  <a href="#a55de0766176ef13f8cf2b3d6379f23b2">[詳解]</a><br/></td></tr>
+<tr class="separator:a55de0766176ef13f8cf2b3d6379f23b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6754df1ae61bf78bda2d61e0497f1b71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html#a6754df1ae61bf78bda2d61e0497f1b71">Add</a> (<a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html">SectionData</a> data)</td></tr>
+<tr class="memdesc:a6754df1ae61bf78bda2d61e0497f1b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new <a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html" title="Information associated to a section in a INI File Includes both the value and the comments associated...">SectionData</a> instance to the collection  <a href="#a6754df1ae61bf78bda2d61e0497f1b71">[詳解]</a><br/></td></tr>
+<tr class="separator:a6754df1ae61bf78bda2d61e0497f1b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26567ee59a9f1cb167b2e8db03eb37ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html#a26567ee59a9f1cb167b2e8db03eb37ce">Clear</a> ()</td></tr>
+<tr class="memdesc:a26567ee59a9f1cb167b2e8db03eb37ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all entries from this collection  <a href="#a26567ee59a9f1cb167b2e8db03eb37ce">[詳解]</a><br/></td></tr>
+<tr class="separator:a26567ee59a9f1cb167b2e8db03eb37ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65f530bf3e46625ffb8106c552d6cb16"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html#a65f530bf3e46625ffb8106c552d6cb16">ContainsSection</a> (string keyName)</td></tr>
+<tr class="memdesc:a65f530bf3e46625ffb8106c552d6cb16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets if a section with a specified name exists in the collection.  <a href="#a65f530bf3e46625ffb8106c552d6cb16">[詳解]</a><br/></td></tr>
+<tr class="separator:a65f530bf3e46625ffb8106c552d6cb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6942a80e286ca6c2bd0785a6b1829627"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html">SectionData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html#a6942a80e286ca6c2bd0785a6b1829627">GetSectionData</a> (string sectionName)</td></tr>
+<tr class="memdesc:a6942a80e286ca6c2bd0785a6b1829627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the section data from a specify section given its name.  <a href="#a6942a80e286ca6c2bd0785a6b1829627">[詳解]</a><br/></td></tr>
+<tr class="separator:a6942a80e286ca6c2bd0785a6b1829627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2554a2cec6ed334a487bb3bf4ef22b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html#af2554a2cec6ed334a487bb3bf4ef22b8">Merge</a> (<a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a> sectionsToMerge)</td></tr>
+<tr class="separator:af2554a2cec6ed334a487bb3bf4ef22b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b8efecf6d0d56712e4ef640a7677c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html#af6b8efecf6d0d56712e4ef640a7677c6">SetSectionData</a> (string sectionName, <a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html">SectionData</a> data)</td></tr>
+<tr class="memdesc:af6b8efecf6d0d56712e4ef640a7677c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the section data for given a section name.  <a href="#af6b8efecf6d0d56712e4ef640a7677c6">[詳解]</a><br/></td></tr>
+<tr class="separator:af6b8efecf6d0d56712e4ef640a7677c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b7bf4861d6ad402fb4507ccc82a65b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html#a88b7bf4861d6ad402fb4507ccc82a65b">RemoveSection</a> (string keyName)</td></tr>
+<tr class="separator:a88b7bf4861d6ad402fb4507ccc82a65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e1f5a58299678ec668f0a25ebbec004"><td class="memItemLeft" align="right" valign="top">IEnumerator&lt; <a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html">SectionData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html#a8e1f5a58299678ec668f0a25ebbec004">GetEnumerator</a> ()</td></tr>
+<tr class="memdesc:a8e1f5a58299678ec668f0a25ebbec004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an enumerator that iterates through the collection.  <a href="#a8e1f5a58299678ec668f0a25ebbec004">[詳解]</a><br/></td></tr>
+<tr class="separator:a8e1f5a58299678ec668f0a25ebbec004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7aa7d44d4e74bd539b9b04232d0dfd9"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html#ab7aa7d44d4e74bd539b9b04232d0dfd9">Clone</a> ()</td></tr>
+<tr class="memdesc:ab7aa7d44d4e74bd539b9b04232d0dfd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new object that is a copy of the current instance.  <a href="#ab7aa7d44d4e74bd539b9b04232d0dfd9">[詳解]</a><br/></td></tr>
+<tr class="separator:ab7aa7d44d4e74bd539b9b04232d0dfd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:ac0509f4add63cd9aedd9fe9e966edafb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html#ac0509f4add63cd9aedd9fe9e966edafb">Count</a><code> [get]</code></td></tr>
+<tr class="memdesc:ac0509f4add63cd9aedd9fe9e966edafb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of <a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html" title="Information associated to a section in a INI File Includes both the value and the comments associated...">SectionData</a> elements in the collection  <a href="#ac0509f4add63cd9aedd9fe9e966edafb">[詳解]</a><br/></td></tr>
+<tr class="separator:ac0509f4add63cd9aedd9fe9e966edafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f37a376e93965a9ff9d863ccf3c6f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html">KeyDataCollection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html#a68f37a376e93965a9ff9d863ccf3c6f2">this[string sectionName]</a><code> [get]</code></td></tr>
+<tr class="memdesc:a68f37a376e93965a9ff9d863ccf3c6f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the key data associated to a specified section name.  <a href="#a68f37a376e93965a9ff9d863ccf3c6f2">[詳解]</a><br/></td></tr>
+<tr class="separator:a68f37a376e93965a9ff9d863ccf3c6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a72425a432133d6479639c3bf1be6fd23"><td class="memItemLeft" align="right" valign="top">IEnumerator IEnumerable.&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html#a72425a432133d6479639c3bf1be6fd23">GetEnumerator</a> ()</td></tr>
+<tr class="memdesc:a72425a432133d6479639c3bf1be6fd23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an enumerator that iterates through a collection.  <a href="#a72425a432133d6479639c3bf1be6fd23">[詳解]</a><br/></td></tr>
+<tr class="separator:a72425a432133d6479639c3bf1be6fd23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a8e327f9d490fd6cbaacbb4a9d3e5d786"><td class="memItemLeft" align="right" valign="top">IEqualityComparer&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html#a8e327f9d490fd6cbaacbb4a9d3e5d786">_searchComparer</a></td></tr>
+<tr class="separator:a8e327f9d490fd6cbaacbb4a9d3e5d786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa41f4b4fc2438c5074c382521f554aa3"><td class="memItemLeft" align="right" valign="top">readonly Dictionary&lt; string, <br class="typebreak"/>
+<a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html">SectionData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html#aa41f4b4fc2438c5074c382521f554aa3">_sectionData</a></td></tr>
+<tr class="memdesc:aa41f4b4fc2438c5074c382521f554aa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data associated to this section  <a href="#aa41f4b4fc2438c5074c382521f554aa3">[詳解]</a><br/></td></tr>
+<tr class="separator:aa41f4b4fc2438c5074c382521f554aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Represents a collection of <a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html" title="Information associated to a section in a INI File Includes both the value and the comments associated...">SectionData</a>.</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a class="anchor" id="afba95ef0c724bd1d404dbe9997a37d79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IniParser.Model.SectionDataCollection.SectionDataCollection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a> class. </p>
+
+</div>
+</div>
+<a class="anchor" id="a285c952468a4fb96680a377c237f169f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IniParser.Model.SectionDataCollection.SectionDataCollection </td>
+          <td>(</td>
+          <td class="paramtype">IEqualityComparer&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>searchComparer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">IniParser.Model.SectionDataCollection</a> class. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">searchComparer</td><td>StringComparer used when accessing section names </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad9afe9bf1031a18982519caac0b1c368"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IniParser.Model.SectionDataCollection.SectionDataCollection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a>&#160;</td>
+          <td class="paramname"><em>ori</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IEqualityComparer&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>searchComparer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a> class from a previous instance of <a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a>. </p>
+<p>Data is deeply copied </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ori</td><td>The instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a> class used to create the new instance.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a class="anchor" id="a6754df1ae61bf78bda2d61e0497f1b71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IniParser.Model.SectionDataCollection.Add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html">SectionData</a>&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a new <a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html" title="Information associated to a section in a INI File Includes both the value and the comments associated...">SectionData</a> instance to the collection </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Data.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a55de0766176ef13f8cf2b3d6379f23b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IniParser.Model.SectionDataCollection.AddSection </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>keyName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new section with empty data. </p>
+<p>If a section with the same name exists, this operation has no effect.</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyName</td><td>Name of the section to be created</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt;return&gt;<code>true</code> if the a new section with the specified name was added, <code>false</code> otherwise&lt;/return&gt; </p>
+<dl class="exception"><dt>例外</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td>If the section name is not valid.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a26567ee59a9f1cb167b2e8db03eb37ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IniParser.Model.SectionDataCollection.Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes all entries from this collection </p>
+
+</div>
+</div>
+<a class="anchor" id="ab7aa7d44d4e74bd539b9b04232d0dfd9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">object IniParser.Model.SectionDataCollection.Clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new object that is a copy of the current instance. </p>
+<dl class="section return"><dt>戻り値</dt><dd>A new object that is a copy of this instance. </dd></dl>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_model_1_1_section_data_collection_ab7aa7d44d4e74bd539b9b04232d0dfd9_icgraph.png" border="0" usemap="#class_ini_parser_1_1_model_1_1_section_data_collection_ab7aa7d44d4e74bd539b9b04232d0dfd9_icgraph" alt=""/></div>
+<map name="class_ini_parser_1_1_model_1_1_section_data_collection_ab7aa7d44d4e74bd539b9b04232d0dfd9_icgraph" id="class_ini_parser_1_1_model_1_1_section_data_collection_ab7aa7d44d4e74bd539b9b04232d0dfd9_icgraph">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_model_1_1_ini_data.html#a41f87775ee7caad2c15493cb3f846988" title="Initializes a new IniData instance using a previous SectionDataCollection. " alt="" coords="243,5,405,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a65f530bf3e46625ffb8106c552d6cb16"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IniParser.Model.SectionDataCollection.ContainsSection </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>keyName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets if a section with a specified name exists in the collection. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyName</td><td>Name of the section to search</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd><code>true</code> if a section with the specified name exists in the collection <code>false</code> otherwise </dd></dl>
+
+<p><div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_model_1_1_section_data_collection_a65f530bf3e46625ffb8106c552d6cb16_icgraph.png" border="0" usemap="#class_ini_parser_1_1_model_1_1_section_data_collection_a65f530bf3e46625ffb8106c552d6cb16_icgraph" alt=""/></div>
+<map name="class_ini_parser_1_1_model_1_1_section_data_collection_a65f530bf3e46625ffb8106c552d6cb16_icgraph" id="class_ini_parser_1_1_model_1_1_section_data_collection_a65f530bf3e46625ffb8106c552d6cb16_icgraph">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html#a5b436e91fa3648a89238c59e7077376a" title="Proccess a string which contains an ini section. " alt="" coords="243,5,405,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8e1f5a58299678ec668f0a25ebbec004"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator&lt;<a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html">SectionData</a>&gt; IniParser.Model.SectionDataCollection.GetEnumerator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an enumerator that iterates through the collection. </p>
+<dl class="section return"><dt>戻り値</dt><dd>A T:System.Collections.Generic.IEnumerator`1 that can be used to iterate through the collection. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a72425a432133d6479639c3bf1be6fd23"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator IEnumerable. IniParser.Model.SectionDataCollection.GetEnumerator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an enumerator that iterates through a collection. </p>
+<dl class="section return"><dt>戻り値</dt><dd>An T:System.Collections.IEnumerator object that can be used to iterate through the collection. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6942a80e286ca6c2bd0785a6b1829627"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html">SectionData</a> IniParser.Model.SectionDataCollection.GetSectionData </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>sectionName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the section data from a specify section given its name. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sectionName</td><td>Name of the section.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>An instance of a <a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html" title="Information associated to a section in a INI File Includes both the value and the comments associated...">SectionData</a> class holding the section data for the currently INI data </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af2554a2cec6ed334a487bb3bf4ef22b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IniParser.Model.SectionDataCollection.Merge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a>&#160;</td>
+          <td class="paramname"><em>sectionsToMerge</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a88b7bf4861d6ad402fb4507ccc82a65b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IniParser.Model.SectionDataCollection.RemoveSection </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>keyName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p></p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyName</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt;return&gt;<code>true</code> if the section with the specified name was removed, <code>false</code> otherwise&lt;/return&gt; </p>
+
+</div>
+</div>
+<a class="anchor" id="af6b8efecf6d0d56712e4ef640a7677c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IniParser.Model.SectionDataCollection.SetSectionData </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>sectionName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html">SectionData</a>&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the section data for given a section name. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sectionName</td><td></td></tr>
+    <tr><td class="paramname">data</td><td>The new <a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html" title="Information associated to a section in a INI File Includes both the value and the comments associated...">SectionData</a>instance.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a class="anchor" id="a8e327f9d490fd6cbaacbb4a9d3e5d786"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEqualityComparer&lt;string&gt; IniParser.Model.SectionDataCollection._searchComparer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa41f4b4fc2438c5074c382521f554aa3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly Dictionary&lt;string, <a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html">SectionData</a>&gt; IniParser.Model.SectionDataCollection._sectionData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Data associated to this section </p>
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a class="anchor" id="ac0509f4add63cd9aedd9fe9e966edafb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IniParser.Model.SectionDataCollection.Count</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of <a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html" title="Information associated to a section in a INI File Includes both the value and the comments associated...">SectionData</a> elements in the collection </p>
+
+</div>
+</div>
+<a class="anchor" id="a68f37a376e93965a9ff9d863ccf3c6f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html">KeyDataCollection</a> IniParser.Model.SectionDataCollection.this[string sectionName]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the key data associated to a specified section name. </p>
+<p>An instance of as <a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html" title="Represents a collection of Keydata. ">KeyDataCollection</a> class holding the key data from the current parsed INI data, or a <code>null</code> value if the section doesn't exist.</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>IniParser/Model/<a class="el" href="_section_data_collection_8cs.html">SectionDataCollection.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

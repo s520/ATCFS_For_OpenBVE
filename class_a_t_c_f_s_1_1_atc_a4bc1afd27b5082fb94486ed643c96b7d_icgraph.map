@@ -1,0 +1,4 @@
+<map id="ATCFS.Atc.Reset" name="ATCFS.Atc.Reset">
+<area shape="rect" id="node2" href="$class_a_t_c_f_s_1_1_atc.html#a674b5e341b030ee009e4dd54853b79eb" title="確認ボタンが押下された際に実行する関数 " alt="" coords="185,5,367,32"/>
+<area shape="rect" id="node3" href="$class_a_t_c_f_s_1_1_atc.html#ab020fd3c7d4073853e0c6516485e9a75" title="ATSキーが押されたときに呼び出される関数 " alt="" coords="417,5,567,32"/>
+</map>

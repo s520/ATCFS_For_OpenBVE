@@ -1,0 +1,5 @@
+<map id="ATCFS.Atc.Start" name="ATCFS.Atc.Start">
+<area shape="rect" id="node2" href="$class_a_t_c_f_s_1_1_atc.html#a3500abc408fbdca7322b308eaee4c667" title="ゲーム開始時に呼び出される関数 " alt="" coords="177,31,319,57"/>
+<area shape="rect" id="node3" href="$class_a_t_c_f_s_1_1_atc.html#a756907f325c585f95f360d7f8d58131e" title="速度に対応する信号インデックスを返す関数 " alt="" coords="372,5,543,32"/>
+<area shape="rect" id="node4" href="$class_a_t_c_f_s_1_1_atc.html#a710ee4d717f500af61fc102b5edeafb2" title="デジタルATC用速度照査パターンを作成する関数 " alt="" coords="369,56,546,83"/>
+</map>

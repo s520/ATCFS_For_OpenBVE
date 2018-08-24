@@ -1,0 +1,19 @@
+<map id="ATCFS.Atc.AtcA" name="ATCFS.Atc.AtcA">
+<area shape="rect" id="node9" href="$class_a_t_c_f_s_1_1_atc.html" title="ATC&#45;1, ATC&#45;2, ATC&#45;NS, KS&#45;ATC, DS&#45;ATCを再現するクラス " alt="" coords="380,545,471,572"/>
+<area shape="rect" id="node2" href="$class_a_t_c_f_s_1_1_train.html" title="このプラグインによってシミュレートされる列車を表すクラス" alt="" coords="632,477,731,504"/>
+<area shape="rect" id="node10" href="$class_a_t_c_f_s_1_1_atc_1_1_fuzzy.html" title="予見Fuzzy制御を再現するクラス " alt="" coords="851,581,981,608"/>
+<area shape="rect" id="node11" href="$class_a_t_c_f_s_1_1_atc_1_1_atc_d.html" title="ATC&#45;NS, KS&#45;ATC, DS&#45;ATCを再現するクラス " alt="" coords="1126,252,1250,279"/>
+<area shape="rect" id="node12" href="$class_a_t_c_f_s_1_1_atc_1_1_atc_d_1_1_pattern_d.html" title="制限速度パターン関連を記述するクラス " alt="" coords="826,303,1006,329"/>
+<area shape="rect" id="node13" href="$class_a_t_c_f_s_1_1_atc_1_1_atc_d_1_1_station_d.html" title="駅停車パターン関連を記述するクラス " alt="" coords="827,353,1005,380"/>
+<area shape="rect" id="node14" href="$class_a_t_c_f_s_1_1_atc_1_1_atc_d_1_1_section_d.html" title="停止信号パターン関連を記述するクラス " alt="" coords="825,252,1007,279"/>
+<area shape="rect" id="node15" href="$class_a_t_c_f_s_1_1_sub.html" title="その他機能を再現するクラス " alt="" coords="869,635,963,661"/>
+<area shape="rect" id="node16" href="$class_a_t_c_f_s_1_1_ats_p.html" title="ATS&#45;Pを再現するクラス " alt="" coords="1139,519,1237,545"/>
+<area shape="rect" id="node17" href="$class_a_t_c_f_s_1_1_ats_p_1_1_section_p.html" title="停止信号パターン関連を記述するクラス " alt="" coords="838,685,994,712"/>
+<area shape="rect" id="node18" href="$class_a_t_c_f_s_1_1_ats_p_1_1_pattern_p.html" title="制限速度パターン関連を記述するクラス " alt="" coords="839,404,993,431"/>
+<area shape="rect" id="node3" href="$class_a_t_c_f_s_1_1_train_1_1_read_only_handles.html" title="読み込みのみ可能なハンドル操作を表すクラス" alt="" coords="321,423,530,449"/>
+<area shape="rect" id="node4" href="$class_a_t_c_f_s_1_1_accel.html" title="列車の加速度を算出するクラス " alt="" coords="374,628,477,655"/>
+<area shape="rect" id="node5" href="$class_a_t_c_f_s_1_1_device.html" title="抽象的な保安装置を表すクラス " alt="" coords="51,679,114,705"/>
+<area shape="rect" id="node6" href="$class_a_t_c_f_s_1_1_device.html" title="抽象的な保安装置を表すクラス " alt="" coords="370,679,481,705"/>
+<area shape="rect" id="node7" href="$class_a_t_c_f_s_1_1_sounds.html" title="ATCFS.Sounds" alt="" coords="368,95,483,121"/>
+<area shape="rect" id="node8" href="$class_a_t_c_f_s_1_1_sounds_1_1_sound.html" title="ループ音を表すクラス" alt="" coords="5,95,160,121"/>
+</map>

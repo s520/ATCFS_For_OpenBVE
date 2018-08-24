@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ATCFS For OpenBVE: ATCFS.Atc.AtcA クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ATCFS For OpenBVE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
+      <li><a href="namespaces.html"><span>パッケージ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>クラス一覧</span></a></li>
+      <li><a href="classes.html"><span>クラス索引</span></a></li>
+      <li><a href="inherits.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>クラスメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>名前空間</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_a_t_c_f_s.html">ATCFS</a></li><li class="navelem"><a class="el" href="class_a_t_c_f_s_1_1_atc.html">Atc</a></li><li class="navelem"><a class="el" href="class_a_t_c_f_s_1_1_atc_1_1_atc_a.html">AtcA</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pac-methods">関数</a> &#124;
+<a href="#pac-attribs">変数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="class_a_t_c_f_s_1_1_atc_1_1_atc_a-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">ATCFS.Atc.AtcA クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>ATC-1, ATC-2を再現するクラス  
+ <a href="class_a_t_c_f_s_1_1_atc_1_1_atc_a.html#details">[詳解]</a></p>
+<div class="dynheader">
+ATCFS.Atc.AtcA 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_a_t_c_f_s_1_1_atc_1_1_atc_a__coll__graph.png" border="0" usemap="#_a_t_c_f_s_8_atc_8_atc_a_coll__map" alt="Collaboration graph"/></div>
+<map name="_a_t_c_f_s_8_atc_8_atc_a_coll__map" id="_a_t_c_f_s_8_atc_8_atc_a_coll__map">
+<area shape="rect" id="node9" href="class_a_t_c_f_s_1_1_atc.html" title="ATC&#45;1, ATC&#45;2, ATC&#45;NS, KS&#45;ATC, DS&#45;ATCを再現するクラス " alt="" coords="380,545,471,572"/><area shape="rect" id="node2" href="class_a_t_c_f_s_1_1_train.html" title="このプラグインによってシミュレートされる列車を表すクラス" alt="" coords="632,477,731,504"/><area shape="rect" id="node10" href="class_a_t_c_f_s_1_1_atc_1_1_fuzzy.html" title="予見Fuzzy制御を再現するクラス " alt="" coords="851,581,981,608"/><area shape="rect" id="node11" href="class_a_t_c_f_s_1_1_atc_1_1_atc_d.html" title="ATC&#45;NS, KS&#45;ATC, DS&#45;ATCを再現するクラス " alt="" coords="1126,252,1250,279"/><area shape="rect" id="node12" href="class_a_t_c_f_s_1_1_atc_1_1_atc_d_1_1_pattern_d.html" title="制限速度パターン関連を記述するクラス " alt="" coords="826,303,1006,329"/><area shape="rect" id="node13" href="class_a_t_c_f_s_1_1_atc_1_1_atc_d_1_1_station_d.html" title="駅停車パターン関連を記述するクラス " alt="" coords="827,353,1005,380"/><area shape="rect" id="node14" href="class_a_t_c_f_s_1_1_atc_1_1_atc_d_1_1_section_d.html" title="停止信号パターン関連を記述するクラス " alt="" coords="825,252,1007,279"/><area shape="rect" id="node15" href="class_a_t_c_f_s_1_1_sub.html" title="その他機能を再現するクラス " alt="" coords="869,635,963,661"/><area shape="rect" id="node16" href="class_a_t_c_f_s_1_1_ats_p.html" title="ATS&#45;Pを再現するクラス " alt="" coords="1139,519,1237,545"/><area shape="rect" id="node17" href="class_a_t_c_f_s_1_1_ats_p_1_1_section_p.html" title="停止信号パターン関連を記述するクラス " alt="" coords="838,685,994,712"/><area shape="rect" id="node18" href="class_a_t_c_f_s_1_1_ats_p_1_1_pattern_p.html" title="制限速度パターン関連を記述するクラス " alt="" coords="839,404,993,431"/><area shape="rect" id="node3" href="class_a_t_c_f_s_1_1_train_1_1_read_only_handles.html" title="読み込みのみ可能なハンドル操作を表すクラス" alt="" coords="321,423,530,449"/><area shape="rect" id="node4" href="class_a_t_c_f_s_1_1_accel.html" title="列車の加速度を算出するクラス " alt="" coords="374,628,477,655"/><area shape="rect" id="node5" href="class_a_t_c_f_s_1_1_device.html" title="抽象的な保安装置を表すクラス " alt="" coords="51,679,114,705"/><area shape="rect" id="node6" href="class_a_t_c_f_s_1_1_device.html" title="抽象的な保安装置を表すクラス " alt="" coords="370,679,481,705"/><area shape="rect" id="node7" href="class_a_t_c_f_s_1_1_sounds.html" title="ATCFS.Sounds" alt="" coords="368,95,483,121"/><area shape="rect" id="node8" href="class_a_t_c_f_s_1_1_sounds_1_1_sound.html" title="ループ音を表すクラス" alt="" coords="5,95,160,121"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
+関数</h2></td></tr>
+<tr class="memitem:a070e2835e6f2f09156024a7f36275c7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc_1_1_atc_a.html#a070e2835e6f2f09156024a7f36275c7b">AtcA</a> (<a class="el" href="class_a_t_c_f_s_1_1_train.html">Train</a> train)</td></tr>
+<tr class="memdesc:a070e2835e6f2f09156024a7f36275c7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">新しいインスタンスを作成する  <a href="#a070e2835e6f2f09156024a7f36275c7b">[詳解]</a><br/></td></tr>
+<tr class="separator:a070e2835e6f2f09156024a7f36275c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66c3ba4c987c05decf5bbbfca5a70b6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc_1_1_atc_a.html#a66c3ba4c987c05decf5bbbfca5a70b6f">Init</a> ()</td></tr>
+<tr class="memdesc:a66c3ba4c987c05decf5bbbfca5a70b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializeで実行する関数  <a href="#a66c3ba4c987c05decf5bbbfca5a70b6f">[詳解]</a><br/></td></tr>
+<tr class="separator:a66c3ba4c987c05decf5bbbfca5a70b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad729cc90b9bbbc006c60a0663e9257e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc_1_1_atc_a.html#ad729cc90b9bbbc006c60a0663e9257e0">ChangedSignal</a> (int signal)</td></tr>
+<tr class="memdesc:ad729cc90b9bbbc006c60a0663e9257e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">SetSignalで実行され、車内信号を更新する関数  <a href="#ad729cc90b9bbbc006c60a0663e9257e0">[詳解]</a><br/></td></tr>
+<tr class="separator:ad729cc90b9bbbc006c60a0663e9257e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+変数</h2></td></tr>
+<tr class="memitem:af4657444f6215376355cd8a67ef73bed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc_1_1_atc_a.html#af4657444f6215376355cd8a67ef73bed">signal_</a></td></tr>
+<tr class="memdesc:af4657444f6215376355cd8a67ef73bed"><td class="mdescLeft">&#160;</td><td class="mdescRight">車内信号の信号インデックス  <a href="#af4657444f6215376355cd8a67ef73bed">[詳解]</a><br/></td></tr>
+<tr class="separator:af4657444f6215376355cd8a67ef73bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc6a30339d39b54983e7446551e2055"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc_1_1_atc_a.html#a6cc6a30339d39b54983e7446551e2055">is_stop_eb_</a></td></tr>
+<tr class="memdesc:a6cc6a30339d39b54983e7446551e2055"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATC-02, 03信号ブレーキフラグ  <a href="#a6cc6a30339d39b54983e7446551e2055">[詳解]</a><br/></td></tr>
+<tr class="separator:a6cc6a30339d39b54983e7446551e2055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9409519d577878b06e8d172d9e262d43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc_1_1_atc_a.html#a9409519d577878b06e8d172d9e262d43">is_stop_svc_</a></td></tr>
+<tr class="memdesc:a9409519d577878b06e8d172d9e262d43"><td class="mdescLeft">&#160;</td><td class="mdescRight">ATC-30信号ブレーキフラグ  <a href="#a9409519d577878b06e8d172d9e262d43">[詳解]</a><br/></td></tr>
+<tr class="separator:a9409519d577878b06e8d172d9e262d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c1f626979b4e244e457c20fd0b5762"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc_1_1_atc_a.html#ad0c1f626979b4e244e457c20fd0b5762">is__brake_reset_</a></td></tr>
+<tr class="memdesc:ad0c1f626979b4e244e457c20fd0b5762"><td class="mdescLeft">&#160;</td><td class="mdescRight">ブレーキ開放フラグ  <a href="#ad0c1f626979b4e244e457c20fd0b5762">[詳解]</a><br/></td></tr>
+<tr class="separator:ad0c1f626979b4e244e457c20fd0b5762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:aa47120d0a858a45adf62de93dffdfc0b"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_a_t_c_f_s_1_1_train.html">Train</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_t_c_f_s_1_1_atc_1_1_atc_a.html#aa47120d0a858a45adf62de93dffdfc0b">train_</a></td></tr>
+<tr class="separator:aa47120d0a858a45adf62de93dffdfc0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>ATC-1, ATC-2を再現するクラス </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a class="anchor" id="a070e2835e6f2f09156024a7f36275c7b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ATCFS.Atc.AtcA.AtcA </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_t_c_f_s_1_1_train.html">Train</a>&#160;</td>
+          <td class="paramname"><em>train</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>新しいインスタンスを作成する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">train</td><td>Trainクラスのインスタンス</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a class="anchor" id="ad729cc90b9bbbc006c60a0663e9257e0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.AtcA.ChangedSignal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>signal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SetSignalで実行され、車内信号を更新する関数 </p>
+<p>ATC-02, 03, 30信号のブレーキフラグ管理および、とーほぐ新幹線信号インデックスの変換を含む</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signal</td><td>現在のセクションの信号番号</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a66c3ba4c987c05decf5bbbfca5a70b6f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ATCFS.Atc.AtcA.Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializeで実行する関数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a class="anchor" id="ad0c1f626979b4e244e457c20fd0b5762"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.AtcA.is__brake_reset_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ブレーキ開放フラグ </p>
+
+</div>
+</div>
+<a class="anchor" id="a6cc6a30339d39b54983e7446551e2055"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.AtcA.is_stop_eb_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATC-02, 03信号ブレーキフラグ </p>
+
+</div>
+</div>
+<a class="anchor" id="a9409519d577878b06e8d172d9e262d43"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.AtcA.is_stop_svc_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ATC-30信号ブレーキフラグ </p>
+
+</div>
+</div>
+<a class="anchor" id="af4657444f6215376355cd8a67ef73bed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ATCFS.Atc.AtcA.signal_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>車内信号の信号インデックス </p>
+
+</div>
+</div>
+<a class="anchor" id="aa47120d0a858a45adf62de93dffdfc0b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="class_a_t_c_f_s_1_1_train.html">Train</a> ATCFS.Atc.AtcA.train_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li><a class="el" href="_atc_8cs.html">Atc.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

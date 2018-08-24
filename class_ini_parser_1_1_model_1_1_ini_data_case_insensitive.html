@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ATCFS For OpenBVE: IniParser.Model.IniDataCaseInsensitive クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ATCFS For OpenBVE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
+      <li><a href="namespaces.html"><span>パッケージ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>クラス一覧</span></a></li>
+      <li><a href="classes.html"><span>クラス索引</span></a></li>
+      <li><a href="inherits.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>クラスメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>名前空間</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_ini_parser.html">IniParser</a></li><li class="navelem"><a class="el" href="namespace_ini_parser_1_1_model.html">Model</a></li><li class="navelem"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data_case_insensitive.html">IniDataCaseInsensitive</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="class_ini_parser_1_1_model_1_1_ini_data_case_insensitive-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">IniParser.Model.IniDataCaseInsensitive クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Represents all data from an INI file exactly as the <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html" title="Represents all data from an INI file ">IniData</a> class, but searching for sections and keys names is done with a case insensitive search.  
+ <a href="class_ini_parser_1_1_model_1_1_ini_data_case_insensitive.html#details">[詳解]</a></p>
+<div class="dynheader">
+IniParser.Model.IniDataCaseInsensitive の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_model_1_1_ini_data_case_insensitive__inherit__graph.png" border="0" usemap="#_ini_parser_8_model_8_ini_data_case_insensitive_inherit__map" alt="Inheritance graph"/></div>
+<map name="_ini_parser_8_model_8_ini_data_case_insensitive_inherit__map" id="_ini_parser_8_model_8_ini_data_case_insensitive_inherit__map">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_model_1_1_ini_data.html" title="Represents all data from an INI file " alt="" coords="68,80,132,107"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+IniParser.Model.IniDataCaseInsensitive 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_model_1_1_ini_data_case_insensitive__coll__graph.png" border="0" usemap="#_ini_parser_8_model_8_ini_data_case_insensitive_coll__map" alt="Collaboration graph"/></div>
+<map name="_ini_parser_8_model_8_ini_data_case_insensitive_coll__map" id="_ini_parser_8_model_8_ini_data_case_insensitive_coll__map">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_model_1_1_ini_data.html" title="Represents all data from an INI file " alt="" coords="581,72,645,99"/><area shape="rect" id="node4" href="class_ini_parser_1_1_model_1_1_section_data_collection.html" title="IniParser.Model.SectionData\lCollection" alt="" coords="253,123,443,165"/><area shape="rect" id="node6" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html" title="Defines data for a Parser configuration object. " alt="" coords="249,6,447,47"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a2fc0913152c6fb8867a8731794e98ebd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data_case_insensitive.html#a2fc0913152c6fb8867a8731794e98ebd">IniDataCaseInsensitive</a> ()</td></tr>
+<tr class="memdesc:a2fc0913152c6fb8867a8731794e98ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an empty <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html" title="Represents all data from an INI file ">IniData</a> instance.  <a href="#a2fc0913152c6fb8867a8731794e98ebd">[詳解]</a><br/></td></tr>
+<tr class="separator:a2fc0913152c6fb8867a8731794e98ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5472c2c6e5c0d96cbb2524d09d30347"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data_case_insensitive.html#ae5472c2c6e5c0d96cbb2524d09d30347">IniDataCaseInsensitive</a> (<a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a> sdc)</td></tr>
+<tr class="memdesc:ae5472c2c6e5c0d96cbb2524d09d30347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html" title="Represents all data from an INI file ">IniData</a> instance using a previous <a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a>.  <a href="#ae5472c2c6e5c0d96cbb2524d09d30347">[詳解]</a><br/></td></tr>
+<tr class="separator:ae5472c2c6e5c0d96cbb2524d09d30347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2975c093e52494c1aefd795be396b140"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data_case_insensitive.html#a2975c093e52494c1aefd795be396b140">IniDataCaseInsensitive</a> (<a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a> ori)</td></tr>
+<tr class="memdesc:a2975c093e52494c1aefd795be396b140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies an instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data_case_insensitive.html" title="Represents all data from an INI file exactly as the IniData class, but searching for sections and key...">IniParser.Model.IniDataCaseInsensitive</a> class  <a href="#a2975c093e52494c1aefd795be396b140">[詳解]</a><br/></td></tr>
+<tr class="separator:a2975c093e52494c1aefd795be396b140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_ini_parser_1_1_model_1_1_ini_data')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniParser.Model.IniData</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:abd1d9ab9d4cbd7eba64ce6ecb27cfd1d inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html#abd1d9ab9d4cbd7eba64ce6ecb27cfd1d">IniData</a> ()</td></tr>
+<tr class="memdesc:abd1d9ab9d4cbd7eba64ce6ecb27cfd1d inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an empty <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html" title="Represents all data from an INI file ">IniData</a> instance.  <a href="#abd1d9ab9d4cbd7eba64ce6ecb27cfd1d">[詳解]</a><br/></td></tr>
+<tr class="separator:abd1d9ab9d4cbd7eba64ce6ecb27cfd1d inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f87775ee7caad2c15493cb3f846988 inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html#a41f87775ee7caad2c15493cb3f846988">IniData</a> (<a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a> sdc)</td></tr>
+<tr class="memdesc:a41f87775ee7caad2c15493cb3f846988 inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html" title="Represents all data from an INI file ">IniData</a> instance using a previous <a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a>.  <a href="#a41f87775ee7caad2c15493cb3f846988">[詳解]</a><br/></td></tr>
+<tr class="separator:a41f87775ee7caad2c15493cb3f846988 inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a534e5dcc3c6fc40a49bdb85a8111925f inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html#a534e5dcc3c6fc40a49bdb85a8111925f">IniData</a> (<a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a> ori)</td></tr>
+<tr class="separator:a534e5dcc3c6fc40a49bdb85a8111925f inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8be8d6d0629f619c63cb9a7614c4c09 inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html#ac8be8d6d0629f619c63cb9a7614c4c09">ToString</a> ()</td></tr>
+<tr class="separator:ac8be8d6d0629f619c63cb9a7614c4c09 inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a7759ecdda7778e33f81157cd30318 inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html#a18a7759ecdda7778e33f81157cd30318">ToString</a> (<a class="el" href="interface_ini_parser_1_1_model_1_1_formatting_1_1_i_ini_data_formatter.html">IIniDataFormatter</a> formatter)</td></tr>
+<tr class="separator:a18a7759ecdda7778e33f81157cd30318 inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6f9cc93bc36fd97543025fc730b55b inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html#a0a6f9cc93bc36fd97543025fc730b55b">Clone</a> ()</td></tr>
+<tr class="memdesc:a0a6f9cc93bc36fd97543025fc730b55b inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new object that is a copy of the current instance.  <a href="#a0a6f9cc93bc36fd97543025fc730b55b">[詳解]</a><br/></td></tr>
+<tr class="separator:a0a6f9cc93bc36fd97543025fc730b55b inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ee16e5976394dc0c35780caed6aab5f inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html#a7ee16e5976394dc0c35780caed6aab5f">ClearAllComments</a> ()</td></tr>
+<tr class="memdesc:a7ee16e5976394dc0c35780caed6aab5f inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes all comments in all sections and key values  <a href="#a7ee16e5976394dc0c35780caed6aab5f">[詳解]</a><br/></td></tr>
+<tr class="separator:a7ee16e5976394dc0c35780caed6aab5f inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65db589744d64f6d530b96fcbe1f409c inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html#a65db589744d64f6d530b96fcbe1f409c">Merge</a> (<a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a> toMergeIniData)</td></tr>
+<tr class="memdesc:a65db589744d64f6d530b96fcbe1f409c inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges the other iniData into this one by overwriting existing values. Comments get appended.  <a href="#a65db589744d64f6d530b96fcbe1f409c">[詳解]</a><br/></td></tr>
+<tr class="separator:a65db589744d64f6d530b96fcbe1f409c inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe2b0ff2e3947d89f32b6325c9e4bd2 inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html#adbe2b0ff2e3947d89f32b6325c9e4bd2">TryGetKey</a> (string key, out string value)</td></tr>
+<tr class="memdesc:adbe2b0ff2e3947d89f32b6325c9e4bd2 inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to retrieve a key, using a single string combining section and key name.  <a href="#adbe2b0ff2e3947d89f32b6325c9e4bd2">[詳解]</a><br/></td></tr>
+<tr class="separator:adbe2b0ff2e3947d89f32b6325c9e4bd2 inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d277b06bcb544171924b63c16bce3c1 inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html#a1d277b06bcb544171924b63c16bce3c1">GetKey</a> (string key)</td></tr>
+<tr class="memdesc:a1d277b06bcb544171924b63c16bce3c1 inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a key using a single input string combining section and key name.  <a href="#a1d277b06bcb544171924b63c16bce3c1">[詳解]</a><br/></td></tr>
+<tr class="separator:a1d277b06bcb544171924b63c16bce3c1 inherit pub_methods_class_ini_parser_1_1_model_1_1_ini_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header properties_class_ini_parser_1_1_model_1_1_ini_data"><td colspan="2" onclick="javascript:toggleInherit('properties_class_ini_parser_1_1_model_1_1_ini_data')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniParser.Model.IniData</a> に属する継承プロパティ</td></tr>
+<tr class="memitem:a12f5908af765d7701a375a8046a78848 inherit properties_class_ini_parser_1_1_model_1_1_ini_data"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html">IniParserConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html#a12f5908af765d7701a375a8046a78848">Configuration</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a12f5908af765d7701a375a8046a78848 inherit properties_class_ini_parser_1_1_model_1_1_ini_data"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_ini_parser_1_1_model_1_1_configuration.html">Configuration</a> used to write an ini file with the proper delimiter characters and data.  <a href="#a12f5908af765d7701a375a8046a78848">[詳解]</a><br/></td></tr>
+<tr class="separator:a12f5908af765d7701a375a8046a78848 inherit properties_class_ini_parser_1_1_model_1_1_ini_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cba2bed3b55585a9add48cef5f7d3d8 inherit properties_class_ini_parser_1_1_model_1_1_ini_data"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html">KeyDataCollection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html#a8cba2bed3b55585a9add48cef5f7d3d8">Global</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a8cba2bed3b55585a9add48cef5f7d3d8 inherit properties_class_ini_parser_1_1_model_1_1_ini_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global sections. Contains key/value pairs which are not enclosed in any section (i.e. they are defined at the beginning of the file, before any section.  <a href="#a8cba2bed3b55585a9add48cef5f7d3d8">[詳解]</a><br/></td></tr>
+<tr class="separator:a8cba2bed3b55585a9add48cef5f7d3d8 inherit properties_class_ini_parser_1_1_model_1_1_ini_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a088ef9fdd551ac9edfec4651db32a4f5 inherit properties_class_ini_parser_1_1_model_1_1_ini_data"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html">KeyDataCollection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html#a088ef9fdd551ac9edfec4651db32a4f5">this[string sectionName]</a><code> [get]</code></td></tr>
+<tr class="memdesc:a088ef9fdd551ac9edfec4651db32a4f5 inherit properties_class_ini_parser_1_1_model_1_1_ini_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html" title="Represents a collection of Keydata. ">KeyDataCollection</a> instance with the specified section name.  <a href="#a088ef9fdd551ac9edfec4651db32a4f5">[詳解]</a><br/></td></tr>
+<tr class="separator:a088ef9fdd551ac9edfec4651db32a4f5 inherit properties_class_ini_parser_1_1_model_1_1_ini_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae438846118978e2f3d41e6db2a9df614 inherit properties_class_ini_parser_1_1_model_1_1_ini_data"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html#ae438846118978e2f3d41e6db2a9df614">Sections</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ae438846118978e2f3d41e6db2a9df614 inherit properties_class_ini_parser_1_1_model_1_1_ini_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets all the <a class="el" href="class_ini_parser_1_1_model_1_1_section_data.html" title="Information associated to a section in a INI File Includes both the value and the comments associated...">SectionData</a> for this <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html" title="Represents all data from an INI file ">IniData</a> instance.  <a href="#ae438846118978e2f3d41e6db2a9df614">[詳解]</a><br/></td></tr>
+<tr class="separator:ae438846118978e2f3d41e6db2a9df614 inherit properties_class_ini_parser_1_1_model_1_1_ini_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab18a903ddf86c02f72cbd2d941e86d inherit properties_class_ini_parser_1_1_model_1_1_ini_data"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html#aaab18a903ddf86c02f72cbd2d941e86d">SectionKeySeparator</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aaab18a903ddf86c02f72cbd2d941e86d inherit properties_class_ini_parser_1_1_model_1_1_ini_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to mark the separation between the section name and the key name when using <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html#adbe2b0ff2e3947d89f32b6325c9e4bd2" title="Attempts to retrieve a key, using a single string combining section and key name. ...">IniData.TryGetKey</a>.  <a href="#aaab18a903ddf86c02f72cbd2d941e86d">[詳解]</a><br/></td></tr>
+<tr class="separator:aaab18a903ddf86c02f72cbd2d941e86d inherit properties_class_ini_parser_1_1_model_1_1_ini_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>Represents all data from an INI file exactly as the <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html" title="Represents all data from an INI file ">IniData</a> class, but searching for sections and keys names is done with a case insensitive search. </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a class="anchor" id="a2fc0913152c6fb8867a8731794e98ebd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IniParser.Model.IniDataCaseInsensitive.IniDataCaseInsensitive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes an empty <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html" title="Represents all data from an INI file ">IniData</a> instance. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae5472c2c6e5c0d96cbb2524d09d30347"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IniParser.Model.IniDataCaseInsensitive.IniDataCaseInsensitive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a>&#160;</td>
+          <td class="paramname"><em>sdc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a new <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html" title="Represents all data from an INI file ">IniData</a> instance using a previous <a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a>. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sdc</td><td><a class="el" href="class_ini_parser_1_1_model_1_1_section_data_collection.html">SectionDataCollection</a> object containing the data with the sections of the file </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2975c093e52494c1aefd795be396b140"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IniParser.Model.IniDataCaseInsensitive.IniDataCaseInsensitive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a>&#160;</td>
+          <td class="paramname"><em>ori</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copies an instance of the <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data_case_insensitive.html" title="Represents all data from an INI file exactly as the IniData class, but searching for sections and key...">IniParser.Model.IniDataCaseInsensitive</a> class </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ori</td><td>Original </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_model_1_1_ini_data_case_insensitive_a2975c093e52494c1aefd795be396b140_cgraph.png" border="0" usemap="#class_ini_parser_1_1_model_1_1_ini_data_case_insensitive_a2975c093e52494c1aefd795be396b140_cgraph" alt=""/></div>
+<map name="class_ini_parser_1_1_model_1_1_ini_data_case_insensitive_a2975c093e52494c1aefd795be396b140_cgraph" id="class_ini_parser_1_1_model_1_1_ini_data_case_insensitive_a2975c093e52494c1aefd795be396b140_cgraph">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_model_1_1_key_data_collection.html#ae23fde5b4e942174b20e3a00453e688b" title="Creates a new object that is a copy of the current instance. " alt="" coords="281,5,511,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>IniParser/Model/<a class="el" href="_ini_data_case_insensitive_8cs.html">IniDataCaseInsensitive.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

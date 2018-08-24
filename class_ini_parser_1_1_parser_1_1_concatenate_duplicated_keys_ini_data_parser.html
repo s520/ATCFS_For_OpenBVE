@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>ATCFS For OpenBVE: IniParser.Parser.ConcatenateDuplicatedKeysIniDataParser クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ATCFS For OpenBVE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>総合概要</span></a></li>
+      <li><a href="pages.html"><span>諸情報</span></a></li>
+      <li><a href="namespaces.html"><span>パッケージ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>クラス一覧</span></a></li>
+      <li><a href="classes.html"><span>クラス索引</span></a></li>
+      <li><a href="inherits.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>クラスメンバ</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>名前空間</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>プロパティ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_ini_parser.html">IniParser</a></li><li class="navelem"><a class="el" href="namespace_ini_parser_1_1_parser.html">Parser</a></li><li class="navelem"><a class="el" href="class_ini_parser_1_1_parser_1_1_concatenate_duplicated_keys_ini_data_parser.html">ConcatenateDuplicatedKeysIniDataParser</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="class_ini_parser_1_1_parser_1_1_concatenate_duplicated_keys_ini_data_parser-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">IniParser.Parser.ConcatenateDuplicatedKeysIniDataParser クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+IniParser.Parser.ConcatenateDuplicatedKeysIniDataParser の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_parser_1_1_concatenate_duplicated_keys_ini_data_parser__inherit__graph.png" border="0" usemap="#_ini_parser_8_parser_8_concatenate_duplicated_keys_ini_data_parser_inherit__map" alt="Inheritance graph"/></div>
+<map name="_ini_parser_8_parser_8_concatenate_duplicated_keys_ini_data_parser_inherit__map" id="_ini_parser_8_parser_8_concatenate_duplicated_keys_ini_data_parser_inherit__map">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html" title="Responsible for parsing an string from an ini file, and creating an IniData structure. " alt="" coords="51,5,153,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+IniParser.Parser.ConcatenateDuplicatedKeysIniDataParser 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ini_parser_1_1_parser_1_1_concatenate_duplicated_keys_ini_data_parser__coll__graph.png" border="0" usemap="#_ini_parser_8_parser_8_concatenate_duplicated_keys_ini_data_parser_coll__map" alt="Collaboration graph"/></div>
+<map name="_ini_parser_8_parser_8_concatenate_duplicated_keys_ini_data_parser_coll__map" id="_ini_parser_8_parser_8_concatenate_duplicated_keys_ini_data_parser_coll__map">
+<area shape="rect" id="node2" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html" title="Responsible for parsing an string from an ini file, and creating an IniData structure. " alt="" coords="51,5,153,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a77c8a3593109fbb867779331ec543704"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_concatenate_duplicated_keys_ini_data_parser.html#a77c8a3593109fbb867779331ec543704">ConcatenateDuplicatedKeysIniDataParser</a> ()</td></tr>
+<tr class="separator:a77c8a3593109fbb867779331ec543704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa3e58fd4240f39285c2df533300598"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_concatenate_duplicated_keys_ini_data_parser.html#adfa3e58fd4240f39285c2df533300598">ConcatenateDuplicatedKeysIniDataParser</a> (<a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_concatenate_duplicated_keys_ini_parser_configuration.html">ConcatenateDuplicatedKeysIniParserConfiguration</a> parserConfiguration)</td></tr>
+<tr class="separator:adfa3e58fd4240f39285c2df533300598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html">IniParser.Parser.IniDataParser</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a10972e66314470d90bb21b2fc4073293 inherit pub_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html#a10972e66314470d90bb21b2fc4073293">IniDataParser</a> ()</td></tr>
+<tr class="memdesc:a10972e66314470d90bb21b2fc4073293 inherit pub_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ctor  <a href="#a10972e66314470d90bb21b2fc4073293">[詳解]</a><br/></td></tr>
+<tr class="separator:a10972e66314470d90bb21b2fc4073293 inherit pub_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeea7dd4182db1cd6ccfad5da27c3d09 inherit pub_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html#adeea7dd4182db1cd6ccfad5da27c3d09">IniDataParser</a> (<a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html">IniParserConfiguration</a> parserConfiguration)</td></tr>
+<tr class="memdesc:adeea7dd4182db1cd6ccfad5da27c3d09 inherit pub_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ctor  <a href="#adeea7dd4182db1cd6ccfad5da27c3d09">[詳解]</a><br/></td></tr>
+<tr class="separator:adeea7dd4182db1cd6ccfad5da27c3d09 inherit pub_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d2631d48b534292bff89da715929661 inherit pub_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html#a4d2631d48b534292bff89da715929661">Parse</a> (string iniDataString)</td></tr>
+<tr class="memdesc:a4d2631d48b534292bff89da715929661 inherit pub_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a string containing valid ini data  <a href="#a4d2631d48b534292bff89da715929661">[詳解]</a><br/></td></tr>
+<tr class="separator:a4d2631d48b534292bff89da715929661 inherit pub_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a6c434ec3cfa6cd9b7e4d6edd91f8110a"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_concatenate_duplicated_keys_ini_data_parser.html#a6c434ec3cfa6cd9b7e4d6edd91f8110a">HandleDuplicatedKeyInCollection</a> (string key, string value, <a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html">KeyDataCollection</a> keyDataCollection, string sectionName)</td></tr>
+<tr class="memdesc:a6c434ec3cfa6cd9b7e4d6edd91f8110a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract Method that decides what to do in case we are trying to add a duplicated key to a section  <a href="#a6c434ec3cfa6cd9b7e4d6edd91f8110a">[詳解]</a><br/></td></tr>
+<tr class="separator:a6c434ec3cfa6cd9b7e4d6edd91f8110a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html">IniParser.Parser.IniDataParser</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:acc884f338265db431cd3e373adf6f4b4 inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html#acc884f338265db431cd3e373adf6f4b4">LineContainsAComment</a> (string line)</td></tr>
+<tr class="memdesc:acc884f338265db431cd3e373adf6f4b4 inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a given string contains a comment.  <a href="#acc884f338265db431cd3e373adf6f4b4">[詳解]</a><br/></td></tr>
+<tr class="separator:acc884f338265db431cd3e373adf6f4b4 inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b0f92265dc0bc4e47cee85dfe422a8 inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html#a32b0f92265dc0bc4e47cee85dfe422a8">LineMatchesASection</a> (string line)</td></tr>
+<tr class="memdesc:a32b0f92265dc0bc4e47cee85dfe422a8 inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a given string represents a section delimiter.  <a href="#a32b0f92265dc0bc4e47cee85dfe422a8">[詳解]</a><br/></td></tr>
+<tr class="separator:a32b0f92265dc0bc4e47cee85dfe422a8 inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a6bee60f75cf6439471c61654400a91 inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html#a2a6bee60f75cf6439471c61654400a91">LineMatchesAKeyValuePair</a> (string line)</td></tr>
+<tr class="memdesc:a2a6bee60f75cf6439471c61654400a91 inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a given string represents a key / value pair.  <a href="#a2a6bee60f75cf6439471c61654400a91">[詳解]</a><br/></td></tr>
+<tr class="separator:a2a6bee60f75cf6439471c61654400a91 inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab55de27a90ef6edf252ba9d887118d inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html#a3ab55de27a90ef6edf252ba9d887118d">ExtractComment</a> (string line)</td></tr>
+<tr class="memdesc:a3ab55de27a90ef6edf252ba9d887118d inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a comment from a string if exist, and returns the string without the comment substring.  <a href="#a3ab55de27a90ef6edf252ba9d887118d">[詳解]</a><br/></td></tr>
+<tr class="separator:a3ab55de27a90ef6edf252ba9d887118d inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6c96797c42364aaa610c24cec6d4011 inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html#af6c96797c42364aaa610c24cec6d4011">ProcessLine</a> (string currentLine, <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a> currentIniData)</td></tr>
+<tr class="memdesc:af6c96797c42364aaa610c24cec6d4011 inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes one line and parses the data found in that line (section or key/value pair who may or may not have comments)  <a href="#af6c96797c42364aaa610c24cec6d4011">[詳解]</a><br/></td></tr>
+<tr class="separator:af6c96797c42364aaa610c24cec6d4011 inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b436e91fa3648a89238c59e7077376a inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html#a5b436e91fa3648a89238c59e7077376a">ProcessSection</a> (string line, <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a> currentIniData)</td></tr>
+<tr class="memdesc:a5b436e91fa3648a89238c59e7077376a inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Proccess a string which contains an ini section.  <a href="#a5b436e91fa3648a89238c59e7077376a">[詳解]</a><br/></td></tr>
+<tr class="separator:a5b436e91fa3648a89238c59e7077376a inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91196e9a66b53cb49a30a0fb130c4f29 inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html#a91196e9a66b53cb49a30a0fb130c4f29">ProcessKeyValuePair</a> (string line, <a class="el" href="class_ini_parser_1_1_model_1_1_ini_data.html">IniData</a> currentIniData)</td></tr>
+<tr class="memdesc:a91196e9a66b53cb49a30a0fb130c4f29 inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes a string containing an ini key/value pair.  <a href="#a91196e9a66b53cb49a30a0fb130c4f29">[詳解]</a><br/></td></tr>
+<tr class="separator:a91196e9a66b53cb49a30a0fb130c4f29 inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40910e5236ffde56090f46cac17ddc4d inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html#a40910e5236ffde56090f46cac17ddc4d">ExtractKey</a> (string s)</td></tr>
+<tr class="memdesc:a40910e5236ffde56090f46cac17ddc4d inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the key portion of a string containing a key/value pair..  <a href="#a40910e5236ffde56090f46cac17ddc4d">[詳解]</a><br/></td></tr>
+<tr class="separator:a40910e5236ffde56090f46cac17ddc4d inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc3aee23d840edc0c24937a9dbb85b9 inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html#abbc3aee23d840edc0c24937a9dbb85b9">ExtractValue</a> (string s)</td></tr>
+<tr class="memdesc:abbc3aee23d840edc0c24937a9dbb85b9 inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the value portion of a string containing a key/value pair..  <a href="#abbc3aee23d840edc0c24937a9dbb85b9">[詳解]</a><br/></td></tr>
+<tr class="separator:abbc3aee23d840edc0c24937a9dbb85b9 inherit pro_methods_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:a2442999087e69999a5de33fe0d12eab9"><td class="memItemLeft" align="right" valign="top">new <br class="typebreak"/>
+<a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_concatenate_duplicated_keys_ini_parser_configuration.html">ConcatenateDuplicatedKeysIniParserConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_concatenate_duplicated_keys_ini_data_parser.html#a2442999087e69999a5de33fe0d12eab9">Configuration</a><code> [get, set]</code></td></tr>
+<tr class="separator:a2442999087e69999a5de33fe0d12eab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td colspan="2" onclick="javascript:toggleInherit('properties_class_ini_parser_1_1_parser_1_1_ini_data_parser')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html">IniParser.Parser.IniDataParser</a> に属する継承プロパティ</td></tr>
+<tr class="memitem:a3fddb1cb8c87a1a66d0794f8de4bda01 inherit properties_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html">IniParserConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html#a3fddb1cb8c87a1a66d0794f8de4bda01">Configuration</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a3fddb1cb8c87a1a66d0794f8de4bda01 inherit properties_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration that defines the behaviour and constraints that the parser must follow.  <a href="#a3fddb1cb8c87a1a66d0794f8de4bda01">[詳解]</a><br/></td></tr>
+<tr class="separator:a3fddb1cb8c87a1a66d0794f8de4bda01 inherit properties_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce00ec609a872ad7c44739b24c69997 inherit properties_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html#a4ce00ec609a872ad7c44739b24c69997">HasError</a><code> [get]</code></td></tr>
+<tr class="memdesc:a4ce00ec609a872ad7c44739b24c69997 inherit properties_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">True is the parsing operation encounter any problem  <a href="#a4ce00ec609a872ad7c44739b24c69997">[詳解]</a><br/></td></tr>
+<tr class="separator:a4ce00ec609a872ad7c44739b24c69997 inherit properties_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ad0f10248dfc3d83a722fb6f792251 inherit properties_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memItemLeft" align="right" valign="top">ReadOnlyCollection&lt; Exception &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html#ac8ad0f10248dfc3d83a722fb6f792251">Errors</a><code> [get]</code></td></tr>
+<tr class="memdesc:ac8ad0f10248dfc3d83a722fb6f792251 inherit properties_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of errors found while parsing the ini file.  <a href="#ac8ad0f10248dfc3d83a722fb6f792251">[詳解]</a><br/></td></tr>
+<tr class="separator:ac8ad0f10248dfc3d83a722fb6f792251 inherit properties_class_ini_parser_1_1_parser_1_1_ini_data_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a class="anchor" id="a77c8a3593109fbb867779331ec543704"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IniParser.Parser.ConcatenateDuplicatedKeysIniDataParser.ConcatenateDuplicatedKeysIniDataParser </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adfa3e58fd4240f39285c2df533300598"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IniParser.Parser.ConcatenateDuplicatedKeysIniDataParser.ConcatenateDuplicatedKeysIniDataParser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_concatenate_duplicated_keys_ini_parser_configuration.html">ConcatenateDuplicatedKeysIniParserConfiguration</a>&#160;</td>
+          <td class="paramname"><em>parserConfiguration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a class="anchor" id="a6c434ec3cfa6cd9b7e4d6edd91f8110a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void IniParser.Parser.ConcatenateDuplicatedKeysIniDataParser.HandleDuplicatedKeyInCollection </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_ini_parser_1_1_model_1_1_key_data_collection.html">KeyDataCollection</a>&#160;</td>
+          <td class="paramname"><em>keyDataCollection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>sectionName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Abstract Method that decides what to do in case we are trying to add a duplicated key to a section </p>
+
+<p><a class="el" href="class_ini_parser_1_1_parser_1_1_ini_data_parser.html#a8c4325ca2a32346be0b5821f76da9c99">IniParser.Parser.IniDataParser</a>を再実装しています。</p>
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a class="anchor" id="a2442999087e69999a5de33fe0d12eab9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">new <a class="el" href="class_ini_parser_1_1_model_1_1_configuration_1_1_concatenate_duplicated_keys_ini_parser_configuration.html">ConcatenateDuplicatedKeysIniParserConfiguration</a> IniParser.Parser.ConcatenateDuplicatedKeysIniDataParser.Configuration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>IniParser/Parser/<a class="el" href="_concatenate_duplicated_keys_ini_data_parser_8cs.html">ConcatenateDuplicatedKeysIniDataParser.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

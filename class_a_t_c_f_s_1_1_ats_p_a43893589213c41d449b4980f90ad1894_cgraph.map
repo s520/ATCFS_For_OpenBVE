@@ -1,0 +1,6 @@
+<map id="ATCFS.AtsP.CalcPattern" name="ATCFS.AtsP.CalcPattern">
+<area shape="rect" id="node2" href="$class_a_t_c_f_s_1_1_ats_p.html#aeb5a25bcc646d209c3b5e79905f54934" title="パターンが無効の場合に目標速度を車両ATS&#45;P最高速度に修正する関数 " alt="" coords="235,5,410,32"/>
+<area shape="rect" id="node3" href="$class_a_t_c_f_s_1_1_ats_p.html#a8d990c4024c6b601ef7f1159a2eb745d" title="パターン照査速度を算出する関数 " alt="" coords="467,81,661,108"/>
+<area shape="rect" id="node5" href="$class_a_t_c_f_s_1_1_ats_p.html#a6d79e2483c10afa68ece2454b2741426" title="パターン接近警報を発信する関数 " alt="" coords="227,107,418,133"/>
+<area shape="rect" id="node4" href="$class_a_t_c_f_s_1_1_ats_p.html#aa42acb5d2bb22ec66cad7dde8e4b41d3" title="距離に対応する速度を返す関数 " alt="" coords="709,81,896,108"/>
+</map>

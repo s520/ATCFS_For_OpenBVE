@@ -1,0 +1,4 @@
+<map id="ATCFS.Atc.SelectBrake" name="ATCFS.Atc.SelectBrake">
+<area shape="rect" id="node2" href="$class_a_t_c_f_s_1_1_atc.html#a9c28a83a33b17c0c4b222fa8178d6dc3" title="デジタルATC用のブレーキノッチを出力する関数 " alt="" coords="219,5,381,32"/>
+<area shape="rect" id="node3" href="$class_a_t_c_f_s_1_1_atc.html#a4f80884a0a65088f75f589d0986ff02b" title="1フレームごとに呼び出される関数 " alt="" coords="430,5,565,32"/>
+</map>

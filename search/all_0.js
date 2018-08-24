@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['_5fcomments',['_comments',['../class_ini_parser_1_1_model_1_1_key_data.html#a1e7d8095c70746c80ff099de534168c1',1,'IniParser::Model::KeyData']]],
+  ['_5fcommentstring',['_commentString',['../class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a24f305ace28f1b39da66d6f2e7e56b02',1,'IniParser::Model::Configuration::IniParserConfiguration']]],
+  ['_5fconfiguration',['_configuration',['../class_ini_parser_1_1_model_1_1_formatting_1_1_default_ini_data_formatter.html#ac6d6133cddc7b1351c2a9d87e7d67c2b',1,'IniParser.Model.Formatting.DefaultIniDataFormatter._configuration()'],['../class_ini_parser_1_1_model_1_1_ini_data.html#a2edbbdfe063437c482844577b3dbc4f9',1,'IniParser.Model.IniData._configuration()']]],
+  ['_5fcurrentcommentlisttemp',['_currentCommentListTemp',['../class_ini_parser_1_1_parser_1_1_ini_data_parser.html#a403e29d35a3dc48fd2bf3fd5c9cf5951',1,'IniParser::Parser::IniDataParser']]],
+  ['_5fcurrentsectionnametemp',['_currentSectionNameTemp',['../class_ini_parser_1_1_parser_1_1_ini_data_parser.html#a0a5f6597884da500c268332051f30b1c',1,'IniParser::Parser::IniDataParser']]],
+  ['_5ferrorexceptions',['_errorExceptions',['../class_ini_parser_1_1_parser_1_1_ini_data_parser.html#a7aa492a62c6ac998f9ad3a4841237805',1,'IniParser::Parser::IniDataParser']]],
+  ['_5fkeydata',['_keyData',['../class_ini_parser_1_1_model_1_1_key_data_collection.html#af2926b29e8fa6ca18084a69e4b609d64',1,'IniParser::Model::KeyDataCollection']]],
+  ['_5fkeydatacollection',['_keyDataCollection',['../class_ini_parser_1_1_model_1_1_section_data.html#a9d6459427731914d4ebfa9aa6c11313f',1,'IniParser::Model::SectionData']]],
+  ['_5fkeyname',['_keyName',['../class_ini_parser_1_1_model_1_1_key_data.html#a46bbfd7f9ea1488f1715a76c1f7586cc',1,'IniParser::Model::KeyData']]],
+  ['_5fleadingcomments',['_leadingComments',['../class_ini_parser_1_1_model_1_1_section_data.html#a83831660265c5ee4faf1e95c809aefc0',1,'IniParser::Model::SectionData']]],
+  ['_5fsearchcomparer',['_searchComparer',['../class_ini_parser_1_1_model_1_1_key_data_collection.html#a9a759f78624d9a7281befb84b207109a',1,'IniParser.Model.KeyDataCollection._searchComparer()'],['../class_ini_parser_1_1_model_1_1_section_data.html#a166bc8071064397d6a301f52a727697a',1,'IniParser.Model.SectionData._searchComparer()'],['../class_ini_parser_1_1_model_1_1_section_data_collection.html#a8e327f9d490fd6cbaacbb4a9d3e5d786',1,'IniParser.Model.SectionDataCollection._searchComparer()']]],
+  ['_5fsectiondata',['_sectionData',['../class_ini_parser_1_1_model_1_1_section_data_collection.html#aa41f4b4fc2438c5074c382521f554aa3',1,'IniParser::Model::SectionDataCollection']]],
+  ['_5fsectionendchar',['_sectionEndChar',['../class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a1fdc7c262c17107987c5afdfbf346481',1,'IniParser::Model::Configuration::IniParserConfiguration']]],
+  ['_5fsectionname',['_sectionName',['../class_ini_parser_1_1_model_1_1_section_data.html#aaa4bbb6d564b444fb35813f8bff56967',1,'IniParser::Model::SectionData']]],
+  ['_5fsections',['_sections',['../class_ini_parser_1_1_model_1_1_ini_data.html#a3a3b0d05dd494411c5411cfc8da21441',1,'IniParser::Model::IniData']]],
+  ['_5fsectionstartchar',['_sectionStartChar',['../class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#ac0f8b28e497d55e8401261eb269af9d6',1,'IniParser::Model::Configuration::IniParserConfiguration']]],
+  ['_5fstrcommentregex',['_strCommentRegex',['../class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a9a21df63923c14862e61e09705b32107',1,'IniParser::Model::Configuration::IniParserConfiguration']]],
+  ['_5fstrkeyregex',['_strKeyRegex',['../class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#aaa31d2e53177488ebafc6d5c1d9c460e',1,'IniParser::Model::Configuration::IniParserConfiguration']]],
+  ['_5fstrsectionregexend',['_strSectionRegexEnd',['../class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a6beff2c7026d9522e652f72aafedcc2d',1,'IniParser::Model::Configuration::IniParserConfiguration']]],
+  ['_5fstrsectionregexmiddle',['_strSectionRegexMiddle',['../class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a6289f6561577e5445878b86e45fdb5cd',1,'IniParser::Model::Configuration::IniParserConfiguration']]],
+  ['_5fstrsectionregexstart',['_strSectionRegexStart',['../class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#a26025e70987eaf036da753fdd35420b6',1,'IniParser::Model::Configuration::IniParserConfiguration']]],
+  ['_5fstrspecialregexchars',['_strSpecialRegexChars',['../class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#aa7be70902edfb05d16649647fb620e41',1,'IniParser::Model::Configuration::IniParserConfiguration']]],
+  ['_5fstrvalueregex',['_strValueRegex',['../class_ini_parser_1_1_model_1_1_configuration_1_1_ini_parser_configuration.html#afc1784f2355ef1e770524499010071ea',1,'IniParser::Model::Configuration::IniParserConfiguration']]],
+  ['_5ftrailingcomments',['_trailingComments',['../class_ini_parser_1_1_model_1_1_section_data.html#acdb99ce25c9ccff2af66aeed99e1754b',1,'IniParser::Model::SectionData']]],
+  ['_5fvalue',['_value',['../class_ini_parser_1_1_model_1_1_key_data.html#a003876e3393d762516d90b9718255817',1,'IniParser::Model::KeyData']]]
+];
